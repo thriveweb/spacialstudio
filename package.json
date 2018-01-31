@@ -41,14 +41,14 @@
     "react-helmet": "^5.1.3",
     "react-markdown": "^2.5.0",
     "react-router-dom": "^4.1.1",
+    "react-router-transition": "^1.2.0",
     "react-snapshot": "^1.1.0"
   },
   "scripts": {
     "start": "npm-run-all prepare-content -p start:content start:js",
     "start:js": "react-scripts start",
     "start:content": "chokidar 'content/**/**' -c 'npm run prepare-content'",
-    "build":
-      "npm-run-all -s prepare-content build:js build:postcss react-snapshot sw",
+    "build": "npm-run-all -s prepare-content build:js build:postcss react-snapshot sw",
     "build:js": "react-scripts build",
     "build:postcss": "postcss build/static/css/*.css -r",
     "react-snapshot": "react-snapshot",
@@ -60,6 +60,8 @@
     "eject": "react-scripts eject"
   },
   "reactSnapshot": {
-    "include": ["/404"]
+    "include": [
+      "/404"
+    ]
   }
 }

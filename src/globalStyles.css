@@ -129,6 +129,14 @@ pre code:after {
 }
 
 /* Layout */
+.AnimatedSwitch {
+  position: relative;
+}
+
+.AnimatedSwitch > * {
+  position: absolute;
+  width: 100%;
+}
 
 .Section {
   width: 100%;

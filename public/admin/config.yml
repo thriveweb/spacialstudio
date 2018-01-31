@@ -51,6 +51,27 @@ collections: # A list of collections the CMS should be able to edit
           - {label: Featured Image, name: featuredImage, widget: image}
           - {label: Section 1, name: section1, widget: markdown}
           - {label: Section 2, name: section2, widget: markdown}
+      - file: "content/pages/services.md"
+        label: "Services Page"
+        name: "services-page"
+        fields:
+          - {label: Title, name: title, widget: string}
+          - {label: Subtitle, name: subtitle, widget: string}
+          - {label: Body, name: body, widget: markdown}
+      - file: "content/pages/Style.md"
+        label: "Style Page"
+        name: "Style-page"
+        fields:
+          - {label: Title, name: title, widget: string}
+          - {label: Subtitle, name: subtitle, widget: string}
+          - {label: Body, name: body, widget: markdown}
+      - file: "content/pages/Bold.md"
+        label: "Blog Page"
+        name: "Bold-page"
+        fields:
+          - {label: Title, name: title, widget: string}
+          - {label: Subtitle, name: subtitle, widget: string}
+          - {label: Body, name: body, widget: markdown}
       - file: "content/pages/contact.md"
         label: "Contact Page"
         name: "contact-page"
