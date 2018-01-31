@@ -9,8 +9,8 @@
   border-bottom-color: transparent;
 }
 
+.NavLink.active,
 .NavLink:hover,
-.NavLink:active,
 .NavLink:focus {
   color: var(--primary);
   border-bottom-color: currentColor;
