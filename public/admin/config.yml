@@ -58,16 +58,16 @@ collections: # A list of collections the CMS should be able to edit
           - {label: Title, name: title, widget: string}
           - {label: Subtitle, name: subtitle, widget: string}
           - {label: Body, name: body, widget: markdown}
-      - file: "content/pages/Style.md"
+      - file: "content/pages/style.md"
         label: "Style Page"
-        name: "Style-page"
+        name: "style-page"
         fields:
           - {label: Title, name: title, widget: string}
           - {label: Subtitle, name: subtitle, widget: string}
           - {label: Body, name: body, widget: markdown}
-      - file: "content/pages/Bold.md"
+      - file: "content/pages/blog.md"
         label: "Blog Page"
-        name: "Bold-page"
+        name: "blog-page"
         fields:
           - {label: Title, name: title, widget: string}
           - {label: Subtitle, name: subtitle, widget: string}
