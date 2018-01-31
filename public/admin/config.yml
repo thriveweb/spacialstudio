@@ -29,6 +29,22 @@ collections: # A list of collections the CMS should be able to edit
               - {label: Twitter Site Account, name: twitterSiteAccount, widget: string, required: false}
               - {label: Twitter Creator Account, name: twitterCreatorAccount, widget: string, required: false}
           - {label: Header Meta / Scripts, name: headerScripts, widget: text, required: false}
+  - name: staff
+    label: Staff
+    editor:
+      preview: false
+    folder: content/staff
+    slug: "{{slug}}"
+    create: true # Allow users to create new documents in this collection
+    fields: # The fields each document in this collection have
+      - {label: Title, name: title, widget: string}
+      - {label: Subtitle, name: subtitle, widget: string}
+      - {label: Image, name: image, widget: image}
+      - {label: Content, name: body, widget: markdown}
+      - {label: Instagram, name: instagram, widget: string, required: false}
+      - {label: Twitter, name: twitter, widget: string, required: false}
+      - {label: Linked In, name: linkedin, widget: string, required: false}
+      - {label: Order, name: order, widget: number, required: false}
   - name: "pages"
     label: "Pages"
     delete: false # Prevent users from deleting documents in this collection
