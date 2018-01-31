@@ -2,14 +2,13 @@
 title: Hello World!
 subtitle: <Home />
 ---
-
 # 🌶 Netlify CMS + React Starter
 
 [![Standard - JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](http://standardjs.com/)
 
 A starter project for creating lightning-fast, offline-first websites with [Netlify CMS](https://netlifycms.org) and React.
 
-* **[Create React App](https://github.com/facebookincubator/create-react-app)**
+* **[Create React App](https://github.com/facebookincubator/create-react-app)** 
 * **[React Router](https://github.com/ReactTraining/react-router)** for routing
 * **[React Helmet](https://github.com/nfl/react-helmet)** for document titles, descriptions, meta
 * **[React Snapshot](https://github.com/geelen/react-snapshot)** for pre-rendering to static html so it works without Javascript ⭐️
@@ -22,35 +21,26 @@ I aim to include commonly used components and best-practices e.g. forms, setting
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/Jinksi/netlify-cms-react-starter)
 
 1. Hit the **Deploy to Netlify** button. This will:
-
    * Clone the repo into your Github account
    * Create you a new project on Netlify, build & deploy
-
-1. Once your Netlify project has been created, change a couple of settings:
-
+2. Once your Netlify project has been created, change a couple of settings:
    * Enable **Identity**
    * Change **Registration Preferences** to **Invite Only**
    * Enable **Git Gateway**
-
-1. Invite users (probably yourself) to enable admin access
+3. Invite users (probably yourself) to enable admin access
    * Open the **Identity** tab and hit **Invite Users**
 
 ## Developing
 
 1. Clone your repo to your local machine
-
-1. Install dependencies
-
+2. Install dependencies
    `yarn` or `npm install`
-
-1. Run the development server
-
+3. Run the development server
    `yarn start` or `npm run start`
 
 If you are adding or editing content locally in the CMS, a couple of things to note:
 
 * Changes will be pushed to the remote repo.
-
 * You will be prompted to enter your site's url, this is necessary for Netlify Identity to manage user login. This is stored in `localStorage`, so you might have to empty your browser cache if you are switching projects but remaining on `localhost:3000`.
 
 ## Editing CMS fields
@@ -61,7 +51,7 @@ Find out more in the [Netlify CMS Docs](https://www.netlifycms.org/docs/#configu
 
 ## See also
 
-[Netlify CMS Docs](https://www.netlifycms.org/docs/)  
-[Netlify CMS Repo](https://github.com/netlify/netlify-cms)  
-[Hyperstatic](https://github.com/Jinksi/hyperstatic) – the same starter project minus Netlify CMS  
+[Netlify CMS Docs](https://www.netlifycms.org/docs/)\
+[Netlify CMS Repo](https://github.com/netlify/netlify-cms)\
+[Hyperstatic](https://github.com/Jinksi/hyperstatic) – the same starter project minus Netlify CMS\
 [Gatsby + Netlify CMS Starter](https://github.com/AustinGreen/gatsby-starter-netlify-cms)
