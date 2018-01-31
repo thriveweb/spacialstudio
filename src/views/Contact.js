@@ -14,18 +14,9 @@ export default ({ page, siteTitle }) => (
     <div className='Section thin'>
       <div className='Container'>
         <Content source={page.content} />
-        <h3>{'<EnquiryFormSimple />'}</h3>
-        <EnquiryFormSimple name='Simple Form' />
-        <br />
         <h3>{'<EnquiryFormSimpleAjax />'}</h3>
         <EnquiryFormSimpleAjax name='Simple Form Ajax' />
         <br />
-        <h3>{'<EnquiryFormControlled />'}</h3>
-        <EnquiryFormControlled siteTitle={siteTitle} name={'Controlled Form'} />
-        <br />
-        <em>Note: these will only work when deployed on Netlify</em>
-        <br />
-        <em>Also, they are active and I will receive submissions</em> 😉
       </div>
     </div>
     <Helmet>
