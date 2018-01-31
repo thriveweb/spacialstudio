@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import { BrowserRouter as Router, Route } from 'react-router-dom'
 import Helmet from 'react-helmet'
-import { spring, AnimatedSwitch } from 'react-router-transition'
+import { AnimatedSwitch } from 'react-router-transition'
 
 import ScrollToTop from './components/ScrollToTop'
 import Meta from './components/Meta'

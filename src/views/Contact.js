@@ -2,8 +2,6 @@ import React from 'react'
 import Helmet from 'react-helmet'
 
 import PageHeader from '../components/PageHeader'
-import EnquiryFormControlled from '../components/EnquiryFormControlled'
-import EnquiryFormSimple from '../components/EnquiryFormSimple'
 import EnquiryFormSimpleAjax from '../components/EnquiryFormSimpleAjax'
 import Content from '../components/Content'
 import './Contact.css'
