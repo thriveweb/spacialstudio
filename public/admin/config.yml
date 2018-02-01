@@ -98,8 +98,12 @@ collections: # A list of collections the CMS should be able to edit
         fields:
           - {label: Title, name: title, widget: string}
           - {label: Featured Image, name: featuredImage, widget: image}
-          - {label: Section 1, name: section1, widget: markdown}
-          - {label: Section 2, name: section2, widget: markdown}
+          - {label: Welcome Quote, name: welcomeQuote, widget: text}
+          - {label: Welcome Section, name: welcomeSection, widget: markdown}
+          - {label: History Title, name: historyTitle, widget: string}
+          - {label: History Section, name: historySection, widget: markdown}
+          - {label: Services Title, name: servicesTitle, widget: string}
+          - {label: message, name: message, widget:}
       - file: "content/pages/home.md"
         label: "Home Page"
         name: "home-page"
