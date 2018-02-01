@@ -46,6 +46,7 @@ historySection: >-
   efficitur vitae, posuere a mauris. Phasellus ac dui pellentesque, lacinia
   risus ut, imperdiet eros.
 servicesTitle: Our Services
-message: adfb
+service:
+  - title: Interior design
 ---
 
