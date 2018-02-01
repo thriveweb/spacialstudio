@@ -3,7 +3,7 @@ siteUrl: 'https://spacialstudio.netlify.com'
 siteDescription: Spacial Studio
 socialMediaCard:
   image: /images/uploads/card-og.png
-  twitterCreatorAccount: 'Spacial Studio'
+  twitterCreatorAccount: Spacial Studio
   twitterSiteAccount: ''
-headerScripts: |-
-  <!-- Add your analytics scripts / verification meta here -->
+headerScripts: <!-- Add your analytics scripts / verification meta here -->
+enableServiceWorker: true
