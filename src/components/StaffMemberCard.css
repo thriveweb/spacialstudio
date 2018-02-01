@@ -1,0 +1,65 @@
+.StaffMember {
+  text-align: center;
+  max-width: 30rem;
+  margin: 1rem;
+}
+
+.StaffMember--Title {
+  font-size: 2.5rem;
+  margin-top: 4rem;
+}
+
+.StaffMember--Subtitle {
+  font-weight: 100;
+  font-size: 2rem;
+  letter-spacing: 0.1em;
+}
+
+.StaffMember--Subtitle:after {
+  content: '';
+  display: block;
+  margin: 1rem auto 2rem;
+  border-bottom: 3px solid var(--tertiary);
+  width: 5rem;
+}
+
+.StaffMember--Image {
+  width: 90%;
+  height: 30rem;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.StaffMember--Image .LazyImage{
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  opacity: 0.8;
+  mix-blend-mode: lighten;
+}
+
+@supports (object-fit: contain) {
+  .StaffMember--Image .LazyImage{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}
+
+.StaffMember--ReadMore {
+  border: none;
+  background: none;
+  text-transform: uppercase;
+  font-family: inherit;
+  margin-top: 1rem;
+  opacity: 0.6;
+  font-size: 0.9em;
+  text-decoration: underline;
+  cursor: pointer;
+  color: inherit;
+}

@@ -9,7 +9,8 @@
   --midGrey: #b5b4b5;
   --darkGrey: #585858;
   --danger: #ff3d3d;
-  --font-primary: 'Open Sans', sans-serif;
+  --font-primary: 'din-condensed', sans-serif;
+  --font-secondary: 'aktiv-grotesk', sans-serif;
   --font-system: '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto',
     'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -24,14 +25,13 @@ html {
 }
 
 body {
-  font-family: var(--font-system);
+  font-family: var(--font-primary);
   min-height: 100%;
   position: relative;
   background: #f8f8f8;
   color: var(--secondary);
   font-size: 1.6em;
   font-weight: 300;
-  letter-spacing: 0.01em;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
 }
@@ -63,6 +63,11 @@ h5,
 h6 {
   margin: 0;
   margin-bottom: 0.5em;
+  font-weight: 300;
+}
+
+h1 {
+  font-family: var(--font-secondary);
 }
 
 pre {
@@ -142,29 +147,29 @@ pre code:after {
   width: 100%;
 }
 
-.Section {
+.section {
   width: 100%;
   padding: 5rem 0;
 }
-.Section.thick {
+.section.thick {
   padding: 10rem 0;
 }
-.Section.thin {
+.section.thin {
   padding: 2.5rem 0;
 }
-.Section.noPadding {
+.section.noPadding {
   padding: 0;
 }
 
-.Container {
+.container {
   max-width: 1111px;
   width: 90%;
   margin: 0 auto;
 }
-.Container.skinny {
+.container.skinny {
   max-width: 888px;
 }
-.Container.skinnier {
+.container.skinnier {
   max-width: 555px;
 }
 
@@ -250,4 +255,9 @@ pre code:after {
       rgba(255, 255, 255, 0) 50%,
       rgba(255, 255, 255, 0)
     );
+}
+
+.section-title {
+  font-size: 4rem;
+  text-align: center;
 }

@@ -7,7 +7,7 @@ import './Nav.css'
 
 export default ({ handlePopupOpen }) => (
   <nav className='Nav'>
-    <div className='Container'>
+    <div className='container'>
       <div className='Flex alignCenter justifyBetween'>
         <Link to='/'>
           <Logo />

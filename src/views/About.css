@@ -1,2 +1,46 @@
 .About {
 }
+
+.welcome--info {
+  padding: 4rem;
+}
+
+.welcome--info blockquote {
+  font-size: 5rem;
+  line-height: 1.1;
+  margin: 0;
+  padding: 0;
+}
+.welcome--info blockquote p {
+  margin: 0 0 1.5rem 0;
+}
+
+.welcome--content {
+  padding: 0 0 0 4rem;
+}
+
+.history .Content {
+  column-count: 3;
+  column-gap: 4rem;
+}
+
+.servicesGrid {
+  flex-wrap: wrap;
+}
+
+.servicePod {
+  width: calc(33.33% - 2rem);
+  margin: 2rem 1rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.servicePod--Icon {
+  margin-right: 4rem;
+}
+.servicePod--Info {
+  padding: 4rem 0 0 0;
+}
+.ServicePod--Title {
+  font-size: 2.5rem;
+}

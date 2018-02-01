@@ -39,6 +39,8 @@ class App extends Component {
       headerScripts
     } = globalSettings
 
+    const staff = this.getDocuments('staff')
+
     const RouteWithFooter = props => (
       <div className='RouteWithFooter'>
         {props.children}
@@ -96,7 +98,11 @@ class App extends Component {
               exact
               render={props => (
                 <RouteWithFooter>
-                  <About page={this.getDocument('pages', 'about')} {...props} />
+                  <About
+                    page={this.getDocument('pages', 'about')}
+                    staff={staff}
+                    {...props}
+                  />
                 </RouteWithFooter>
               )}
             />

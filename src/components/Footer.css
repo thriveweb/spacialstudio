@@ -1,14 +1,7 @@
 .Footer {
-  background: var(--primary);
-  color: white;
+  padding: 4rem 0;
 }
 
-.Footer--Lower {
-  background: var(--primary);
-  padding: 1rem 0;
-  font-weight: 100;
-}
-
-.Footer--Lower a {
+.Footer a {
   color: inherit;
 }
