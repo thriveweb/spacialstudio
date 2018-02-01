@@ -11,11 +11,7 @@ export default ({ page }) => (
     <Helmet>
       <title>{page.title}</title>
     </Helmet>
-    <PageHeader
-      title={page.title}
-      subtitle={page.subtitle}
-      backgroundImage={page.featuredImage}
-    />
+    <PageHeader title={page.title} />
     <div className='Section thin'>
       <div className='Container'>
         <Content source={page.section1} />
