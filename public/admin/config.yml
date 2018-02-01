@@ -46,22 +46,6 @@ collections: # A list of collections the CMS should be able to edit
       - {label: Twitter, name: twitter, widget: string, required: false}
       - {label: Linked In, name: linkedin, widget: string, required: false}
       - {label: Order, name: order, widget: number, required: false}
-  - name: services
-    label: Services
-    editor:
-      preview: false
-    folder: content/services
-    slug: "{{slug}}"
-    create: true # Allow users to create new documents in this collection
-    fields: # The fields each document in this collection have
-      - {label: Title, name: title, widget: string}
-      - label: Services
-        name: services
-        widget: list
-        fields:
-          - { label: Title, name: title, widget: string}
-          - { label: Icon, name: icon, widget: image}
-          - { label: Description, name: description, widget: text}
   - name: "pages"
     label: "Pages"
     delete: false # Prevent users from deleting documents in this collection
@@ -103,7 +87,13 @@ collections: # A list of collections the CMS should be able to edit
           - {label: History Title, name: historyTitle, widget: string}
           - {label: History Section, name: historySection, widget: markdown}
           - {label: Services Title, name: servicesTitle, widget: string}
-          - {label: message, name: message, widget:}
+          - label: Service
+            name: service
+            widget: list
+            fields:
+              - { label: Title, name: title, widget: string}
+              - { label: Icon, name: icon, widget: image}
+              - { label: Description, name: description, widget: text}
       - file: "content/pages/home.md"
         label: "Home Page"
         name: "home-page"

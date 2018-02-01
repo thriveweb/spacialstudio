@@ -14,15 +14,27 @@ export default ({ page }) => (
     <PageHeader title={page.title} />
     <div className='Section thin'>
       <div className='Container'>
-        <Content source={page.section1} />
+        <LazyImage src={page.featuredImage} alt='LazyImage' lazy />
+        <blockquote>
+          <Content source={page.welcomeQuote} />
+        </blockquote>
+        <Content source={page.welcomeSection} />
       </div>
     </div>
     <div className='Section thin'>
       <div className='Container'>
-        <Content source={page.section2} />
-        <p>The image below is a {'<LazyImage />'}</p>
-        <LazyImage src={page.featuredImage} alt='LazyImage' />
+        <h2 className='section-title'>{page.historyTitle}</h2>
+        <Content source={page.historySection} />
       </div>
+    </div>
+    <div className='Section thin'>
+      <div className='Container'>
+        <h2 className='section-title'>{page.servicesTitle}</h2>
+        services go here
+      </div>
+    </div>
+    <div className='Section thin'>
+      <div className='Container'>Staff go here</div>
     </div>
   </div>
 )
