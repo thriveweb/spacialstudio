@@ -6,4 +6,4 @@ socialMediaCard:
   twitterCreatorAccount: Spacial Studio
   twitterSiteAccount: ''
 headerScripts: <!-- Add your analytics scripts / verification meta here -->
-enableServiceWorker: true
+enableServiceWorker: false
