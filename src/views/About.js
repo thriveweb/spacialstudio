@@ -32,7 +32,7 @@ export default ({ page, staff }) => (
       <div className='section thin history'>
         <div className='container'>
           <h2 className='section-title'>{page.historyTitle}</h2>
-          <Content source={page.historySection} />
+          <Content source={page.historySection} classes='threeColumn' />
         </div>
       </div>
     )}

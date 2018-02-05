@@ -19,11 +19,6 @@
   padding: 0 0 0 4rem;
 }
 
-.history .Content {
-  column-count: 3;
-  column-gap: 4rem;
-}
-
 .servicePod {
   width: calc(33.33% - 2rem);
   margin: 2rem 1rem;

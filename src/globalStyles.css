@@ -173,6 +173,17 @@ pre code:after {
   max-width: 555px;
 }
 
+/* CSS Columns */
+
+.twoColumn {
+  column-count: 2;
+  column-gap: 4rem;
+}
+.threeColumn {
+  column-count: 3;
+  column-gap: 4rem;
+}
+
 /* Flex */
 
 .Flex {
