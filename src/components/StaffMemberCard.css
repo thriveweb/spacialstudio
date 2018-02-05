@@ -1,39 +1,25 @@
 .StaffMember {
-  text-align: center;
-  max-width: 30rem;
-  margin: 1rem;
+  width: calc(50% - 4rem);
+  margin: 1rem 0;
 }
 
 .StaffMember--Title {
-  font-size: 2.5rem;
-  margin-top: 4rem;
+  font-size: 3.5rem;
+  margin-top: 2rem;
 }
 
 .StaffMember--Subtitle {
   font-weight: 100;
-  font-size: 2rem;
-  letter-spacing: 0.1em;
-}
-
-.StaffMember--Subtitle:after {
-  content: '';
-  display: block;
-  margin: 1rem auto 2rem;
-  border-bottom: 3px solid var(--tertiary);
-  width: 5rem;
+  font-size: 1.2rem;
+  margin: 0 0 2rem 0;
 }
 
 .StaffMember--Image {
-  width: 90%;
-  height: 30rem;
-  margin-left: auto;
-  margin-right: auto;
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
+  width: 100%;
+  height: auto;
 }
 
-.StaffMember--Image .LazyImage{
+.StaffMember--Image .LazyImage {
   max-width: 100%;
   max-height: 100%;
   width: auto;
@@ -44,22 +30,14 @@
 }
 
 @supports (object-fit: contain) {
-  .StaffMember--Image .LazyImage{
+  .StaffMember--Image .LazyImage {
     width: 100%;
     height: 100%;
     object-fit: contain;
   }
 }
 
-.StaffMember--ReadMore {
-  border: none;
-  background: none;
-  text-transform: uppercase;
-  font-family: inherit;
-  margin-top: 1rem;
-  opacity: 0.6;
-  font-size: 0.9em;
-  text-decoration: underline;
-  cursor: pointer;
-  color: inherit;
+.StaffMember--ContentWrap {
+  width: 100%;
+  max-width: 400px;
 }

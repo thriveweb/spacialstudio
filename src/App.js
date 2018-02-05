@@ -44,7 +44,7 @@ class App extends Component {
     const RouteWithFooter = props => (
       <div className='RouteWithFooter'>
         {props.children}
-        <Footer />
+        <Footer globalSettings={globalSettings} />
       </div>
     )
 
@@ -143,6 +143,7 @@ class App extends Component {
                 <RouteWithFooter>
                   <Contact
                     page={this.getDocument('pages', 'contact')}
+                    globalSettings={globalSettings}
                     siteTitle={siteTitle}
                     {...props}
                   />

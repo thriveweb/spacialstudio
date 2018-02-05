@@ -10,7 +10,24 @@ export default ({ globalSettings, socialSettings, navLinks }) => (
       <Link to='/'>
         <Logo />
       </Link>
-      conact page goes here.
+      <div className='Flex alignStart justifyBetween halfs'>
+        <div className='address pods'>
+          <h4>Office Address</h4>
+          {globalSettings.officeAddress}
+        </div>
+        <div className='email pods'>
+          <h4>Email</h4>
+          <a href='mailto:'>{globalSettings.email}</a>
+        </div>
+        <div className='phone pods'>
+          <h4>Phone</h4>
+          {globalSettings.phone}
+        </div>
+        <div className='mail pods'>
+          <h4>Mail</h4>
+          {globalSettings.postalAddress}
+        </div>
+      </div>
     </div>
     <div className='container taCenter'>
       <span>© 2017 All rights reserved.</span>

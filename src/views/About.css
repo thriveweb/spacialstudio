@@ -6,7 +6,7 @@
 }
 
 .welcome--info blockquote {
-  font-size: 5rem;
+  font-size: 4rem;
   line-height: 1.1;
   margin: 0;
   padding: 0;
@@ -22,10 +22,6 @@
 .history .Content {
   column-count: 3;
   column-gap: 4rem;
-}
-
-.servicesGrid {
-  flex-wrap: wrap;
 }
 
 .servicePod {

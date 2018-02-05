@@ -4,21 +4,50 @@ import Helmet from 'react-helmet'
 import PageHeader from '../components/PageHeader'
 import EnquiryFormSimpleAjax from '../components/EnquiryFormSimpleAjax'
 import Content from '../components/Content'
+import MapBanner from '../components/MapBanner'
 import './Contact.css'
 
-export default ({ page, siteTitle }) => (
+export default ({ page, siteTitle, globalSettings }) => (
   <div className='Contact'>
-    <PageHeader title={page.title} subtitle='<Contact />' />
-    <div className='section thin'>
-      <div className='container'>
-        <Content source={page.content} />
-        <h3>{'<EnquiryFormSimpleAjax />'}</h3>
-        <EnquiryFormSimpleAjax name='Simple Form Ajax' />
-        <br />
-      </div>
-    </div>
     <Helmet>
       <title>{page.title}</title>
     </Helmet>
+    <PageHeader title={page.title} subtitle='<Contact />' />
+    {globalSettings && (
+      <div className='section thin'>
+        <div className='container'>
+          <MapBanner
+            apiKey='AIzaSyCcfv8L8FmeieABBF2u1dZxeB3NlULe_Nw'
+            lat={globalSettings.location.lat}
+            lng={globalSettings.location.lng}
+          />
+        </div>
+      </div>
+    )}
+    <div className='section thick'>
+      <div className='container'>
+        <div className='Flex alignStart justifyBetween'>
+          <h1>{page.title}</h1>
+          <div className='Flex alignStart justifyBetween flexWrap thirds'>
+            <div className='address pods'>
+              <h4>Office Address</h4>
+              {globalSettings.officeAddress}
+            </div>
+            <div className='email pods'>
+              <h4>Email</h4>
+              <a href='mailto:'>{globalSettings.email}</a>
+            </div>
+            <div className='phone pods'>
+              <h4>Phone</h4>
+              {globalSettings.phone}
+            </div>
+            <EnquiryFormSimpleAjax
+              className='contactForm'
+              name='Simple Form Ajax'
+            />
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 )

@@ -1,13 +1,13 @@
 .NavLink {
   padding: 0 0 0.5rem 5rem;
   display: block;
-  font-weight: 300;
+  font-weight: 600;
   letter-spacing: 0.1rem;
   color: inherit;
   text-decoration: none;
   text-align: center;
   text-transform: uppercase;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 .NavLink .hover {
   opacity: 0;
@@ -18,7 +18,7 @@
 
 .NavLink:hover,
 .NavLink:focus {
-  color: var(--orange);
+  opacity: 0.6;
 }
 
 .NavLink.active .hover {

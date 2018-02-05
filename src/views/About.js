@@ -37,7 +37,7 @@ export default ({ page, staff }) => (
       </div>
     )}
     {page.service && (
-      <div className='section thin'>
+      <div className='section thick'>
         <div className='container'>
           <h2 className='section-title'>{page.servicesTitle}</h2>
           <div className='servicesGrid Flex alignStart justifyCenter flexWrap'>
@@ -63,9 +63,9 @@ export default ({ page, staff }) => (
       </div>
     )}
     {staff && (
-      <div className='section thin'>
-        <div className='container StaffSection'>
-          <div className='StaffSection--Grid'>
+      <div className='section thin StaffSection'>
+        <div className='container'>
+          <div className='StaffSection--Grid Flex alignStart justifyBetween flexWrap'>
             {_sortBy(staff, ['order']).map(staffMember => (
               <StaffMemberCard
                 key={staffMember.title}

@@ -8,7 +8,7 @@ const fetch = window.fetch
 
 class Form extends React.Component {
   static defaultProps = {
-    name: 'Simple Form Ajax',
+    name: 'Contact From',
     subject: '', // optional subject of the notification email
     action: '',
     successMessage: 'Thanks for your enquiry, we will get back to you soon',
@@ -69,39 +69,44 @@ class Form extends React.Component {
         {this.state.alert && (
           <div className='EnquiryForm--Alert'>{this.state.alert}</div>
         )}
-        <label className='EnquiryForm--Label'>
-          <input
-            className='EnquiryForm--Input'
-            type='text'
-            placeholder='Name'
-            name='name'
-            required
-          />
-        </label>
-        <label className='EnquiryForm--Label'>
-          <input
-            className='EnquiryForm--Input'
-            type='email'
-            placeholder='Email'
-            name='email'
-            required
-          />
-        </label>
-        <label className='EnquiryForm--Label has-arrow'>
-          <select
-            className='EnquiryForm--Input EnquiryForm--Select'
-            name='type'
-            defaultValue='Type of Enquiry'
-            required
-          >
-            <option disabled hidden>
-              Type of Enquiry
-            </option>
-            <option>Need to know more</option>
-            <option>Found a bug</option>
-            <option>Want to say hello</option>
-          </select>
-        </label>
+        <div className='Flex alignStart justifyBetween flexWrap'>
+          <label className='EnquiryForm--Label'>
+            <input
+              className='EnquiryForm--Input'
+              type='text'
+              placeholder='First Name'
+              name='first-name'
+              required
+            />
+          </label>
+          <label className='EnquiryForm--Label'>
+            <input
+              className='EnquiryForm--Input'
+              type='text'
+              placeholder='Last Name'
+              name='last-name'
+              required
+            />
+          </label>
+          <label className='EnquiryForm--Label'>
+            <input
+              className='EnquiryForm--Input'
+              type='email'
+              placeholder='Email'
+              name='email'
+              required
+            />
+          </label>
+          <label className='EnquiryForm--Label'>
+            <input
+              className='EnquiryForm--Input'
+              type='text'
+              placeholder='Phone'
+              name='phone'
+              required
+            />
+          </label>
+        </div>
         <label className='EnquiryForm--Label'>
           <textarea
             className='EnquiryForm--Input EnquiryForm--Textarea'
