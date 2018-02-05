@@ -1,4 +1,4 @@
 ---
 title: Contact
-latlong: 'Visit https://www.gps-coordinates.net/ to get your Lat & Long'
+latlong: 'Goto Global Setting to edit the content on this page.'
 ---
