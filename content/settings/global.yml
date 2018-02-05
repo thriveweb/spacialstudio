@@ -5,5 +5,16 @@ socialMediaCard:
   image: /images/uploads/card-og.png
   twitterCreatorAccount: Spacial Studio
   twitterSiteAccount: '@spacialstudio'
+location:
+  lat: '-28.104'
+  lng: '153.43600000000004'
+officeAddress: |-
+  4 / 25 Lemana Ln.
+  Burleigh Heads, Gold Coast, Queensland, 4220
+postalAddress: |-
+  4 / 25 Lemana Ln.
+  Burleigh Heads, Gold Coast, Queensland, 4220
+phone: (07) 55 35 00 63
+email: info@thriveweb.com.au
 headerScripts: <!-- Add your analytics scripts / verification meta here -->
 enableServiceWorker: false
