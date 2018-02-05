@@ -34,7 +34,7 @@ export default class GoogleMap extends Component {
     const { lat, lng } = this.props
     const center = { lat, lng }
     this.map.setCenter(center)
-    this.panMapOffset()
+    // this.panMapOffset()
   }
 
   panMapOffset = () => {

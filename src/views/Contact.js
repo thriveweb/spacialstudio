@@ -12,7 +12,6 @@ export default ({ page, siteTitle, globalSettings }) => (
     <Helmet>
       <title>{page.title}</title>
     </Helmet>
-    <PageHeader title={page.title} subtitle='<Contact />' />
     {globalSettings && (
       <div className='section thin'>
         <div className='container'>
@@ -35,11 +34,15 @@ export default ({ page, siteTitle, globalSettings }) => (
             </div>
             <div className='email pods'>
               <h4>Email</h4>
-              <a href='mailto:'>{globalSettings.email}</a>
+              <a href={`mailto:${globalSettings.email}`}>
+                {globalSettings.email}
+              </a>
             </div>
             <div className='phone pods'>
               <h4>Phone</h4>
-              {globalSettings.phone}
+              <a className='tel' href={`tel:${globalSettings.phone}`}>
+                {globalSettings.phone}
+              </a>
             </div>
             <EnquiryFormSimpleAjax
               className='contactForm'

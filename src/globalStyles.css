@@ -214,50 +214,34 @@ pre code:after {
 }
 
 /* Buttons */
-
 .Button {
-  background: var(--primary);
-  color: white;
+  color: black;
   text-transform: uppercase;
   text-decoration: none;
   font-weight: 400;
   letter-spacing: 0.15em;
   font-size: 1.4rem;
   display: inline-block;
-  padding: 1rem 2rem;
   border: none;
-  transition: all 0.2s ease;
+  transition: all 0.1s ease;
   cursor: pointer;
-  border-radius: var(--borderRadius);
+  position: relative;
+  background: url(/images/button-background.svg) 0 0 no-repeat;
+  background-size: contain;
+  padding: 3rem;
+  line-height: 1rem;
 }
 .Button:hover,
 .Button:focus {
-  background: var(--primary-light);
+  background: url(/images/button-background-hover.svg) 0 0 no-repeat;
+  background-size: contain;
   outline: none;
 }
+
 .Button[disabled] {
   opacity: 0.4;
   pointer-events: none;
   cursor: progress;
-}
-.Button.Button--inverted {
-  background: white;
-  border-color: white;
-  color: var(--primary);
-}
-.Button.Button--inverted:hover,
-.Button.Button--inverted:focus {
-  background: transparent;
-  border-color: currentColor;
-  color: white;
-  background-image: linear-gradient(rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0)),
-    linear-gradient(
-      -32deg,
-      rgba(255, 255, 255, 0),
-      rgba(255, 255, 255, 0.05) 50%,
-      rgba(255, 255, 255, 0) 50%,
-      rgba(255, 255, 255, 0)
-    );
 }
 
 .section-title {

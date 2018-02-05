@@ -2,6 +2,24 @@
   padding: 4rem 0;
 }
 
+.mainFooter {
+  padding: 4rem 0 0 0;
+  border-top: 1px solid #bababa;
+}
+
+.Footer .Logo {
+  width: 8rem;
+  height: 8rem;
+}
+
 .Footer a {
   color: inherit;
+}
+
+.Footer .halfs {
+  width: 60%;
+}
+
+.Footer .halfs .pods {
+  width: 49%;
 }
