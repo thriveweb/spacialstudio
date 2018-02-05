@@ -4,6 +4,6 @@ siteDescription: Spacial Studio
 socialMediaCard:
   image: /images/uploads/card-og.png
   twitterCreatorAccount: Spacial Studio
-  twitterSiteAccount: ''
+  twitterSiteAccount: '@spacialstudio'
 headerScripts: <!-- Add your analytics scripts / verification meta here -->
 enableServiceWorker: false
