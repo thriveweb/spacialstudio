@@ -1,5 +1,5 @@
 ---
 title: Contact
-puppies: 105
+puppies: ''
 ---
 
