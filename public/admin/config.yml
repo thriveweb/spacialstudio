@@ -123,7 +123,6 @@ collections: # A list of collections the CMS should be able to edit
             #       collection: "projects"
             #       searchFields: ["name"]
             #       valueField: "name"
-          - {label:  Title, name: newsSectionTitle, widget: string}
           - {label:  Booking Title, name: bookingTitle, widget: string}
       - file: "content/pages/about.md"
         label: "About Page"
