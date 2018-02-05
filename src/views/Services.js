@@ -16,6 +16,7 @@ export default ({ page }) => (
     <div className='section thin gallery'>
       <div className='container'>
         <div className='Flex alignCenter'>
+          {console.log(page.galleryImages)}
           <Gallery images={page.galleryImages.map(obj => obj.galleryimage)} />
           <div className='info'>
             <h2>{page.galleryTitle}</h2>
