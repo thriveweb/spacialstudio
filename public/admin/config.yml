@@ -85,7 +85,11 @@ collections: # A list of collections the CMS should be able to edit
         name: "services-page"
         fields:
           - {label: Title, name: title, widget: string}
-          - {label: Body, name: body, widget: markdown}
+          - label: "Gallery Images"
+            name: "galleryImages"
+            widget: "list"
+            field:
+              - {label: Image, name: galleryimage, widget: image}
       - file: "content/pages/about.md"
         label: "About Page"
         name: "about-page"
