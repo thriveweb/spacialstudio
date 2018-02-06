@@ -74,7 +74,6 @@ accordion:
       Phasellus ac dui pellentesque, lacinia risus ut, imperdiet eros.
     link: /images/uploads/sample.pdf
     title: Quisque lectus est
-
 projectSectionTitle: Interior design inspiration
 newsSectionTitle: News
 bookingTitle: Ask today for a free consultation
