@@ -100,6 +100,7 @@ collections: # A list of collections the CMS should be able to edit
             fields:
               - {label: Title, name: title, widget: string}
               - {label: Description, name: description, widget: markdown}
+              - {label: Link Title, name: linkTitle, widget: string}
               - {label: Link, name: link, widget: file}
           - {label: Project Section Title, name: projectSectionTitle, widget: string}
             # - label: "Featured Projects"
