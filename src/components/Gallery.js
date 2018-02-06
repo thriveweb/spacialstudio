@@ -5,6 +5,8 @@ import './Gallery.css'
 
 export default ({ images }) => (
   <div className='Gallery'>
-    {images.map(image => <LazyImage lazy src={image} alt='gallery' />)}
+    {images.map((image, index) => (
+      <LazyImage lazy key={image + index} src={image} alt='gallery' />
+    ))}
   </div>
 )

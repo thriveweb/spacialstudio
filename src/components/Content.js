@@ -4,9 +4,9 @@ import Marked from 'react-markdown'
 import { getImageSrc, getImageSrcset } from '../util/getImageUrl'
 import './Content.css'
 
-export default ({ source, classes }) => (
+export default ({ source, className = '' }) => (
   <Marked
-    className={`content ${classes}`}
+    className={`Content ${className}`}
     source={source}
     renderers={{
       Image: ImageWithSrcset
