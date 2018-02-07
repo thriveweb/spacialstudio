@@ -1,6 +1,9 @@
 ---
+projectFeaturedImage: /images/uploads/bitmap.jpg
 title: New project
 year: '2009'
+typeofproject: Construction
+client: New of client
 order: '1'
 testimonial: >-
   Etiam ac quam eget lectus venenatis ullamcorper sit amet non arcu. Nullam
@@ -9,7 +12,6 @@ testimonial: >-
   pellentesque, lacinia risus ut, imperdiet eros.
 name: Joe Blogs
 role: Role here
-projectFeaturedImage: /images/uploads/bitmap.jpg
 projectGalleryImages:
   - projectGalleryimage: /images/uploads/harprit-bola-239056.jpg
   - projectGalleryimage: /images/uploads/jake-campbell-355139.jpg
