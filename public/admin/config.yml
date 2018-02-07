@@ -159,6 +159,6 @@ collections: # A list of collections the CMS should be able to edit
       - {label: Title, name: title, widget: string}
       - {label: Year, name: year, widget: number}
       - {label: Content, name: body, widget: markdown}
-      - {label: Testimonial, name: testimonial, widget: markdown}
-      - {label: Name, name: name, widget: string}
-      - {label: Role, name: name, widget: string}
+      - {label: Testimonial, name: testimonial, widget: markdown, required: false }
+      - {label: Name, name: name, widget: string, required: false}
+      - {label: Role, name: role, widget: string, required: false}
