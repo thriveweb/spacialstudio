@@ -25,9 +25,8 @@ export default class Accordion extends React.Component {
           const active = this.state.activeItem === index
           return (
             <div
-              className='Accordion--item'
+              className={`Accordion--item ${active ? 'active' : ''}`}
               key={`accordion-item-${item.title + index}`}
-              active={active}
             >
               <h3 onClick={() => this.handleClick(index)}>{item.title}</h3>
               {active && (
@@ -35,7 +34,7 @@ export default class Accordion extends React.Component {
                   {item.description} <br />
                   {item.link && (
                     <a href={item.link} className='Button'>
-                      {item.link}
+                      {item.linkTitle}
                     </a>
                   )}
                 </div>

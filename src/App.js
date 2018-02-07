@@ -4,6 +4,7 @@ import Helmet from 'react-helmet'
 import { AnimatedSwitch } from 'react-router-transition'
 
 import ScrollToTop from './components/ScrollToTop'
+import AOS from './components/AOS'
 import Meta from './components/Meta'
 import Home from './views/Home'
 import About from './views/About'
@@ -51,6 +52,7 @@ class App extends Component {
     return (
       <Router>
         <div className='React-Wrap'>
+          <AOS />
           <ScrollToTop />
           <ServiceWorkerNotifications reloadOnUpdate />
           <Helmet titleTemplate={`${siteTitle} | %s`} />

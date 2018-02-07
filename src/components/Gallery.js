@@ -1,12 +1,30 @@
 import React from 'react'
+import Flickity from 'react-flickity-component/src/index'
+import 'flickity/dist/flickity.min.css'
 
-import LazyImage from '../components/LazyImage'
+import BackgroundImage from '../components/BackgroundImage'
 import './Gallery.css'
+
+const flickityOptions = {
+  initialIndex: 0,
+  autoPlay: 1500,
+  wrapAround: true,
+  prevNextButtons: true,
+  pageDots: false
+}
 
 export default ({ images }) => (
   <div className='Gallery'>
-    {images.map((image, index) => (
-      <LazyImage lazy key={image + index} src={image} alt='gallery' />
-    ))}
+    <Flickity
+      className={'carousel'} // default ''
+      elementType={'div'} // default 'div'
+      options={flickityOptions} // takes flickity options {}
+      disableImagesLoaded={false} // default false
+      reloadOnUpdate // default false
+    >
+      {images.map((image, index) => (
+        <BackgroundImage lazy key={image + index} src={image} alt='gallery' />
+      ))}
+    </Flickity>
   </div>
 )
