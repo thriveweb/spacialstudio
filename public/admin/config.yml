@@ -63,11 +63,6 @@ collections: # A list of collections the CMS should be able to edit
         name: "projects-page"
         fields:
           - {label: Title, name: title, widget: string}
-      - file: "content/pages/style.md"
-        label: "Style Page"
-        name: "style-page"
-        fields:
-          - {label: Title, name: title, widget: string}
       - file: "content/pages/services.md"
         label: "Services Page"
         name: "services-page"
