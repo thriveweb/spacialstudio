@@ -1,7 +1,12 @@
 .ProjectCard {
-  width: calc(50% - 4rem);
+  width: calc(60% - 4rem);
   text-decoration: none;
 }
+
+.ProjectCard:nth-child(2n) {
+  width: calc(40% - 4rem);
+}
+
 .ProjectCard .ProjectCard--Image {
   margin: 0 0 2rem 0;
 }

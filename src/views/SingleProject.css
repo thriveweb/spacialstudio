@@ -1,2 +1,10 @@
 .SingleProject {
 }
+
+.SingleProject--gallery {
+  width: 50%;
+}
+
+.SingleProject--content {
+  width: 50%;
+}
