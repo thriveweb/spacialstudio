@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { BrowserRouter as Router, Route } from 'react-router-dom'
 import Helmet from 'react-helmet'
 import { AnimatedSwitch } from 'react-router-transition'
+import _kebabCase from 'lodash/kebabCase'
 
 import ScrollToTop from './components/ScrollToTop'
 import AOS from './components/AOS'
@@ -10,6 +11,7 @@ import Home from './views/Home'
 import About from './views/About'
 import Services from './views/Services'
 import Project from './views/Project'
+import SingleProject from './views/SingleProject'
 import Blog from './views/Blog'
 import Contact from './views/Contact'
 import NoMatch from './views/NoMatch'
@@ -135,6 +137,21 @@ class App extends Component {
                 </RouteWithFooter>
               )}
             />
+            <Route
+              path='/projects/:slug/'
+              render={props => {
+                const slug = props.match.params.slug
+                const singleProject = projects.find(
+                  item => _kebabCase(item.title) === slug
+                )
+                return (
+                  <RouteWithFooter>
+                    <SingleProject singleProject={singleProject} {...props} />
+                  </RouteWithFooter>
+                )
+              }}
+            />
+
             <Route
               path='/blog/'
               exact
