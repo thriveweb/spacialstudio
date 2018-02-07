@@ -2,31 +2,24 @@ import React from 'react'
 import Helmet from 'react-helmet'
 
 import PageHeader from '../components/PageHeader'
-import LazyImage from '../components/LazyImage'
+// import LazyImage from '../components/LazyImage'
 import Content from '../components/Content.js'
-import './Style.css'
+// import Gallery from '../components/Gallery.js'
+import './Projects.css'
 
-export default ({ page }) => (
+export default ({ page, projects }) => (
   <div className='Style'>
     <Helmet>
       <title>{page.title}</title>
     </Helmet>
-    <PageHeader
-      title={page.title}
-      subtitle={page.subtitle}
-      backgroundImage={page.featuredImage}
-    />
+    <PageHeader title={page.title} />
     <div className='section thin'>
       <div className='container'>
-        <Content source={page.section1} />
+        <Content source={page.body} />
       </div>
     </div>
     <div className='section thin'>
-      <div className='container'>
-        <Content source={page.section2} />
-        <p>The image below is a {'<LazyImage />'}</p>
-        <LazyImage src={page.featuredImage} alt='LazyImage' />
-      </div>
+      <div className='container'>project card here</div>
     </div>
   </div>
 )

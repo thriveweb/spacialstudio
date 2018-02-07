@@ -127,7 +127,7 @@ class App extends Component {
               exact
               render={props => (
                 <RouteWithFooter>
-                  <Style
+                  <Projects
                     page={this.getDocument('pages', 'projects')}
                     projects={projects}
                     {...props}

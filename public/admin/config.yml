@@ -58,9 +58,9 @@ collections: # A list of collections the CMS should be able to edit
         fields:
           - {label: Title, name: title, widget: string}
           - {label: Body, name: body, widget: markdown}
-      - file: "content/pages/projects.md"
+      - file: "content/pages/project.md"
         label: "Projects Page"
-        name: "projects-page"
+        name: "project-page"
         fields:
           - {label: Title, name: title, widget: string}
       - file: "content/pages/services.md"

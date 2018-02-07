@@ -19,8 +19,8 @@ export default ({ handlePopupOpen }) => (
           <NavLink to='/services/' exact>
             Services
           </NavLink>
-          <NavLink to='/style/' exact>
-            Style
+          <NavLink to='/projects/' exact>
+            Projects
           </NavLink>
           <NavLink to='/blog/' exact>
             Blog
