@@ -1,6 +1,7 @@
 ---
 title: New project
 year: '2009'
+order: '1'
 testimonial: >-
   Etiam ac quam eget lectus venenatis ullamcorper sit amet non arcu. Nullam
   interdum arcu vitae augue pulvinar sodales. Sed non dui diam. Quisque lectus
@@ -8,6 +9,7 @@ testimonial: >-
   pellentesque, lacinia risus ut, imperdiet eros.
 name: Joe Blogs
 role: Role here
+projectFeaturedImage: /images/uploads/bitmap.jpg
 projectGalleryImages:
   - projectGalleryimage: /images/uploads/harprit-bola-239056.jpg
   - projectGalleryimage: /images/uploads/jake-campbell-355139.jpg
