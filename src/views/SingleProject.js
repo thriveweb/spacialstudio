@@ -12,7 +12,17 @@ export default ({ singleProject }) => (
     </Helmet>
     <PageHeader title={singleProject.title} />
     <div className='section thin'>
-      <div className='container'>{console.log(singleProject)}goes here</div>
+      <div className='container'>
+        {singleProject.projectFeaturedImage}
+        {/* {singleProject.projectGalleryImages} */}
+        {console.log(singleProject.content)}goes here
+        {singleProject.title}
+        {singleProject.content}
+        {singleProject.year}
+        --
+        {singleProject.testimonial}
+        {singleProject.role}
+      </div>
     </div>
   </div>
 )

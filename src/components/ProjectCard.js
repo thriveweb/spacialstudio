@@ -21,7 +21,10 @@ export default class ProjectCard extends React.Component {
             />
           </div>
         )}
-        <h3 className='ProjectCard--Title'>{projectItem.title}</h3>
+        {projectItem.title && (
+          <h3 className='ProjectCard--Title'>{projectItem.title}</h3>
+        )}
+        <div className='button'>See more</div>
       </Link>
     )
   }

@@ -9,7 +9,7 @@ const flickityOptions = {
   initialIndex: 0,
   autoPlay: 1500,
   wrapAround: true,
-  prevNextButtons: true,
+  prevNextbuttons: true,
   pageDots: false
 }
 

@@ -171,7 +171,7 @@ class Form extends Component {
           value={this.state['form-name']}
         />
         <button
-          className='Button EnquiryForm--SubmitButton'
+          className='button EnquiryForm--Submitbutton'
           type='submit'
           value='Send'
           disabled={this.state.disabled ? 'disabled' : ''}

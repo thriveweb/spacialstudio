@@ -120,7 +120,7 @@ class Form extends React.Component {
         {!!subject && <input type='hidden' name='subject' value={subject} />}
         <input type='hidden' name='form-name' value={name} />
         <input
-          className='Button EnquiryForm--SubmitButton'
+          className='button EnquiryForm--SubmitButton'
           type='submit'
           value='Enquire'
           disabled={this.state.disabled}

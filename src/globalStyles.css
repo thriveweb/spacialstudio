@@ -69,6 +69,9 @@ h6 {
 h1 {
   font-family: var(--font-secondary);
 }
+h2.large {
+  font-size: 4rem;
+}
 
 pre {
   background: var(--lightGrey);
@@ -163,8 +166,11 @@ pre code:after {
 
 .container {
   max-width: 1111px;
-  width: 90%;
+  width: 96%;
   margin: 0 auto;
+}
+.container.larger {
+  max-width: 1333px;
 }
 .container.skinny {
   max-width: 888px;
@@ -177,11 +183,11 @@ pre code:after {
 
 .twoColumn {
   column-count: 2;
-  column-gap: 4rem;
+  column-gap: 2rem;
 }
 .threeColumn {
   column-count: 3;
-  column-gap: 4rem;
+  column-gap: 2rem;
 }
 
 /* Flex */
@@ -224,8 +230,8 @@ pre code:after {
   flex-wrap: wrap;
 }
 
-/* Buttons */
-.Button {
+/* buttons */
+.button {
   color: black;
   text-transform: uppercase;
   text-decoration: none;
@@ -242,14 +248,14 @@ pre code:after {
   padding: 3rem;
   line-height: 1rem;
 }
-.Button:hover,
-.Button:focus {
+.button:hover,
+.button:focus {
   background: url(/images/button-background-hover.svg) 0 0 no-repeat;
   background-size: contain;
   outline: none;
 }
 
-.Button[disabled] {
+.button[disabled] {
   opacity: 0.4;
   pointer-events: none;
   cursor: progress;

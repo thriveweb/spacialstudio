@@ -1,2 +1,13 @@
 .ProjectCard {
+  width: calc(50% - 4rem);
+  text-decoration: none;
+}
+.ProjectCard .ProjectCard--Image {
+  margin: 0 0 2rem 0;
+}
+.ProjectCard h3 {
+  margin: 0 0 0 4rem;
+}
+.ProjectCard .button {
+  margin: 2rem 6rem;
 }

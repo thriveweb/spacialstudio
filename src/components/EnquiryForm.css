@@ -64,7 +64,7 @@
 }
 
 .EnquiryForm--Input[disabled],
-.EnquiryForm--SubmitButton[disabled] {
+.EnquiryForm--Submitbutton[disabled] {
   opacity: 0.4;
   pointer-events: none;
   cursor: progress;

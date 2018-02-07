@@ -1,2 +1,20 @@
 .Services {
 }
+
+.Services--gallery .Gallery {
+  width: 60%;
+}
+
+.Services--info {
+  padding: 2rem;
+}
+
+.Services--description {
+  padding: 0 4rem;
+}
+
+.Projects--section h2 {
+  width: 100%;
+  max-width: 200px;
+  margin: 0 auto 4rem auto;
+}

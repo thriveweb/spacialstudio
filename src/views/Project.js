@@ -13,7 +13,7 @@ export default ({ page, projects }) => (
     </Helmet>
     <PageHeader title={page.title} />
     <div className='section thin'>
-      <div className='container'>
+      <div className='container Flex alignCenter justifyBetween flexWrap'>
         {_sortBy(projects, ['order']).map((projectItem, index) => (
           <ProjectCard
             key={projectItem.title + index}
