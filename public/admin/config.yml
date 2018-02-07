@@ -156,6 +156,7 @@ collections: # A list of collections the CMS should be able to edit
     slug: "{{slug}}"
     create: true # Allow users to create new documents in this collection
     fields: # The fields each document in this collection have
+      - {label: Project Featured Image, name: projectFeaturedImage, widget: image}
       - {label: Title, name: title, widget: string}
       - {label: Year, name: year, widget: number, required: false}
       - {label: Type Of Project, name: typeofproject, widget: string, required: false}
@@ -165,7 +166,6 @@ collections: # A list of collections the CMS should be able to edit
       - {label: Testimonial, name: testimonial, widget: markdown, required: false }
       - {label: Name, name: name, widget: string, required: false}
       - {label: Role, name: role, widget: string, required: false}
-      - {label: Project Featured Image, name: projectFeaturedImage, widget: image}
       - label: "Project Gallery Images"
         name: "projectGalleryImages"
         widget: "list"
