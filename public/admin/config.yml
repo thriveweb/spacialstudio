@@ -40,22 +40,6 @@ collections: # A list of collections the CMS should be able to edit
           - {label: Email, name: email, widget: string, required: false, pattern: ['^([A-Z|a-z|0-9](\.|_){0,1})+[A-Z|a-z|0-9]\@([A-Z|a-z|0-9])+((\.){0,1}[A-Z|a-z|0-9]){2}\.[a-z]{2,3}$', 'Email address required']}
           - {label: Header Meta / Scripts, name: headerScripts, widget: text, required: false}
           - {label: Enable Service Worker Pre-Cache, name: enableServiceWorker, widget: boolean, required: false}
-  - name: staff
-    label: Staff
-    editor:
-      preview: false
-    folder: content/staff
-    slug: "{{slug}}"
-    create: true # Allow users to create new documents in this collection
-    fields: # The fields each document in this collection have
-      - {label: Title, name: title, widget: string}
-      - {label: Subtitle, name: subtitle, widget: string}
-      - {label: Image, name: image, widget: image}
-      - {label: Content, name: body, widget: markdown}
-      - {label: Instagram, name: instagram, widget: string, required: false}
-      - {label: Twitter, name: twitter, widget: string, required: false}
-      - {label: Linked In, name: linkedin, widget: string, required: false}
-      - {label: Order, name: order, widget: number, required: false}
   - name: "pages"
     label: "Pages"
     delete: false # Prevent users from deleting documents in this collection
@@ -77,6 +61,11 @@ collections: # A list of collections the CMS should be able to edit
       - file: "content/pages/projects.md"
         label: "Projects Page"
         name: "projects-page"
+        fields:
+          - {label: Title, name: title, widget: string}
+      - file: "content/pages/style.md"
+        label: "Style Page"
+        name: "style-page"
         fields:
           - {label: Title, name: title, widget: string}
       - file: "content/pages/services.md"
@@ -148,3 +137,33 @@ collections: # A list of collections the CMS should be able to edit
         fields:
           - {label: Title, name: title, widget: string}
           - {label: Body, name: body, widget: markdown}
+  - name: staff
+    label: Staff
+    editor:
+      preview: false
+    folder: content/staff
+    slug: "{{slug}}"
+    create: true # Allow users to create new documents in this collection
+    fields: # The fields each document in this collection have
+      - {label: Title, name: title, widget: string}
+      - {label: Subtitle, name: subtitle, widget: string}
+      - {label: Image, name: image, widget: image}
+      - {label: Content, name: body, widget: markdown}
+      - {label: Instagram, name: instagram, widget: string, required: false}
+      - {label: Twitter, name: twitter, widget: string, required: false}
+      - {label: Linked In, name: linkedin, widget: string, required: false}
+      - {label: Order, name: order, widget: number, required: false}
+  - name: projects
+    label: Projects
+    editor:
+      preview: false
+    folder: content/projects
+    slug: "{{slug}}"
+    create: true # Allow users to create new documents in this collection
+    fields: # The fields each document in this collection have
+      - {label: Title, name: title, widget: string}
+      - {label: Year, name: year, widget: number}
+      - {label: Content, name: body, widget: markdown}
+      - {label: Testimonial, name: testimonial, widget: markdown}
+      - {label: Name, name: name, widget: string}
+      - {label: Role, name: name, widget: string}
