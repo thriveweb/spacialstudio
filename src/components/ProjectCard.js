@@ -10,7 +10,7 @@ export default class ProjectCard extends React.Component {
     const { projectItem } = this.props
 
     return (
-      <div className='Project'>
+      <div className='ProjectCard'>
         {projectItem.image && (
           <div className='Project--Image'>
             <LazyImage src={projectItem.image} alt={projectItem.title} />
