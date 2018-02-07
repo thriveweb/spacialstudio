@@ -9,7 +9,6 @@ testimonial: >-
 name: Joe Blogs
 role: Role here
 projectGalleryImages:
-  - projectGalleryimage: /images/uploads/card-og.png
   - projectGalleryimage: /images/uploads/harprit-bola-239056.jpg
   - projectGalleryimage: /images/uploads/jake-campbell-355139.jpg
 ---
