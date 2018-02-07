@@ -9,7 +9,7 @@ import Meta from './components/Meta'
 import Home from './views/Home'
 import About from './views/About'
 import Services from './views/Services'
-import Style from './views/Style'
+import Projects from './views/Projects'
 import Blog from './views/Blog'
 import Contact from './views/Contact'
 import NoMatch from './views/NoMatch'
@@ -40,7 +40,9 @@ class App extends Component {
       headerScripts
     } = globalSettings
 
+    /* Custom posts setup */
     const staff = this.getDocuments('staff')
+    const projects = this.getDocuments('projects')
 
     const RouteWithFooter = props => (
       <div className='RouteWithFooter'>
@@ -121,11 +123,15 @@ class App extends Component {
               )}
             />
             <Route
-              path='/style/'
+              path='/projects/'
               exact
               render={props => (
                 <RouteWithFooter>
-                  <Style page={this.getDocument('pages', 'style')} {...props} />
+                  <Style
+                    page={this.getDocument('pages', 'projects')}
+                    projects={projects}
+                    {...props}
+                  />
                 </RouteWithFooter>
               )}
             />

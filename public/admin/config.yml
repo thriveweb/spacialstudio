@@ -162,3 +162,8 @@ collections: # A list of collections the CMS should be able to edit
       - {label: Testimonial, name: testimonial, widget: markdown, required: false }
       - {label: Name, name: name, widget: string, required: false}
       - {label: Role, name: role, widget: string, required: false}
+      - label: "Project Gallery Images"
+        name: "projectGalleryImages"
+        widget: "list"
+        fields:
+          - {label: Image, name: projectGalleryimage, widget: image}
