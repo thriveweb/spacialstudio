@@ -5,10 +5,10 @@ import PageHeader from '../components/PageHeader'
 // import LazyImage from '../components/LazyImage'
 import Content from '../components/Content.js'
 // import Gallery from '../components/Gallery.js'
-import './Projects.css'
+import './Project.css'
 
 export default ({ page, projects }) => (
-  <div className='Style'>
+  <div className='Project'>
     <Helmet>
       <title>{page.title}</title>
     </Helmet>
