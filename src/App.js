@@ -9,7 +9,7 @@ import Meta from './components/Meta'
 import Home from './views/Home'
 import About from './views/About'
 import Services from './views/Services'
-import Projects from './views/Projects'
+import Project from './views/Project'
 import Blog from './views/Blog'
 import Contact from './views/Contact'
 import NoMatch from './views/NoMatch'
@@ -123,12 +123,12 @@ class App extends Component {
               )}
             />
             <Route
-              path='/projects/'
+              path='/project/'
               exact
               render={props => (
                 <RouteWithFooter>
-                  <Projects
-                    page={this.getDocument('pages', 'projects')}
+                  <Project
+                    page={this.getDocument('pages', 'project')}
                     projects={projects}
                     {...props}
                   />

@@ -2,7 +2,7 @@ import React from 'react'
 import Helmet from 'react-helmet'
 
 import PageHeader from '../components/PageHeader'
-import LazyImage from '../components/LazyImage'
+// import LazyImage from '../components/LazyImage'
 import Content from '../components/Content.js'
 import Gallery from '../components/Gallery.js'
 import Accordion from '../components/Accordion.js'

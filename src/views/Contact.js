@@ -1,9 +1,7 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 
-import PageHeader from '../components/PageHeader'
 import EnquiryFormSimpleAjax from '../components/EnquiryFormSimpleAjax'
-import Content from '../components/Content'
 import MapBanner from '../components/MapBanner'
 import './Contact.css'
 

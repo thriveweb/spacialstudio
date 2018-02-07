@@ -59,7 +59,7 @@ collections: # A list of collections the CMS should be able to edit
           - {label: Title, name: title, widget: string}
           - {label: Body, name: body, widget: markdown}
       - file: "content/pages/project.md"
-        label: "Projects Page"
+        label: "Project Page"
         name: "project-page"
         fields:
           - {label: Title, name: title, widget: string}
@@ -158,6 +158,7 @@ collections: # A list of collections the CMS should be able to edit
     fields: # The fields each document in this collection have
       - {label: Title, name: title, widget: string}
       - {label: Year, name: year, widget: number}
+      - {label: Order, name: order, widget: number}
       - {label: Content, name: body, widget: markdown}
       - {label: Testimonial, name: testimonial, widget: markdown, required: false }
       - {label: Name, name: name, widget: string, required: false}
