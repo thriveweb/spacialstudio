@@ -1,22 +1,4 @@
 ---
 title: Hello World!
 ---
-{
-  "images": \[
-    {
-      "galleryimage": "/images/uploads/Building design.svg"
-    }
-  ]
-}
-
-![asdf](/images/uploads/Building design.svg)
-
-{
-  "galleryImages": [
-    {}
-  ]
-}
-
-{}
-
-gallery
+<div class="Gallery">![undefined](/images/uploads/Construction.svg)  ,![undefined](/images/uploads/bitmap.jpg)  </div>
