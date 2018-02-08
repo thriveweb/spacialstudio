@@ -15,6 +15,7 @@ export default ({ singleProject }) => (
     <div className='section thin'>
       <div className='container Flex alignStart justifyBetween'>
         <div className='SingleProject--gallery'>
+          {console.log(singleProject.projectGalleryImages)}
           <Gallery
             images={singleProject.projectGalleryImages.map(
               obj => obj.galleryimage

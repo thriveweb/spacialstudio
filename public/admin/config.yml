@@ -170,4 +170,4 @@ collections: # A list of collections the CMS should be able to edit
         name: "projectGalleryImages"
         widget: "list"
         fields:
-          - {label: Image, name: image, widget: image}
+          - {label: Image, name: galleryimage, widget: image}

@@ -7,7 +7,7 @@ import PageHeader from '../components/PageHeader'
 import Content from '../components/Content.js'
 import Gallery from '../components/Gallery.js'
 import Accordion from '../components/Accordion.js'
-import ProjectCard from '../components/ProjectCard'
+import ProjectSection from '../components/ProjectSection'
 import './Services.css'
 
 export default ({ page, projects }) => (
@@ -40,21 +40,11 @@ export default ({ page, projects }) => (
         <Accordion items={page.accordion} />
       </div>
     </div>
-    <div className='section thin Projects--section'>
-      <div className='container'>
-        <h2 className='taCenter'>{page.projectSectionTitle}</h2>
-        <div className='Flex alignCenter justifyBetween'>
-          {_sortBy(projects, ['order'])
-            .slice(projects, 2)
-            .map((projectItem, index) => (
-              <ProjectCard
-                key={projectItem.title + index}
-                projectItem={projectItem}
-              />
-            ))}
-        </div>
-      </div>
-    </div>
+    <ProjectSection
+      projects={projects}
+      title={page.projectSectionTitle}
+      limit='2'
+    />
     <div className='section thin'>
       <div className='container'>
         <h2>{page.newsSectionTitle}</h2>

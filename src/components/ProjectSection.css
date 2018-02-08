@@ -1,0 +1,15 @@
+.ProjectSection .ProjectCard {
+  width: calc(60% - 4rem);
+}
+
+.ProjectSection .ProjectCard:nth-child(4n + 2),
+.ProjectSection .ProjectCard:nth-child(4n + 3) {
+  width: calc(40% - 4rem);
+}
+
+.ProjectSection h2 {
+  width: 100%;
+  max-width: 200px;
+  margin: 0 auto 4rem auto;
+  line-height: 1.2;
+}
