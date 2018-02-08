@@ -1,6 +1,6 @@
 ---
 projectFeaturedImage: /images/uploads/bitmap.jpg
-title: This project
+title: This projects
 year: '2009'
 typeofproject: Construction
 client: New of client
