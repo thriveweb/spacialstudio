@@ -1,4 +1,4 @@
 ---
 title: Hello World!
 ---
-![undefined](/images/uploads/bitmap.jpg)  </div>
+<div class="Gallery">![undefined](/images/uploads/bitmap.jpg)  </div>
