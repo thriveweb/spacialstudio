@@ -1,6 +1,5 @@
 ---
 title: Hello World!
-subtitle: <Home />
 ---
 # 🌶 Netlify CMS + React Starter
 
@@ -37,6 +36,8 @@ I aim to include commonly used components and best-practices e.g. forms, setting
    `yarn` or `npm install`
 3. Run the development server
    `yarn start` or `npm run start`
+
+gallery 
 
 If you are adding or editing content locally in the CMS, a couple of things to note:
 
