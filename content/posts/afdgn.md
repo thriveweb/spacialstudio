@@ -3,10 +3,10 @@ postFeaturedImage: /images/uploads/Building design.svg
 title: afdgn
 date: 2018-02-14T03:52:13.021Z
 category: fgmzf
-gallery:
-  - galleryimage: /images/uploads/jake-campbell-355139.jpg
+galleryImages:
   - galleryimage: /images/uploads/bitmap.jpg
-  - galleryimage: /images/uploads/bitmap.jpg
+  - galleryimage: /images/uploads/harprit-bola-239056.jpg
+  - galleryimage: /images/uploads/stephen-di-donato-119071.jpg
 ---
 # An h1 header
 
