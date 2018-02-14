@@ -1,7 +1,8 @@
 ---
-postFeaturedImage: /images/uploads/Building design.svg
 title: afdgn
+status: Featured / Published
 date: 2018-02-14T03:52:13.021Z
+postFeaturedImage: /images/uploads/Building design.svg
 category: fgmzf
 galleryImages:
   - galleryimage: /images/uploads/bitmap.jpg
