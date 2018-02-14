@@ -13,15 +13,29 @@ export default class FeaturePostCard extends React.Component {
         to={`/blog/${_kebabCase(postItem.title)}/`}
         className='FeaturePostCard'
       >
-        {postItem.postFeaturedImage && (
-          <div className='FeaturePostCard--Image'>
-            <LazyImage src={postItem.postFeaturedImage} alt={postItem.title} />
+        <div className='Flex'>
+          {postItem.postFeaturedImage && (
+            <div className='FeaturePostCard--Image'>
+              <LazyImage
+                src={postItem.postFeaturedImage}
+                alt={postItem.title}
+              />
+            </div>
+          )}
+          <div className='info'>
+            {postItem.title && (
+              <h3 className='FeaturePostCard--Title'>{postItem.title}</h3>
+            )}
+
+            {postItem.date}
+
+            {postItem.category}
+
+            {postItem.excerpt}
+
+            <div className='button'>See more</div>
           </div>
-        )}
-        {postItem.title && (
-          <h3 className='FeaturePostCard--Title'>{postItem.title}</h3>
-        )}
-        <div className='button'>See more</div>
+        </div>
       </Link>
     )
   }

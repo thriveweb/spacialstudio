@@ -187,6 +187,7 @@ collections: # A list of collections the CMS should be able to edit
       - {label: Date / Order, name: date, widget: date}
       - {label: Category, name: category, widget: string}
       - {label: Post Featured Image, name: postFeaturedImage, widget: image}
+      - {label: Excerpt, name: excerpt, widget: text}
       - {label: Content, name: body, widget: markdown}
       - label: "Gallery Images"
         name: "galleryImages"
