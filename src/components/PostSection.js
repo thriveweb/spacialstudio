@@ -11,6 +11,7 @@ const PostSection = ({ posts = [], title, limit = 9999 }) => (
       {posts.length && (
         <div className='Flex alignCenter justifyBetween flexWrap'>
           {_sortBy(posts, ['date'])
+            .reverse()
             .slice(0, limit)
             .map((postItem, index) => (
               <PostCard key={postItem.title + index} postItem={postItem} />

@@ -1,0 +1,13 @@
+.FeaturePostCard {
+  text-decoration: none;
+}
+
+.FeaturePostCard .FeaturePostCard--Image {
+  margin: 0 0 2rem 0;
+}
+.FeaturePostCard h3 {
+  margin: 0 0 0 4rem;
+}
+.FeaturePostCard .button {
+  margin: 2rem 6rem;
+}
