@@ -2,8 +2,8 @@
 title: test 3
 status: Featured / Published
 date: 2018-03-16T03:52:13.021Z
-postFeaturedImage: /images/uploads/Building design.svg
-category: fgmzf
+postFeaturedImage: /images/uploads/harprit-bola-239056.jpg
+category: Another cat
 galleryImages:
   - galleryimage: /images/uploads/bitmap.jpg
   - galleryimage: /images/uploads/harprit-bola-239056.jpg

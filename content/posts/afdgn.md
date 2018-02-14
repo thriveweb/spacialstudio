@@ -1,9 +1,9 @@
 ---
-title: afdgn
+title: Testing
 status: Featured / Published
 date: 2018-12-14T03:52:13.021Z
-category: fgmzf
 postFeaturedImage: /images/uploads/harprit-bola-239056.jpg
+category: fgmzf
 galleryImages:
   - galleryimage: /images/uploads/bitmap.jpg
   - galleryimage: /images/uploads/harprit-bola-239056.jpg
