@@ -57,7 +57,6 @@ collections: # A list of collections the CMS should be able to edit
         name: "blog-page"
         fields:
           - {label: Title, name: title, widget: string}
-          - {label: Body, name: body, widget: markdown}
       - file: "content/pages/project.md"
         label: "Project Page"
         name: "project-page"
@@ -171,3 +170,27 @@ collections: # A list of collections the CMS should be able to edit
         widget: "list"
         fields:
           - {label: Image, name: galleryimage, widget: image}
+  - name: posts
+    label: Posts
+    editor:
+      preview: false
+    folder: content/posts
+    slug: "{{slug}}"
+    create: true # Allow users to create new documents in this collection
+    fields: # The fields each document in this collection have
+      - {label: Title, name: title, widget: string}
+      - label: 'Status'
+        name: 'status'
+        widget: 'select'
+        options: ["Published", "Featured / Published", "Draft / Hidden"]
+        default: 'Published'
+      - {label: Date / Order, name: date, widget: date}
+      - {label: Category, name: category, widget: string}
+      - {label: Post Featured Image, name: postFeaturedImage, widget: image}
+      - {label: Content, name: body, widget: markdown}
+      - label: "Gallery Images"
+        name: "galleryImages"
+        widget: "list"
+        fields:
+          - {label: Image, name: galleryimage, widget: image}
+        required: false

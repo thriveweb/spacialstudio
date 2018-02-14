@@ -13,6 +13,7 @@ import Services from './views/Services'
 import Project from './views/Project'
 import SingleProject from './views/SingleProject'
 import Blog from './views/Blog'
+import SinglePost from './views/SinglePost'
 import Contact from './views/Contact'
 import NoMatch from './views/NoMatch'
 import Nav from './components/Nav'
@@ -45,6 +46,7 @@ class App extends Component {
     /* Custom posts setup */
     const staff = this.getDocuments('staff')
     const projects = this.getDocuments('projects')
+    const posts = this.getDocuments('posts')
 
     const RouteWithFooter = props => (
       <div className='RouteWithFooter'>
@@ -158,9 +160,27 @@ class App extends Component {
               exact
               render={props => (
                 <RouteWithFooter>
-                  <Blog page={this.getDocument('pages', 'blog')} {...props} />
+                  <Blog
+                    page={this.getDocument('pages', 'blog')}
+                    posts={posts}
+                    {...props}
+                  />
                 </RouteWithFooter>
               )}
+            />
+            <Route
+              path='/blog/:slug/'
+              render={props => {
+                const slug = props.match.params.slug
+                const singlePost = posts.find(
+                  item => _kebabCase(item.title) === slug
+                )
+                return (
+                  <RouteWithFooter>
+                    <SinglePost singlePost={singlePost} {...props} />
+                  </RouteWithFooter>
+                )
+              }}
             />
             <Route
               path='/contact/'

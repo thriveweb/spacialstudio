@@ -4,57 +4,57 @@ import Helmet from 'react-helmet'
 import Content from '../components/Content'
 import Gallery from '../components/Gallery'
 
-import './SingleProject.css'
+import './SinglePost.css'
 
-export default ({ singleProject }) => (
-  <div className='Project'>
+export default ({ singlePost }) => (
+  <div className='Post'>
     <Helmet>
-      <title>{singleProject.title}</title>
+      <title>{singlePost.title}</title>
     </Helmet>
 
     <div className='section thin'>
       <div className='container Flex alignStart justifyBetween'>
-        {singleProject.projectGalleryImages && (
-          <div className='SingleProject--gallery'>
+        {singlePost.projectGalleryImages && (
+          <div className='SinglePost--gallery'>
             <Gallery
-              images={singleProject.projectGalleryImages.map(
+              images={singlePost.projectGalleryImages.map(
                 obj => obj.galleryimage
               )}
             />
           </div>
         )}
-        <div className='SingleProject--content'>
-          {singleProject.title && <h1>{singleProject.title}</h1>}
-          {singleProject.content && <Content source={singleProject.content} />}
+        <div className='SinglePost--content'>
+          {singlePost.title && <h1>{singlePost.title}</h1>}
+          {singlePost.content && <Content source={singlePost.content} />}
           <div className='breakout Flex alignStart justifyBetween'>
-            {singleProject.year && (
+            {singlePost.year && (
               <div className='year breakout--box'>
                 <h3>Year</h3>
-                <p>{singleProject.year}</p>
+                <p>{singlePost.year}</p>
               </div>
             )}
-            {singleProject.typeofproject && (
+            {singlePost.typeofproject && (
               <div className='type breakout--box'>
                 <h3>Type of project</h3>
-                <p>{singleProject.typeofproject}</p>
+                <p>{singlePost.typeofproject}</p>
               </div>
             )}
-            {singleProject.client && (
+            {singlePost.client && (
               <div className='client breakout--box'>
                 <h3>Client</h3>
-                <p>{singleProject.client}</p>
+                <p>{singlePost.client}</p>
               </div>
             )}
           </div>
 
-          {singleProject.testimonial && (
+          {singlePost.testimonial && (
             <div className='testimonials'>
               <h3>Client Testimonials</h3>
               <em>&quot;</em>
-              <blockquote>{singleProject.testimonial}</blockquote>
+              <blockquote>{singlePost.testimonial}</blockquote>
               <div className='from Flex alignStart justifyStart'>
-                {singleProject.name && <p>{singleProject.name}</p>}
-                {singleProject.role && <small>{singleProject.role}</small>}
+                {singlePost.name && <p>{singlePost.name}</p>}
+                {singlePost.role && <small>{singlePost.role}</small>}
               </div>
             </div>
           )}

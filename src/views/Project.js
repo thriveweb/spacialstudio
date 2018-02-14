@@ -1,6 +1,5 @@
 import React from 'react'
 import Helmet from 'react-helmet'
-import _sortBy from 'lodash/sortBy'
 
 import PageHeader from '../components/PageHeader'
 import ProjectSection from '../components/ProjectSection'

@@ -1,0 +1,13 @@
+.PostCard {
+  text-decoration: none;
+}
+
+.PostCard .PostCard--Image {
+  margin: 0 0 2rem 0;
+}
+.PostCard h3 {
+  margin: 0 0 0 4rem;
+}
+.PostCard .button {
+  margin: 2rem 6rem;
+}

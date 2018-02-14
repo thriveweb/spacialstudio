@@ -47,6 +47,10 @@
   flex-direction: column;
 }
 
+.nc-controlPane-control:first-child {
+  margin-top: 0;
+}
+
 /* Custom logo */
 
 /* .nc-githubAuthenticationPage-logo {

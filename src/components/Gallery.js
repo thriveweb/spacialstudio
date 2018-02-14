@@ -1,8 +1,7 @@
 import React from 'react'
-import Flickity from 'react-flickity-component/src/index'
-import 'flickity/dist/flickity.min.css'
 
-import BackgroundImage from '../components/BackgroundImage'
+import Flickity from './Flickity'
+import BackgroundImage from './BackgroundImage'
 import './Gallery.css'
 
 const flickityOptions = {

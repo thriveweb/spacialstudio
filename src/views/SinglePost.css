@@ -1,11 +1,11 @@
-.SingleProject {
+.SinglePost {
 }
 
-.SingleProject--gallery {
+.SinglePost--gallery {
   width: 60%;
 }
 
-.SingleProject--content {
+.SinglePost--content {
   width: 35%;
 }
 

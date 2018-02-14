@@ -1,5 +1,5 @@
 ---
-title: Blog page title
+title: Blog
 subtitle: <Blog />
 featuredImage: /images/uploads/isabella-juskova-260426.jpg
 section1: |-
