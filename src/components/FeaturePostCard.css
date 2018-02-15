@@ -3,10 +3,10 @@
 }
 
 .FeaturePostCard .FeaturePostCard--Image {
-  margin: 0 0 2rem 0;
+  width: 50%;
+  height: 500px;
 }
 .FeaturePostCard h3 {
-  margin: 0 0 0 4rem;
 }
 .FeaturePostCard .button {
   margin: 2rem 6rem;
