@@ -6,8 +6,20 @@
   width: 50%;
   height: 500px;
 }
+
 .FeaturePostCard h3 {
+  margin: 2rem 0;
 }
+
+.FeaturePostCard--Info {
+  width: 40%;
+}
+
+.FeaturePostCard--Excerpt {
+  width: 85%;
+  margin: 2rem 0 0 auto;
+}
+
 .FeaturePostCard .button {
-  margin: 2rem 6rem;
+  margin: 2rem 0;
 }

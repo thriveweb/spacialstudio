@@ -5,11 +5,11 @@ import _kebabCase from 'lodash/kebabCase'
 import './Categories.css'
 
 const Categories = ({ categories }) => (
-  <ul className='categories'>
+  <ul className='Categories'>
     {categories.map((category, index) => {
       return (
         <li key={category + index}>
-          <Link to={`/blog/${_kebabCase(category)}/`}>{category} testing</Link>
+          <Link to={`/blog/${_kebabCase(category)}/`}>{category}</Link>
         </li>
       )
     })}

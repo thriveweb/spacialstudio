@@ -26,15 +26,18 @@ export default class FeaturePostCard extends React.Component {
               />
             </div>
           )}
-          <div className='info'>
+          <div className='FeaturePostCard--Info'>
             {postItem.category && (
               <span className='cat'>{postItem.category} | </span>
             )}
-            {dateFormatted && <span className='date'>{dateFormatted}</span>}
+            {dateFormatted && <span className='postDate'>{dateFormatted}</span>}
             {postItem.title && (
               <h3 className='FeaturePostCard--Title'>{postItem.title}</h3>
             )}
-            {postItem.excerpt}
+            {postItem.excerpt && (
+              <div className='FeaturePostCard--Excerpt'>{postItem.excerpt}</div>
+            )}
+
             <div className='button'>See more</div>
           </div>
         </div>

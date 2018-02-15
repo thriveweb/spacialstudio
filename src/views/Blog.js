@@ -11,6 +11,8 @@ import PostSection from '../components/PostSection'
 import './Blog.css'
 
 export default ({ page, posts }) => {
+  const categories = posts.map(post => post.category)
+
   posts = _sortBy(posts, ['date']).reverse()
   const featuredPostIndex = _findIndex(
     posts,
@@ -18,8 +20,6 @@ export default ({ page, posts }) => {
   )
   const featuredPost =
     featuredPostIndex >= 0 ? _pullAt(posts, featuredPostIndex)[0] : null
-
-  const categories = posts.map(category => posts.category)
 
   return (
     <div className='Blog'>
