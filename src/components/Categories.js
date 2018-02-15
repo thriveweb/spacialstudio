@@ -5,17 +5,20 @@ import _kebabCase from 'lodash/kebabCase'
 import './Categories.css'
 
 const Categories = ({ categories }) => (
-  <ul className='Categories'>
+  <div className='Categories'>
     {categories.map((category, index) => {
       return (
-        <li key={category + index}>
-          <NavLink to={`/blog/category/${_kebabCase(category)}/`}>
-            {category}
-          </NavLink>
-        </li>
+        <NavLink
+          className='NavLink'
+          key={category + index}
+          to={`/blog/category/${_kebabCase(category)}/`}
+        >
+          {category}
+          <div className='hover'>•</div>
+        </NavLink>
       )
     })}
-  </ul>
+  </div>
 )
 
 export default Categories

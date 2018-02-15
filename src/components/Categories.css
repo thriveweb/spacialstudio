@@ -1,2 +1,12 @@
 .Categories {
+  list-style: none;
+  margin: 4rem 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Categories .NavLink {
+  text-transform: none;
 }
