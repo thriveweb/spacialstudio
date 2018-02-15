@@ -1,0 +1,24 @@
+.PhotoLayout {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: space-between;
+  margin: 2rem 0;
+}
+
+.PhotoLayout .BackgroundImage {
+  width: 100%;
+  height: 400px;
+}
+
+.PhotoLayout .BackgroundImage {
+  width: 100%;
+  position: relative;
+  margin: 0 0 2rem 0;
+}
+
+.PhotoLayout .BackgroundImage:nth-child(3n + 1),
+.PhotoLayout .BackgroundImage:nth-child(3n + 2) {
+  width: calc(50% - 1rem);
+}

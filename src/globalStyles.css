@@ -84,6 +84,10 @@ blockquote {
   font-style: italic;
 }
 
+a {
+  text-decoration: none;
+}
+
 pre {
   background: var(--lightGrey);
   line-height: 1.45;

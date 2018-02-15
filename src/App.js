@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route } from 'react-router-dom'
 import Helmet from 'react-helmet'
 import { AnimatedSwitch } from 'react-router-transition'
 import _kebabCase from 'lodash/kebabCase'
+import _findIndex from 'lodash/findIndex'
 
 import ScrollToTop from './components/ScrollToTop'
 import AOS from './components/AOS'
@@ -194,12 +195,25 @@ class App extends Component {
               path='/blog/:slug/'
               render={props => {
                 const slug = props.match.params.slug
-                const singlePost = posts.find(
+                const singlePostID = _findIndex(
+                  posts,
                   item => _kebabCase(item.title) === slug
                 )
+                const singlePost = posts[singlePostID]
+                const nextPost = posts[singlePostID + 1]
+                const prevPost = posts[singlePostID - 1]
                 return (
                   <RouteWithFooter>
-                    <SinglePost singlePost={singlePost} {...props} />
+                    <SinglePost
+                      singlePost={singlePost}
+                      nextPostURL={
+                        nextPost && `/blog/${_kebabCase(nextPost.title)}`
+                      }
+                      prevPostURL={
+                        prevPost && `/blog/${_kebabCase(prevPost.title)}`
+                      }
+                      {...props}
+                    />
                   </RouteWithFooter>
                 )
               }}

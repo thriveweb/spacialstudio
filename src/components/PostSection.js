@@ -38,7 +38,7 @@ class PostSection extends React.Component {
         <div className='container'>
           {title && <h2 className='taCenter'>{title}</h2>}
           {!!visiblePosts.length && (
-            <div className='Flex alignStretch justifyStart flexWrap'>
+            <div className='Flex alignStretch justifyBetween flexWrap'>
               {visiblePosts.map((postItem, index) => (
                 <PostCard
                   key={postItem.title + index}
@@ -50,7 +50,11 @@ class PostSection extends React.Component {
           )}
           {showLoadMore &&
             visiblePosts.length < posts.length && (
-              <button onClick={this.increaseLimit}>{loadMoreTitle}</button>
+              <div className='taCenter'>
+                <button className='button' onClick={this.increaseLimit}>
+                  {loadMoreTitle}
+                </button>
+              </div>
             )}
         </div>
       </div>

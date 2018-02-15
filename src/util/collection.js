@@ -15,7 +15,7 @@ export const getCollectionTerms = (
     .filter(collectionItem => collectionItem[taxonomyName])
     .reduce((acc, collectionItem) => {
       const termString = collectionItem[taxonomyName]
-      const collectionItemTerms = termString.split(',')
+      const collectionItemTerms = termString.split(',').map(term => term.trim())
       return _uniq([...acc, ...collectionItemTerms])
     }, [])
     .sort()
