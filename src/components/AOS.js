@@ -7,7 +7,8 @@ export default ({ options }) => {
     offset: 300,
     duration: 400,
     easing: 'ease-out-sine',
-    delay: 0
+    delay: 0,
+    once: true
   }
   AOS.init({ ...defaultOptions, ...options })
   return null

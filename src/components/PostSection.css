@@ -1,10 +1,17 @@
 .PostSection .PostCard {
-  width: calc(60% - 4rem);
+  width: calc(33.33% - 4rem);
 }
 
-.PostSection .PostCard:nth-child(4n + 2),
-.PostSection .PostCard:nth-child(4n + 3) {
-  width: calc(40% - 4rem);
+@supports (display: grid) {
+  .PostSection .Flex {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 4rem;
+  }
+  .PostSection .PostCard {
+    width: auto;
+    margin: 0 0 4rem 0;
+  }
 }
 
 .PostSection h2 {
