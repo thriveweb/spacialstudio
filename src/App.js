@@ -18,8 +18,8 @@ import Contact from './views/Contact'
 import NoMatch from './views/NoMatch'
 import Nav from './components/Nav'
 import Footer from './components/Footer'
-
 import ServiceWorkerNotifications from './components/ServiceWorkerNotifications'
+import { getCollectionTerms, documentHasTerm } from './util/collection'
 import data from './data.json'
 
 class App extends Component {
@@ -47,6 +47,7 @@ class App extends Component {
     const staff = this.getDocuments('staff')
     const projects = this.getDocuments('projects')
     const posts = this.getDocuments('posts')
+    const postCategories = getCollectionTerms(posts, 'category', 'asc')
 
     const RouteWithFooter = props => (
       <div className='RouteWithFooter'>
@@ -163,10 +164,30 @@ class App extends Component {
                   <Blog
                     page={this.getDocument('pages', 'blog')}
                     posts={posts}
+                    postCategories={postCategories}
                     {...props}
                   />
                 </RouteWithFooter>
               )}
+            />
+            <Route
+              path='/blog/category/:slug/'
+              render={props => {
+                const slug = props.match.params.slug
+                const categoryPosts = posts.filter(post =>
+                  documentHasTerm(post, 'category', slug)
+                )
+                return (
+                  <RouteWithFooter>
+                    <Blog
+                      page={this.getDocument('pages', 'blog')}
+                      posts={categoryPosts}
+                      postCategories={postCategories}
+                      {...props}
+                    />
+                  </RouteWithFooter>
+                )
+              }}
             />
             <Route
               path='/blog/:slug/'
@@ -182,6 +203,7 @@ class App extends Component {
                 )
               }}
             />
+
             <Route
               path='/contact/'
               exact
