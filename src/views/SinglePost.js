@@ -3,61 +3,49 @@ import Helmet from 'react-helmet'
 
 import Content from '../components/Content'
 import Gallery from '../components/Gallery'
+import BackgroundImage from '../components/BackgroundImage'
+import { dateFormatted } from '../util/date'
 
 import './SinglePost.css'
 
 export default ({ singlePost }) => (
-  <div className='Post'>
+  <div className='SinglePost'>
     <Helmet>
       <title>{singlePost.title}</title>
     </Helmet>
-
     <div className='section thin'>
-      <div className='container Flex alignStart justifyBetween'>
-        {singlePost.projectGalleryImages && (
-          <div className='SinglePost--gallery'>
-            <Gallery
-              images={singlePost.projectGalleryImages.map(
-                obj => obj.galleryimage
-              )}
-            />
-          </div>
+      <div className='container relative'>
+        {singlePost.postFeaturedImage && (
+          <BackgroundImage
+            className='SinglePost--BackgroundImage'
+            src={singlePost.postFeaturedImage}
+            alt={singlePost.title}
+          />
         )}
-        <div className='SinglePost--content'>
-          {singlePost.title && <h1>{singlePost.title}</h1>}
-          {singlePost.content && <Content source={singlePost.content} />}
-          <div className='breakout Flex alignStart justifyBetween'>
-            {singlePost.year && (
-              <div className='year breakout--box'>
-                <h3>Year</h3>
-                <p>{singlePost.year}</p>
-              </div>
+        <div className='SinglePost--Content relative'>
+          <div className='SinglePost--Category-Date'>
+            {' '}
+            {singlePost.category && (
+              <span className='cat'>{singlePost.category} | </span>
             )}
-            {singlePost.typeofproject && (
-              <div className='type breakout--box'>
-                <h3>Type of project</h3>
-                <p>{singlePost.typeofproject}</p>
-              </div>
-            )}
-            {singlePost.client && (
-              <div className='client breakout--box'>
-                <h3>Client</h3>
-                <p>{singlePost.client}</p>
-              </div>
+            {singlePost.date && (
+              <span className='postDate'>{dateFormatted(singlePost.date)}</span>
             )}
           </div>
 
-          {singlePost.testimonial && (
-            <div className='testimonials'>
-              <h3>Client Testimonials</h3>
-              <em>&quot;</em>
-              <blockquote>{singlePost.testimonial}</blockquote>
-              <div className='from Flex alignStart justifyStart'>
-                {singlePost.name && <p>{singlePost.name}</p>}
-                {singlePost.role && <small>{singlePost.role}</small>}
-              </div>
-            </div>
+          {singlePost.title && (
+            <h1 className='SinglePost--Title'>{singlePost.title}</h1>
           )}
+          <div className='SinglePost--InnerContent'>
+            {singlePost.content && <Content source={singlePost.content} />}
+            {singlePost.galleryImages && (
+              <div className='SinglePost--gallery'>
+                <Gallery
+                  images={singlePost.galleryImages.map(obj => obj.galleryimage)}
+                />
+              </div>
+            )}
+          </div>
         </div>
       </div>
     </div>

@@ -1,5 +1,5 @@
 ---
-title: Etiam ac quam eget lectus venenatis ullamcorper sit amet non arcu
+title: Post 1 Etiam ac quam eget lectus venenatis ullamcorper sit amet non arcu
 status: Featured / Published
 date: 2018-12-14T03:52:13.021Z
 postFeaturedImage: /images/uploads/harprit-bola-239056.jpg
@@ -14,8 +14,6 @@ galleryImages:
   - galleryimage: /images/uploads/harprit-bola-239056.jpg
   - galleryimage: /images/uploads/stephen-di-donato-119071.jpg
 ---
-
-# An h1 header
 
 Paragraphs are separated by a blank line.
 
@@ -33,7 +31,6 @@ content starts at 4-columns in.
 
 > Block quotes are
 > written like so.
->
 > They can span multiple paragraphs,
 > if you like.
 

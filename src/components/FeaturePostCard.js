@@ -1,16 +1,14 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import _kebabCase from 'lodash/kebabCase'
-import _format from 'date-fns/format'
 
 import BackgroundImage from './BackgroundImage'
+import { dateFormatted } from '../util/date'
 import './FeaturePostCard.css'
 
 export default class FeaturePostCard extends React.Component {
   render () {
     const { postItem } = this.props
-    const date = new Date(postItem.date)
-    const dateFormatted = _format(date, 'MM.DD.YYYY')
 
     return (
       <Link
@@ -28,9 +26,15 @@ export default class FeaturePostCard extends React.Component {
           )}
           <div className='FeaturePostCard--Info'>
             {postItem.category && (
-              <span className='cat'>{postItem.category} | </span>
+              <span className='FeaturePostCard--Cat'>
+                {postItem.category} |{' '}
+              </span>
             )}
-            {dateFormatted && <span className='postDate'>{dateFormatted}</span>}
+            {postItem.date && (
+              <span className='FeaturePostCard--PostDate'>
+                {dateFormatted(postItem.date)}
+              </span>
+            )}
             {postItem.title && (
               <h3 className='FeaturePostCard--Title'>{postItem.title}</h3>
             )}
