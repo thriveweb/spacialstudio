@@ -183,6 +183,7 @@ class App extends Component {
                       page={this.getDocument('pages', 'blog')}
                       posts={categoryPosts}
                       postCategories={postCategories}
+                      showFeatured={false}
                       {...props}
                     />
                   </RouteWithFooter>

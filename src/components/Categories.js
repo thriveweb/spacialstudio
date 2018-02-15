@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import _kebabCase from 'lodash/kebabCase'
 
 import './Categories.css'
@@ -9,7 +9,9 @@ const Categories = ({ categories }) => (
     {categories.map((category, index) => {
       return (
         <li key={category + index}>
-          <Link to={`/blog/${_kebabCase(category)}/`}>{category}</Link>
+          <NavLink to={`/blog/category/${_kebabCase(category)}/`}>
+            {category}
+          </NavLink>
         </li>
       )
     })}

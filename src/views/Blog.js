@@ -8,16 +8,15 @@ import PageHeader from '../components/PageHeader'
 import FeaturePostSection from '../components/FeaturePostSection'
 import Categories from '../components/Categories'
 import PostSection from '../components/PostSection'
+
 import './Blog.css'
 
-export default ({ page, posts }) => {
-  const categories = posts.map(post => post.category)
-
+export default ({ page, posts, postCategories, showFeatured = true }) => {
   posts = _sortBy(posts, ['date']).reverse()
-  const featuredPostIndex = _findIndex(
-    posts,
-    post => post.status === 'Featured / Published'
-  )
+
+  const featuredPostIndex = showFeatured
+    ? _findIndex(posts, post => post.status === 'Featured / Published')
+    : 0
   const featuredPost =
     featuredPostIndex >= 0 ? _pullAt(posts, featuredPostIndex)[0] : null
 
@@ -28,8 +27,8 @@ export default ({ page, posts }) => {
       </Helmet>
       <PageHeader title={page.title} />
       <FeaturePostSection featuredPost={featuredPost} />
-      <Categories categories={categories} />
-      <PostSection posts={posts} />
+      <Categories categories={postCategories} />
+      {!!posts.length && <PostSection posts={posts} />}
     </div>
   )
 }
