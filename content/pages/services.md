@@ -1,5 +1,5 @@
 ---
-title: Services page title
+title: Services
 galleryImages:
   - galleryimage: /images/uploads/bitmap.jpg
   - galleryimage: /images/uploads/card-og.png

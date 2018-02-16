@@ -33,6 +33,8 @@ class PostSection extends React.Component {
       // show all unlesss you set a limit.
       .slice(0, limit || posts.length)
 
+    console.log(showLoadMore)
+
     return (
       <div className='section thin PostSection'>
         <div className='container'>

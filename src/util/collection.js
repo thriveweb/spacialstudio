@@ -19,7 +19,6 @@ export const getCollectionTerms = (
       return _uniq([...acc, ...collectionItemTerms])
     }, [])
     .sort()
-
   terms = orderBy.toLowerCase() === 'asc' ? terms : terms.reverse()
   return terms
 }

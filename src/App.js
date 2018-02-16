@@ -124,6 +124,7 @@ class App extends Component {
                   <Services
                     page={this.getDocument('pages', 'services')}
                     projects={projects}
+                    posts={posts}
                     {...props}
                   />
                 </RouteWithFooter>

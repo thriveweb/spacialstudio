@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import Helmet from 'react-helmet'
 
 import PageHeader from '../components/PageHeader'
@@ -6,9 +7,10 @@ import Content from '../components/Content.js'
 import Gallery from '../components/Gallery.js'
 import Accordion from '../components/Accordion.js'
 import ProjectSection from '../components/ProjectSection'
+import PostSection from '../components/PostSection'
 import './Services.css'
 
-export default ({ page, projects }) => (
+export default ({ page, projects, posts }) => (
   <div className='Services'>
     <Helmet>
       <title>{page.title}</title>
@@ -45,16 +47,20 @@ export default ({ page, projects }) => (
     />
     <div className='section thin'>
       <div className='container'>
-        <h2>{page.newsSectionTitle}</h2>
-        news here.
+        <PostSection
+          posts={posts}
+          title={page.newsSectionTitle}
+          limit='3'
+          showLoadMore={false}
+        />
       </div>
     </div>
-    <div className='section thin'>
+    <div className='section thin Services--Consultation'>
       <div className='container'>
         <h2>{page.bookingTitle}</h2>
-        <a className='button' href=''>
-          link to contact page
-        </a>
+        <Link className='button' to='/contact/'>
+          book now
+        </Link>
       </div>
     </div>
   </div>
