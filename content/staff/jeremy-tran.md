@@ -1,7 +1,7 @@
 ---
 title: Jeremy Tran
 subtitle: Owner
-image: /images/uploads/isabella-juskova-260426.jpg
+image: /images/uploads/rectangle.jpg
 instagram: 'http://instagram.com'
 twitter: 'http://instagram.com'
 linkedin: 'http://instagram.com'
