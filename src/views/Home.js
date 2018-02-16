@@ -18,9 +18,10 @@ export default ({ page, projects, posts }) => {
       </Helmet>
 
       {page.welcomeGalleryImages && (
-        <div className='SingleProject--gallery'>
+        <div className='Home--Gallery'>
           <Gallery
             images={page.welcomeGalleryImages.map(obj => obj.galleryimage)}
+            flickityOptions={{ autoPlay: 30000 }}
           />
         </div>
       )}

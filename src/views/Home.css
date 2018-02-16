@@ -1,2 +1,13 @@
 .Home {
 }
+
+.Home--Gallery {
+}
+
+.HomeTitle .container {
+  max-width: 600px;
+  text-align: center;
+}
+.HomeTitle h1 {
+  line-height: 1.2;
+}

@@ -7,10 +7,35 @@ title: >-
   and unique spaces
 service:
   - description: >-
-      Etiam ac quam eget lectus venenatis ullamcorper sit amet non arcu. Nullam
-      interdum arcu vitae augue pulvinar sodales. Sed non dui diam.
-    icon: /images/uploads/interior design.svg
+      Nullam interdum arcu vitae augue pulvinar sodales. Sed non dui diam.
+      Quisque lectus est, lobortis ac efficitur vitae, posuere a mauris.
+      Phasellus ac dui pellentesque, lacinia risus ut, imperdiet eros.
+    icon: /images/uploads/Interior design.svg
     title: Interior design
+  - description: >-
+      Nullam interdum arcu vitae augue pulvinar sodales. Sed non dui diam.
+      Quisque lectus est, lobortis ac efficitur vitae, posuere a mauris.
+      Phasellus ac dui pellentesque, lacinia risus ut, imperdiet eros.
+    icon: /images/uploads/Construction.svg
+    title: Construction
+  - description: >-
+      Nullam interdum arcu vitae augue pulvinar sodales. Sed non dui diam.
+      Quisque lectus est, lobortis ac efficitur vitae, posuere a mauris.
+      Phasellus ac dui pellentesque, lacinia risus ut, imperdiet eros.
+    icon: /images/uploads/Building design.svg
+    title: Building Design
+  - description: >-
+      Nullam interdum arcu vitae augue pulvinar sodales. Sed non dui diam.
+      Quisque lectus est, lobortis ac efficitur vitae, posuere a mauris.
+      Phasellus ac dui pellentesque, lacinia risus ut, imperdiet eros.
+    icon: /images/uploads/Property.svg
+    title: Property
+  - description: >-
+      Nullam interdum arcu vitae augue pulvinar sodales. Sed non dui diam.
+      Quisque lectus est, lobortis ac efficitur vitae, posuere a mauris.
+      Phasellus ac dui pellentesque, lacinia risus ut, imperdiet eros.
+    icon: /images/uploads/Consulting.svg
+    title: Consulting
 aboutImage: /images/uploads/joel-filipe-377515.jpg
 aboutSectionTitle: >-
   We are an Australian practice operating within the traditional boundaries of
@@ -31,4 +56,3 @@ newsLinkText: See more
 projectSectionTitle: A unique style and approach
 testimonialSectionTitle: What our clients say about us
 ---
-
