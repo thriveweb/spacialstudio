@@ -6,7 +6,7 @@ import _kebabCase from 'lodash/kebabCase'
 import _findIndex from 'lodash/findIndex'
 import _merge from 'lodash/merge'
 
-import ScrollToTop from './components/ScrollToTop'
+import ScrollToTopOnMount from './components/ScrollToTopOnMount'
 import AOS from './components/AOS'
 import Meta from './components/Meta'
 import Home from './views/Home'
@@ -78,9 +78,10 @@ class App extends Component {
     const posts = this.getDocuments('posts')
     const postCategories = getCollectionTerms(posts, 'category', 'asc')
 
-    const RouteWithFooter = props => (
-      <div className='RouteWithFooter'>
-        {props.children}
+    const RouteWithFooter = ({ children, scrollToTop = true, ...props }) => (
+      <div className='RouteWithFooter' {...props}>
+        {children}
+        {scrollToTop && <ScrollToTopOnMount />}
         <Footer globalSettings={globalSettings} />
       </div>
     )
@@ -90,7 +91,6 @@ class App extends Component {
         <div className='React-Wrap'>
           {this.state.loading && <Spinner />}
           <AOS />
-          <ScrollToTop />
           <ServiceWorkerNotifications reloadOnUpdate />
           <Helmet titleTemplate={`${siteTitle} | %s`} />
           <Meta
@@ -214,7 +214,7 @@ class App extends Component {
                   documentHasTerm(post, 'category', slug)
                 )
                 return (
-                  <RouteWithFooter>
+                  <RouteWithFooter scrollToTop={false}>
                     <Blog
                       page={this.getDocument('pages', 'blog')}
                       posts={categoryPosts}
