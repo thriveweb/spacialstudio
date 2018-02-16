@@ -15,53 +15,72 @@ export default ({ page, projects, posts }) => (
     <Helmet>
       <title>{page.title}</title>
     </Helmet>
+
     <PageHeader title={page.title} />
-    <div className='section thin Services--gallery'>
-      <div className='container larger'>
-        <div className='Flex alignCenter'>
-          <Gallery images={page.galleryImages.map(obj => obj.galleryimage)} />
-          <div className='Services--info'>
-            <h2 className='large'>{page.galleryTitle}</h2>
-            <div className='Services--description'>
-              {page.galleryDescription}
+
+    {page.galleryDescription && (
+      <section className='section thin Services--gallery'>
+        <div className='container larger'>
+          <div className='Flex alignCenter'>
+            <Gallery images={page.galleryImages.map(obj => obj.galleryimage)} />
+            <div className='Services--info'>
+              <h2 className='large'>{page.galleryTitle}</h2>
+              <div className='Services--description'>
+                {page.galleryDescription}
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
-    <div className='section thin'>
-      <div className='container'>
-        <h2 className='taCenter'>{page.threeColumnSectionTitle}</h2>
-        <Content source={page.threeColumnSection} className='threeColumn' />
-      </div>
-    </div>
-    <div className='section thin'>
-      <div className='container'>
-        <Accordion items={page.accordion} />
-      </div>
-    </div>
-    <ProjectSection
-      projects={projects}
-      title={page.projectSectionTitle}
-      limit='2'
-    />
-    <div className='section thin'>
-      <div className='container'>
-        <PostSection
-          posts={posts}
-          title={page.newsSectionTitle}
-          limit='3'
-          showLoadMore={false}
-        />
-      </div>
-    </div>
-    <div className='section thin Services--Consultation'>
-      <div className='container'>
-        <h2>{page.bookingTitle}</h2>
-        <Link className='button' to='/contact/'>
-          book now
-        </Link>
-      </div>
-    </div>
+      </section>
+    )}
+
+    {page.threeColumnSectionTitle && (
+      <section className='section thin'>
+        <div className='container'>
+          <h2 className='taCenter'>{page.threeColumnSectionTitle}</h2>
+          <Content source={page.threeColumnSection} className='threeColumn' />
+        </div>
+      </section>
+    )}
+
+    {page.accordion && (
+      <section className='section thin'>
+        <div className='container'>
+          <Accordion items={page.accordion} />
+        </div>
+      </section>
+    )}
+
+    {projects && (
+      <ProjectSection
+        projects={projects}
+        title={page.projectSectionTitle}
+        limit='2'
+      />
+    )}
+
+    {posts && (
+      <section className='section thin'>
+        <div className='container'>
+          <PostSection
+            posts={posts}
+            title={page.newsSectionTitle}
+            limit='3'
+            showLoadMore={false}
+          />
+        </div>
+      </section>
+    )}
+
+    {page.bookingTitle && (
+      <section className='section thin Services--Consultation'>
+        <div className='container'>
+          <h2>{page.bookingTitle}</h2>
+          <Link className='button' to='/contact/'>
+            book now
+          </Link>
+        </div>
+      </section>
+    )}
   </main>
 )

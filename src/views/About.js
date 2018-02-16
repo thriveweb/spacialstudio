@@ -15,7 +15,7 @@ export default ({ page, staff }) => (
       <title>{page.title}</title>
     </Helmet>
     <PageHeader title={page.title} />
-    <div className='section thin welcome'>
+    <section className='section thin welcome'>
       <div className='container Flex alignCenter justifyBettwen'>
         <LazyImage src={page.featuredImage} alt='LazyImage' lazy />
         <div className='welcome--info'>
@@ -27,17 +27,17 @@ export default ({ page, staff }) => (
           </div>
         </div>
       </div>
-    </div>
+    </section>
     {page.historyTitle && (
-      <div className='section thin history'>
+      <section className='section thin history'>
         <div className='container'>
           <h2 className='section-title'>{page.historyTitle}</h2>
           <Content source={page.historySection} className='threeColumn' />
         </div>
-      </div>
+      </section>
     )}
     {page.service && (
-      <div className='section thick'>
+      <section className='section thick'>
         <div className='container'>
           <h2 className='section-title'>{page.servicesTitle}</h2>
           <div className='servicesGrid Flex alignStart justifyCenter flexWrap'>
@@ -60,10 +60,10 @@ export default ({ page, staff }) => (
             ))}
           </div>
         </div>
-      </div>
+      </section>
     )}
     {staff && (
-      <div className='section thin StaffSection'>
+      <section className='section thin StaffSection'>
         <div className='container'>
           <div className='StaffSection--Grid Flex alignStart justifyBetween flexWrap'>
             {_sortBy(staff, ['order']).map(staffMember => (
@@ -74,7 +74,7 @@ export default ({ page, staff }) => (
             ))}
           </div>
         </div>
-      </div>
+      </section>
     )}
   </main>
 )

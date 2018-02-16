@@ -145,7 +145,7 @@ collections: # A list of collections the CMS should be able to edit
           - {label: About Image, name: aboutImage, widget: image}
           - {label: About Section Title, name: aboutSectionTitle, widget: string}
           - {label: About Content, name: aboutContent, widget: markdown}
-          - {label: About link text, name: AboutLinkText, widget: string}
+          - {label: About link text, name: aboutLinkText, widget: string}
           - {label: News Section Title, name: newsSectionTitle, widget: string}
           - {label: News Content, name: newsContent, widget: markdown}
           - {label: News link text, name: newsLinkText, widget: string}

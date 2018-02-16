@@ -21,7 +21,7 @@ export default ({ page, siteTitle, globalSettings }) => (
         </div>
       </div>
     )}
-    <div className='section thick'>
+    <section className='section thick'>
       <div className='container'>
         <div className='Flex alignStart justifyBetween'>
           <h1>{page.title}</h1>
@@ -49,6 +49,6 @@ export default ({ page, siteTitle, globalSettings }) => (
           </div>
         </div>
       </div>
-    </div>
+    </section>
   </main>
 )

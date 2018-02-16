@@ -19,7 +19,7 @@ export default ({ singlePost, nextPostURL, prevPostURL }) => {
       <Helmet>
         <title>{singlePost.title}</title>
       </Helmet>
-      <div className='section thin'>
+      <section className='section thin'>
         <div className='container relative'>
           {singlePost.postFeaturedImage && (
             <BackgroundImage
@@ -63,7 +63,7 @@ export default ({ singlePost, nextPostURL, prevPostURL }) => {
             </div>
           </div>
         </div>
-      </div>
+      </section>
     </article>
   )
 }

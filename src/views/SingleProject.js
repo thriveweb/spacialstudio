@@ -12,7 +12,7 @@ export default ({ singleProject }) => (
       <title>{singleProject.title}</title>
     </Helmet>
 
-    <div className='section thin'>
+    <section className='section thin'>
       <div className='container Flex alignStart justifyBetween'>
         {singleProject.projectGalleryImages && (
           <div className='SingleProject--gallery'>
@@ -60,6 +60,6 @@ export default ({ singleProject }) => (
           )}
         </div>
       </div>
-    </div>
+    </section>
   </article>
 )
