@@ -85,16 +85,16 @@ collections: # A list of collections the CMS should be able to edit
               - {label: Link Title, name: linkTitle, widget: string}
               - {label: Link, name: link, widget: file}
           - {label: Project Section Title, name: projectSectionTitle, widget: string}
-            # - label: "Featured Projects"
-            #   name: "featuredProject"
-            #   widget: "list"
-            #   fields:
-            #     - label: "Project List"
-            #       name: "projectList"
-            #       widget: "relation"
-            #       collection: "projects"
-            #       searchFields: ["name"]
-            #       valueField: "name"
+          # - label: "Featured Projects"
+          #   name: "featuredProject"
+          #   widget: "list"
+          #   fields:
+          #     - label: "Project List"
+          #       name: "projectList"
+          #       widget: "relation"
+          #       collection: "projects"
+          #       searchFields: ["name"]
+          #       valueField: "name"
           - {label: News Section Title, name: newsSectionTitle, widget: string}
             # - label: "Featured Projects"
             #   name: "featuredProject"
@@ -129,8 +129,28 @@ collections: # A list of collections the CMS should be able to edit
         label: "Home Page"
         name: "home-page"
         fields:
+          - label: "Welcome Gallery Images"
+            name: "welcomeGalleryImages"
+            widget: "list"
+            fields:
+              - {label: Image, name: galleryimage, widget: image}
           - {label: Title, name: title, widget: string}
-          - {label: Body, name: body, widget: markdown}
+          - label: Service
+            name: service
+            widget: list
+            fields:
+              - { label: Title, name: title, widget: string}
+              - { label: Icon, name: icon, widget: image}
+              - { label: Description, name: description, widget: text}
+          - {label: About Image, name: aboutImage, widget: image}
+          - {label: About Section Title, name: aboutSectionTitle, widget: string}
+          - {label: About Content, name: aboutContent, widget: markdown}
+          - {label: About link text, name: AboutLinkText, widget: string}
+          - {label: News Section Title, name: newsSectionTitle, widget: string}
+          - {label: News Content, name: newsContent, widget: markdown}
+          - {label: News link text, name: newsLinkText, widget: string}
+          - {label: Project Section Title, name: projectSectionTitle, widget: string}
+          - {label: Testimonial Section Title, name: testimonialSectionTitle, widget: string}
   - name: staff
     label: Staff
     editor:
