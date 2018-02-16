@@ -4,7 +4,6 @@ import _sortBy from 'lodash/sortBy'
 import _pullAt from 'lodash/pullAt'
 import _findIndex from 'lodash/findIndex'
 
-import Meta from '../components/Meta'
 import PageHeader from '../components/PageHeader'
 import FeaturePostSection from '../components/FeaturePostSection'
 import Categories from '../components/Categories'

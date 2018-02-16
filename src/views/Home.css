@@ -11,3 +11,44 @@
 .HomeTitle h1 {
   line-height: 1.2;
 }
+
+.AboutSection small {
+  margin: 2rem 0;
+  display: block;
+}
+
+.AboutSection .LazyImage {
+  width: 40%;
+}
+
+.AboutSection--Info {
+  width: 50%;
+}
+
+.HomeNews {
+  background: white;
+  padding: 0 !important;
+}
+
+.HomeNews--Info {
+  display: block;
+  width: 40%;
+  background: #f8f8f8;
+  padding: 4rem 8rem;
+}
+
+.HomeNews--Posts {
+  display: block;
+  width: calc(60% - 4rem);
+  padding: 4rem 0;
+}
+
+.HomeNews--Post {
+  display: block;
+  width: 45%;
+  margin: 0;
+}
+
+.HomeProjectSection {
+  padding: 8rem 0 !important;
+}

@@ -4,8 +4,14 @@ import _sortBy from 'lodash/sortBy'
 import ProjectCard from '../components/ProjectCard'
 import './ProjectSection.css'
 
-const ProjectSection = ({ projects = [], title, limit = 9999 }) => (
-  <div className='section thin ProjectSection'>
+const ProjectSection = ({
+  projects = [],
+  title,
+  limit = 9999,
+  className = '',
+  ...props
+}) => (
+  <div className={`section thin ProjectSection ${className}`} {...props}>
     <div className='container'>
       {title && <h2 className='taCenter'>{title}</h2>}
       {projects.length && (

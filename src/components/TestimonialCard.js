@@ -2,7 +2,6 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import _kebabCase from 'lodash/kebabCase'
 
-import LazyImage from './LazyImage'
 import './TestimonialCard.css'
 
 export default class TestimonialCard extends React.Component {

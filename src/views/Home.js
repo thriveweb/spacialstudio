@@ -1,16 +1,20 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import Helmet from 'react-helmet'
+import _sortBy from 'lodash/sortBy'
 
 import Content from '../components/Content'
 import LazyImage from '../components/LazyImage'
 import Gallery from '../components/Gallery'
 import ProjectSection from '../components/ProjectSection'
-import PostSection from '../components/PostSection'
+import PostCard from '../components/PostCard'
 import TestimonialsSection from '../components/TestimonialsSection'
 import './Home.css'
 
 export default ({ page, projects, posts }) => {
+  const visiblePosts = _sortBy(posts, ['date'])
+    .reverse()
+    .slice(0, 2)
   return (
     <main className='Home'>
       <Helmet>
@@ -63,9 +67,10 @@ export default ({ page, projects, posts }) => {
 
       {page.aboutSectionTitle && (
         <section className='section thin AboutSection'>
-          <div className='container Flex alignCenter justifyBettwen'>
+          <div className='container Flex alignCenter justifyBetween flexWrap'>
             <LazyImage src={page.aboutImage} alt='LazyImage' lazy />
             <div className='AboutSection--Info'>
+              <small>About us</small>
               <blockquote>
                 <Content source={page.aboutSectionTitle} />
               </blockquote>
@@ -80,21 +85,35 @@ export default ({ page, projects, posts }) => {
         </section>
       )}
 
-      {!!posts.length && (
-        <section className='section thin'>
-          <div className='container'>
-            <PostSection
-              posts={posts}
-              title={page.newsSectionTitle}
-              limit='3'
-              showLoadMore={false}
-            />
+      {!!visiblePosts.length && (
+        <section className='section thin HomeNews'>
+          <div className='container Flex alignStretch justifyBetween flexWrap'>
+            <div className='HomeNews--Info'>
+              <h2>{page.newsSectionTitle}</h2>
+              <div className='HomeNews--Content'>
+                <Content source={page.aboutContent} />
+              </div>
+              <Link to={`/about/`} className='button'>
+                {page.aboutLinkText}
+              </Link>
+            </div>
+            <div className='HomeNews--Posts Flex alignStretch justifyBetween flexWrap'>
+              {visiblePosts.map((postItem, index) => (
+                <PostCard
+                  key={postItem.title + index}
+                  postItem={postItem}
+                  data-aos='fade-in'
+                  className='HomeNews--Post'
+                />
+              ))}
+            </div>
           </div>
         </section>
       )}
 
       {!!projects.length && (
         <ProjectSection
+          className='HomeProjectSection'
           projects={projects}
           title={page.projectSectionTitle}
           limit='4'
