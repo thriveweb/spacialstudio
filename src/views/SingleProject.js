@@ -7,7 +7,7 @@ import Gallery from '../components/Gallery'
 import './SingleProject.css'
 
 export default ({ singleProject }) => (
-  <div className='Project'>
+  <article className='Project'>
     <Helmet>
       <title>{singleProject.title}</title>
     </Helmet>
@@ -61,5 +61,5 @@ export default ({ singleProject }) => (
         </div>
       </div>
     </div>
-  </div>
+  </article>
 )

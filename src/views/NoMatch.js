@@ -5,7 +5,7 @@ import Helmet from 'react-helmet'
 import './NoMatch.css'
 
 const NoMatch = ({ siteUrl }) => (
-  <div className='NoMatch'>
+  <main className='NoMatch'>
     <section className='section thick'>
       <div className='container taCenter'>
         <h1>404 - Page Not Found</h1>
@@ -21,7 +21,7 @@ const NoMatch = ({ siteUrl }) => (
       <title>404 – Page Not Found</title>
       <body className='body--NoMatch' />
     </Helmet>
-  </div>
+  </main>
 )
 
 NoMatch.propTypes = {

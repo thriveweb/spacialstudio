@@ -15,7 +15,7 @@ export default ({ singlePost, nextPostURL, prevPostURL }) => {
   contentArray[1] = contentArray.slice(1).join('')
 
   return (
-    <div className='SinglePost'>
+    <article className='SinglePost'>
       <Helmet>
         <title>{singlePost.title}</title>
       </Helmet>
@@ -64,6 +64,6 @@ export default ({ singlePost, nextPostURL, prevPostURL }) => {
           </div>
         </div>
       </div>
-    </div>
+    </article>
   )
 }

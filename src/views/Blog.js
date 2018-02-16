@@ -22,7 +22,7 @@ export default ({ page, posts, postCategories, showFeatured = true }) => {
     featuredPostIndex >= 0 ? _pullAt(posts, featuredPostIndex)[0] : null
 
   return (
-    <div className='Blog'>
+    <main className='Blog'>
       <Helmet>
         <title>{page.title}</title>
       </Helmet>
@@ -30,6 +30,6 @@ export default ({ page, posts, postCategories, showFeatured = true }) => {
       <FeaturePostSection featuredPost={featuredPost} />
       <Categories categories={postCategories} />
       {!!posts.length && <PostSection posts={posts} />}
-    </div>
+    </main>
   )
 }

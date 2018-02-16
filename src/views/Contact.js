@@ -6,7 +6,7 @@ import MapBanner from '../components/MapBanner'
 import './Contact.css'
 
 export default ({ page, siteTitle, globalSettings }) => (
-  <div className='Contact'>
+  <main className='Contact'>
     <Helmet>
       <title>{page.title}</title>
     </Helmet>
@@ -50,5 +50,5 @@ export default ({ page, siteTitle, globalSettings }) => (
         </div>
       </div>
     </div>
-  </div>
+  </main>
 )

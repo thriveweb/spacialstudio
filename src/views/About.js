@@ -10,7 +10,7 @@ import StaffMemberCard from '../components/StaffMemberCard'
 import './About.css'
 
 export default ({ page, staff }) => (
-  <div className='About'>
+  <main className='About'>
     <Helmet>
       <title>{page.title}</title>
     </Helmet>
@@ -76,5 +76,5 @@ export default ({ page, staff }) => (
         </div>
       </div>
     )}
-  </div>
+  </main>
 )

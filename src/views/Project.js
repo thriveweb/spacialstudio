@@ -6,11 +6,11 @@ import ProjectSection from '../components/ProjectSection'
 import './Project.css'
 
 export default ({ page, projects }) => (
-  <div className='Project'>
+  <main className='Project'>
     <Helmet>
       <title>{page.title}</title>
     </Helmet>
     <PageHeader title={page.title} />
     <ProjectSection projects={projects} />
-  </div>
+  </main>
 )

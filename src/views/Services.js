@@ -11,7 +11,7 @@ import PostSection from '../components/PostSection'
 import './Services.css'
 
 export default ({ page, projects, posts }) => (
-  <div className='Services'>
+  <main className='Services'>
     <Helmet>
       <title>{page.title}</title>
     </Helmet>
@@ -63,5 +63,5 @@ export default ({ page, projects, posts }) => (
         </Link>
       </div>
     </div>
-  </div>
+  </main>
 )
