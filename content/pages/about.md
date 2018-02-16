@@ -8,7 +8,7 @@ welcomeSection: >-
   pellentesque, lacinia risus ut, imperdiet eros.
 
 
-  Test interdum arcu vitae augue pulvinar sodales. Sed non dui diam. Quisque
+  interdum interdum arcu vitae augue pulvinar sodales. Sed non dui diam. Quisque
   lectus est, lobortis ac efficitur vitae, posuere a mauris. Phasellus ac dui
   pellentesque, lacinia risus ut, imperdiet eros.
 historyTitle: Our History
