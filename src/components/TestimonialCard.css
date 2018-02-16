@@ -1,0 +1,12 @@
+.TestimonialCard {
+  text-decoration: none;
+}
+.TestimonialCard .TestimonialCard--Image {
+  margin: 0 0 2rem 0;
+}
+.TestimonialCard h3 {
+  margin: 0 0 0 4rem;
+}
+.TestimonialCard .button {
+  margin: 2rem 6rem;
+}

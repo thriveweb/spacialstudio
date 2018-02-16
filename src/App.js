@@ -99,7 +99,12 @@ class App extends Component {
               exact
               render={props => (
                 <RouteWithFooter>
-                  <Home page={this.getDocument('pages', 'home')} {...props} />
+                  <Home
+                    page={this.getDocument('pages', 'home')}
+                    projects={projects}
+                    posts={posts}
+                    {...props}
+                  />
                 </RouteWithFooter>
               )}
             />

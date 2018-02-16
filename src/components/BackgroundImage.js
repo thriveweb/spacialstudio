@@ -56,6 +56,7 @@ export default class BackgroundImage extends React.Component {
     return (
       <Observer {...options}>
         <div
+          {...this.props}
           className={`BackgroundImage absolute ${className || ''}`}
           src={this.state.src}
           style={{

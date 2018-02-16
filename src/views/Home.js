@@ -5,9 +5,12 @@ import Helmet from 'react-helmet'
 import Content from '../components/Content'
 import LazyImage from '../components/LazyImage'
 import Gallery from '../components/Gallery'
+import ProjectSection from '../components/ProjectSection'
+import PostSection from '../components/PostSection'
+import TestimonialsSection from '../components/TestimonialsSection'
 import './Home.css'
 
-export default ({ page }) => {
+export default ({ page, projects, posts }) => {
   return (
     <main className='Home'>
       <Helmet>
@@ -76,11 +79,32 @@ export default ({ page }) => {
         </section>
       )}
 
-      {projects && (
+      {!!posts.length && (
+        <section className='section thin'>
+          <div className='container'>
+            <PostSection
+              posts={posts}
+              title={page.newsSectionTitle}
+              limit='3'
+              showLoadMore={false}
+            />
+          </div>
+        </section>
+      )}
+
+      {!!projects.length && (
         <ProjectSection
           projects={projects}
           title={page.projectSectionTitle}
-          limit='2'
+          limit='4'
+        />
+      )}
+
+      {!!projects.length && (
+        <TestimonialsSection
+          projects={projects}
+          title={page.testimonialSectionTitle}
+          limit='6'
         />
       )}
     </main>

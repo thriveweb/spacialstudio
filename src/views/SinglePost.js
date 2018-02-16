@@ -15,7 +15,7 @@ export default ({ singlePost, nextPostURL, prevPostURL }) => {
   contentArray[1] = contentArray.slice(1).join('')
 
   return (
-    <article className='SinglePost'>
+    <article className='SinglePost' data-aos='fade-up'>
       <Helmet>
         <title>{singlePost.title}</title>
       </Helmet>
@@ -29,37 +29,39 @@ export default ({ singlePost, nextPostURL, prevPostURL }) => {
             />
           )}
           <div className='SinglePost--Content relative'>
-            <div className='SinglePost--Category-Date'>
-              {' '}
-              {singlePost.category && (
-                <span className='cat'>{singlePost.category} | </span>
-              )}
-              {singlePost.date && (
-                <span className='postDate'>
-                  {dateFormatted(singlePost.date)}
-                </span>
-              )}
-            </div>
+            <div className='aos' data-aos='fade-up' data-aos-delay='200'>
+              <div className='SinglePost--Category-Date'>
+                {' '}
+                {singlePost.category && (
+                  <span className='cat'>{singlePost.category} | </span>
+                )}
+                {singlePost.date && (
+                  <span className='postDate'>
+                    {dateFormatted(singlePost.date)}
+                  </span>
+                )}
+              </div>
 
-            {singlePost.title && (
-              <h1 className='SinglePost--Title'>{singlePost.title}</h1>
-            )}
-            <div className='SinglePost--InnerContent'>
-              {contentArray[0] && <Content source={contentArray[0]} />}
-              {singlePost.galleryImages && (
-                <div className='SinglePost--gallery'>
-                  <PhotoLayout
-                    images={singlePost.galleryImages.map(
-                      obj => obj.galleryimage
-                    )}
-                  />
-                </div>
+              {singlePost.title && (
+                <h1 className='SinglePost--Title'>{singlePost.title}</h1>
               )}
-              {contentArray[1] && <Content source={contentArray[1]} />}
-            </div>
-            <div className='SinglePost--Links Flex alignStretch justifyBetween flexWrap'>
-              {nextPostURL && <Link to={nextPostURL}>Next Post</Link>}
-              {prevPostURL && <Link to={prevPostURL}>Previous Post</Link>}
+              <div className='SinglePost--InnerContent'>
+                {contentArray[0] && <Content source={contentArray[0]} />}
+                {singlePost.galleryImages && (
+                  <div className='SinglePost--gallery'>
+                    <PhotoLayout
+                      images={singlePost.galleryImages.map(
+                        obj => obj.galleryimage
+                      )}
+                    />
+                  </div>
+                )}
+                {contentArray[1] && <Content source={contentArray[1]} />}
+              </div>
+              <div className='SinglePost--Links Flex alignStretch justifyBetween flexWrap'>
+                {nextPostURL && <Link to={nextPostURL}>Next Post</Link>}
+                {prevPostURL && <Link to={prevPostURL}>Previous Post</Link>}
+              </div>
             </div>
           </div>
         </div>

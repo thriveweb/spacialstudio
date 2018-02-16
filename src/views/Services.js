@@ -51,7 +51,7 @@ export default ({ page, projects, posts }) => (
       </section>
     )}
 
-    {projects && (
+    {!!projects.length && (
       <ProjectSection
         projects={projects}
         title={page.projectSectionTitle}
@@ -59,7 +59,7 @@ export default ({ page, projects, posts }) => (
       />
     )}
 
-    {posts && (
+    {!!posts.length && (
       <section className='section thin'>
         <div className='container'>
           <PostSection

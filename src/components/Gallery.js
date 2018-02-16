@@ -12,7 +12,7 @@ const flickityOptions = {
   pageDots: false
 }
 
-export default ({ images }) => (
+const Gallery = ({ images }) => (
   <div className='Gallery'>
     <Flickity
       className={'carousel'} // default ''
@@ -27,3 +27,5 @@ export default ({ images }) => (
     </Flickity>
   </div>
 )
+
+export default Gallery
