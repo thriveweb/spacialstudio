@@ -1,5 +1,20 @@
+body,
+#root,
+.React-Wrap {
+  position: relative;
+  min-height: 100vh;
+}
+
 .Nav {
   position: sticky;
   top: 0;
-  z-index: 1;
+  left: 0;
+  z-index: 6;
+  width: 100%;
+  background: var(--bodyColor);
+}
+
+.isHome.Nav {
+  background: transparent;
+  position: fixed;
 }

@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
-import { BrowserRouter as Router, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import Helmet from 'react-helmet'
-import { AnimatedSwitch } from 'react-router-transition'
+// import { Switch } from 'react-router-transition'
 import _kebabCase from 'lodash/kebabCase'
 import _findIndex from 'lodash/findIndex'
 import _merge from 'lodash/merge'
@@ -111,18 +111,7 @@ class App extends Component {
             headerScripts={headerScripts}
           />
           <Nav />
-          <AnimatedSwitch
-            atEnter={{
-              opacity: 1
-            }}
-            atLeave={{
-              opacity: 1
-            }}
-            atActive={{
-              opacity: 1
-            }}
-            className='AnimatedSwitch'
-          >
+          <Switch>
             <Route
               path='/'
               exact
@@ -275,7 +264,7 @@ class App extends Component {
                 </RouteWithFooter>
               )}
             />
-          </AnimatedSwitch>
+          </Switch>
         </div>
       </Router>
     )

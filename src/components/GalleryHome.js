@@ -42,18 +42,14 @@ export default class GalleryHome extends React.Component {
   render () {
     const { images } = this.props
     return (
-      <div className='GalleryHome Flex'>
+      <div className='GalleryHome'>
         {images.map((image, index) => {
           return (
             <div
+              key={image + index}
               className={`GalleryHome--Item ${this.calculatePosition(index)}`}
             >
-              <BackgroundImage
-                lazy
-                key={image + index}
-                src={image}
-                alt='gallery'
-              />
+              <BackgroundImage lazy={'true'} src={image} alt='gallery' />
             </div>
           )
         })}
@@ -61,7 +57,11 @@ export default class GalleryHome extends React.Component {
         {images.map((image, index) => {
           if (index % 2) return null
           return (
-            <button className='relative' onClick={() => this.nextSlide(index)}>
+            <button
+              key={index}
+              className='relative'
+              onClick={() => this.nextSlide(index)}
+            >
               next
             </button>
           )

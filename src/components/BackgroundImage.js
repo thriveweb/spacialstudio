@@ -52,17 +52,18 @@ export default class BackgroundImage extends React.Component {
       onlyOnce: true,
       rootMargin: '0% 0% 100%'
     }
+    const { lazy, ...props } = this.props
 
     return (
       <Observer {...options}>
         <div
-          {...this.props}
+          {...props}
           className={`BackgroundImage absolute ${className || ''}`}
           src={this.state.src}
           style={{
             backgroundImage: `url(${this.state.src})`,
-            backgroundSize: this.props.contain ? 'contain' : 'cover',
-            opacity: this.props.opacity || 1
+            backgroundSize: props.contain ? 'contain' : 'cover',
+            opacity: props.opacity || 1
           }}
         />
       </Observer>

@@ -5,13 +5,14 @@ import _sortBy from 'lodash/sortBy'
 
 import Content from '../components/Content'
 import LazyImage from '../components/LazyImage'
+import WelcomeAnimation from '../components/WelcomeAnimation'
 import GalleryHome from '../components/GalleryHome'
 import ProjectSection from '../components/ProjectSection'
 import PostCard from '../components/PostCard'
 import TestimonialsSection from '../components/TestimonialsSection'
 import './Home.css'
 
-export default ({ page, projects, posts }) => {
+const Home = ({ page, projects, posts }) => {
   const visiblePosts = _sortBy(posts, ['date'])
     .reverse()
     .slice(0, 2)
@@ -20,6 +21,8 @@ export default ({ page, projects, posts }) => {
       <Helmet>
         <title>{page.title}</title>
       </Helmet>
+
+      <WelcomeAnimation />
 
       {page.welcomeGalleryImages && (
         <GalleryHome
@@ -128,3 +131,5 @@ export default ({ page, projects, posts }) => {
     </main>
   )
 }
+
+export default Home

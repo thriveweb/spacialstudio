@@ -1,0 +1,56 @@
+.WelcomeAnimation {
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: var(--primary);
+  z-index: 5;
+  animation: pulse 5s forwards;
+}
+
+body.fixed {
+  overflow: hidden;
+}
+
+body.fixed .WelcomeAnimation {
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: var(--primary);
+  z-index: 5;
+  animation: pulse 5s forwards;
+}
+
+.WelcomeAnimation--Spacial {
+  display: block;
+  height: 50px;
+  width: auto;
+  position: absolute;
+  top: 25vh;
+  left: 50%;
+  transform: translate(6px, -50%);
+}
+
+.WelcomeAnimation--Studio {
+  display: block;
+  height: 50px;
+  width: auto;
+  position: absolute;
+  top: 25vh;
+  right: 50%;
+  transform: translate(-6px, -50%);
+}
+
+@keyframes pulse {
+  20% {
+    background-color: var(--primary);
+  }
+  100% {
+    background-color: transparent;
+  }
+}
