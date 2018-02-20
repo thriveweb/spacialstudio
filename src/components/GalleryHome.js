@@ -43,6 +43,7 @@ export default class GalleryHome extends React.Component {
     const { images } = this.props
     return (
       <div className='GalleryHome'>
+        <div className='overlay' />
         {images.map((image, index) => {
           return (
             <div

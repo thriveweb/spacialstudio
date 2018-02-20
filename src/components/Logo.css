@@ -7,7 +7,6 @@
   width: 15rem;
   margin-right: 1rem;
   color: currentColor;
-  transform: scale(1);
 }
 
 body.scrolled .Logo {
