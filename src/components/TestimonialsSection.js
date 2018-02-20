@@ -7,12 +7,13 @@ import './TestimonialsSection.css'
 
 const TestimonialsSection = ({ projects = [], title, limit = 9999 }) => {
   const flickityOptions = {
-    initialIndex: 0,
-    autoPlay: 1500,
+    initialIndex: 1,
+    autoPlay: 3500,
     wrapAround: true,
     prevNextbuttons: true,
     pageDots: false
   }
+
   return (
     <div className='section thin TestimonialSection'>
       <div className='container'>

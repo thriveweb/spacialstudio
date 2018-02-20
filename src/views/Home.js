@@ -5,7 +5,7 @@ import _sortBy from 'lodash/sortBy'
 
 import Content from '../components/Content'
 import LazyImage from '../components/LazyImage'
-import Gallery from '../components/Gallery'
+import GalleryHome from '../components/GalleryHome'
 import ProjectSection from '../components/ProjectSection'
 import PostCard from '../components/PostCard'
 import TestimonialsSection from '../components/TestimonialsSection'
@@ -22,16 +22,14 @@ export default ({ page, projects, posts }) => {
       </Helmet>
 
       {page.welcomeGalleryImages && (
-        <div className='Home--Gallery'>
-          <Gallery
-            images={page.welcomeGalleryImages.map(obj => obj.galleryimage)}
-            flickityOptions={{ autoPlay: 30000 }}
-          />
-        </div>
+        <GalleryHome
+          images={page.welcomeGalleryImages.map(obj => obj.galleryimage)}
+          flickityOptions={{ autoPlay: 30000 }}
+        />
       )}
 
       {page.title && (
-        <section className='section thick HomeTitle'>
+        <section className='section HomeTitle'>
           <div className='container'>
             <h1>{page.title}</h1>
           </div>
@@ -39,7 +37,7 @@ export default ({ page, projects, posts }) => {
       )}
 
       {page.service && (
-        <section className='section thick'>
+        <section className='section'>
           <div className='container'>
             <h2 className='section-title'>{page.servicesTitle}</h2>
             <div className='servicesGrid Flex alignStart justifyCenter flexWrap'>

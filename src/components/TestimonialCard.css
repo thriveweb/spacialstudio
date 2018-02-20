@@ -1,6 +1,17 @@
 .TestimonialCard {
   text-decoration: none;
+  opacity: 0.3;
+  padding: 1rem 6rem;
+  width: 100%;
+  max-width: 500px;
+  transition: opacity 0.2s ease-out;
 }
+.TestimonialCard.is-selected {
+  opacity: 1;
+  border-left: 1px solid var(--midGrey);
+  border-right: 1px solid var(--midGrey);
+}
+
 .TestimonialCard .TestimonialCard--Image {
   margin: 0 0 2rem 0;
 }
