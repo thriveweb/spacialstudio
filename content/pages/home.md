@@ -1,7 +1,11 @@
 ---
 welcomeGalleryImages:
+<<<<<<< HEAD
   - galleryimage: /images/uploads/stephen-di-donato-119071.jpg
   - galleryimage: /images/uploads/willie-fineberg-57667.jpg
+=======
+  - galleryimage: /images/uploads/rectangle.jpg
+>>>>>>> f32bf1bf99355ed6586aa5ffb3efeac22d082e1e
   - galleryimage: /images/uploads/joel-filipe-377515.jpg
   - galleryimage: /images/uploads/stephen-di-donato-119071.jpg
   - galleryimage: /images/uploads/joel-filipe-377515.jpg
