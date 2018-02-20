@@ -1,6 +1,6 @@
 ---
 welcomeGalleryImages:
-  - galleryimage: /images/uploads/willie-fineberg-57667.jpg
+  - galleryimage: /images/uploads/rectangle.jpg
   - galleryimage: /images/uploads/joel-filipe-377515.jpg
   - galleryimage: /images/uploads/willie-fineberg-57667.jpg
   - galleryimage: /images/uploads/rectangle.jpg
