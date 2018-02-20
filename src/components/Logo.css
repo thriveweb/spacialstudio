@@ -6,4 +6,13 @@
   height: 15rem;
   width: 15rem;
   margin-right: 1rem;
+  color: currentColor;
+  transform: scale(1);
+}
+
+body.scrolled .Logo {
+  transform: scale(0.5);
+  position: absolute;
+  top: -3.5rem;
+  left: 0;
 }

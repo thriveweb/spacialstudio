@@ -39,8 +39,8 @@ class Nav extends React.Component {
         }}
       >
         <div className='container'>
-          <div className='Flex alignCenter justifyBetween'>
-            <Link to='/'>
+          <div className='Flex alignCenter justifyBetween relative'>
+            <Link style={{ color: 'currentColor' }} to='/'>
               <Logo />
             </Link>
             <div className='nav Flex alignCenter justifyStart'>
