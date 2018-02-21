@@ -25,4 +25,5 @@ body,
 body.scrolled .isHome.Nav {
   color: var(--primary);
   background: var(--bodyColor);
+  border-bottom: 2px solid var(--lightGrey);
 }

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="11px" height="119px" viewBox="0 0 11 119" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>see more copy</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Homepage" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-81.000000, -774.000000)">
+        <g id="see-more-copy" transform="translate(79.000000, 761.000000)">
+            <g id="Group-8" transform="translate(8.000000, 105.500000) rotate(90.000000) translate(-8.000000, -105.500000) translate(-18.500000, 101.500000)" stroke="#FFFFFF" stroke-width="0.5">
+                <g id="Group-4" transform="translate(0.000000, -0.000000)">
+                    <g id="arrow" transform="translate(26.500000, 4.000000) scale(1, -1) translate(-26.500000, -4.000000) ">
+                        <path d="M0,4 L52,4" id="Stroke-1"></path>
+                        <polyline id="Stroke-3" points="45.8559905 0.284053333 52.5028478 4.17205333 45.8559905 7.83872"></polyline>
+                    </g>
+                </g>
+            </g>
+            <text id="See-more" transform="translate(7.500000, 32.361328) rotate(-90.000000) translate(-7.500000, -32.361328) " font-family="DIN2014-Demi, DIN 2014" font-size="12" font-weight="500" letter-spacing="0.600000024" fill="#FFFFFF">
+                <tspan x="-24.8613281" y="35.8613281">See more</tspan>
+            </text>
+        </g>
+    </g>
+</svg>

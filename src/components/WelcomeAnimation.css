@@ -10,9 +10,10 @@
 
 body.fixed {
   overflow: hidden;
+  /* height: 0; */
 }
 
-.WelcomeAnimation--Spacial {
+.WelcomeAnimation--Studio {
   display: block;
   height: 50px;
   width: auto;
@@ -22,7 +23,7 @@ body.fixed {
   transform: translate(6px, 0);
 }
 
-.WelcomeAnimation--Studio {
+.WelcomeAnimation--Spacial {
   display: block;
   height: 50px;
   width: auto;
@@ -43,7 +44,7 @@ body.fixed .WelcomeAnimation {
   z-index: 5;
   animation: pulse 3s forwards;
 }
-body.fixed .WelcomeAnimation--Spacial {
+body.fixed .WelcomeAnimation--Studio {
   display: block;
   height: 50px;
   width: auto;
@@ -54,7 +55,7 @@ body.fixed .WelcomeAnimation--Spacial {
   animation: slideLeft 2s forwards;
 }
 
-body.fixed .WelcomeAnimation--Studio {
+body.fixed .WelcomeAnimation--Spacial {
   display: block;
   height: 50px;
   width: auto;

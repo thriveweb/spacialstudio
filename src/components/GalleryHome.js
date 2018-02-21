@@ -5,7 +5,7 @@ import './GalleryHome.css'
 
 export default class GalleryHome extends React.Component {
   static defaultProps = {
-    autoPlay: 1500,
+    autoPlay: 3000,
     wrapAround: true,
     prevNextbuttons: true,
     pageDots: false
@@ -13,6 +13,15 @@ export default class GalleryHome extends React.Component {
 
   state = {
     index: 0
+  }
+
+  autoPlay = null
+
+  componentDidMount () {
+    this.autoPlay = setInterval(this.nextSlide, this.props.autoPlay)
+  }
+  componentWillUnmount () {
+    clearInterval(this.autoPlay)
   }
 
   nextSlide = index =>
@@ -54,19 +63,29 @@ export default class GalleryHome extends React.Component {
             </div>
           )
         })}
-
-        {images.map((image, index) => {
-          if (index % 2) return null
-          return (
-            <button
-              key={index}
-              className='relative'
-              onClick={() => this.nextSlide(index)}
-            >
-              next
-            </button>
-          )
-        })}
+        <div className='GalleryHome--Indicators'>
+          {images.map((image, index) => {
+            if (index % 2) return null
+            return (
+              <div
+                key={index}
+                className='GalleryHome--Indicator relative'
+                onClick={() => this.nextSlide(index)}
+              >
+                <img
+                  src='/images/dot.svg'
+                  alt='Indicator'
+                  className='GalleryHome--IndicatorDot'
+                />
+              </div>
+            )
+          })}
+        </div>
+        <img
+          src='/images/see-more.svg'
+          alt='Scroll down to see more'
+          className='GalleryHome--Arrow'
+        />
       </div>
     )
   }

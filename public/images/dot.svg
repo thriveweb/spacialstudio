@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="17px" height="17px" viewBox="0 0 17 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>dot</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Homepage" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-1707.000000, -477.000000)">
+        <g id="Group-2" transform="translate(1708.000000, 461.000000)">
+            <g id="dot" transform="translate(0.000000, 17.000000)">
+                <circle id="Oval-5-Copy" fill="#FFFFFF" cx="7.5" cy="7.5" r="3.5"></circle>
+                <circle id="Oval-6" stroke="#FFFFFF" stroke-width="0.5" cx="7.5" cy="7.5" r="7.5"></circle>
+            </g>
+        </g>
+    </g>
+</svg>
