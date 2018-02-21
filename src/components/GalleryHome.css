@@ -1,6 +1,6 @@
 .GalleryHome {
   width: 100%;
-  height: 50vh;
+  height: 100vh;
   overflow: hidden;
   position: relative;
   will-change: transform, z-index;
@@ -20,7 +20,7 @@
 
 .GalleryHome--Item {
   width: 50%;
-  height: 50vh;
+  height: 100vh;
   position: relative;
   transition: all 0.666s ease-in-out;
   transform: translate3d(0, 0, 0);
@@ -50,7 +50,7 @@
 }
 .GalleryHome--Item .BackgroundImage {
   width: 100%;
-  height: 50vh;
+  height: 100vh;
 }
 
 .GalleryHome--Indicators {
