@@ -6,6 +6,24 @@ var MessageControl = createClass({
 })
 CMS.registerWidget('message', MessageControl)
 
+var EncodeControl = createClass({
+  handleChange: function (e) {
+    this.props.onChange(btoa(e.target.value.trim()))
+  },
+
+  render: function () {
+    var value = this.props.value ? atob(this.props.value) : ''
+    return h('input', {
+      type: 'text',
+      value: value,
+      onChange: this.handleChange,
+      className: 'nc-controlPane-widget'
+    })
+  }
+})
+
+CMS.registerWidget('encode', EncodeControl)
+
 CMS.registerEditorComponent({
   // Internal id of the component
   id: 'youtube',
