@@ -17,6 +17,7 @@ import SingleProject from './views/SingleProject'
 import Blog from './views/Blog'
 import SinglePost from './views/SinglePost'
 import Contact from './views/Contact'
+import ClientArea from './views/ClientArea'
 import NoMatch from './views/NoMatch'
 import Nav from './components/Nav'
 import Footer from './components/Footer'
@@ -260,7 +261,7 @@ class App extends Component {
               exact
               render={props => (
                 <RouteWithFooter>
-                  <Contact
+                  <ClientArea
                     page={this.getDocument('pages', 'clientArea')}
                     globalSettings={globalSettings}
                     siteTitle={siteTitle}

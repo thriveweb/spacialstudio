@@ -48,7 +48,7 @@ collections: # A list of collections the CMS should be able to edit
       preview: false
     files:
       - file: "content/pages/clientArea.md"
-        label: "Contact Page"
+        label: "Client Area"
         name: "clientArea-page"
         fields:
           - {label: Title, name: title, widget: string}
