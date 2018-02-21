@@ -1,7 +1,7 @@
 ---
 title: Jeremy Tran
 subtitle: Owner
-image: /images/uploads/rectangle.jpg
+image: /images/uploads/jake-campbell-355139.jpg
 instagram: 'http://instagram.com'
 twitter: 'http://instagram.com'
 linkedin: 'http://instagram.com'
