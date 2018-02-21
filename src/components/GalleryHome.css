@@ -30,18 +30,18 @@
 }
 
 .GalleryHome--Item:nth-child(even) {
-  transform: translate3d(0, -400px, 0);
+  transform: translate3d(0, -100%, 0);
   left: 50%;
 }
 .GalleryHome--Item:nth-child(odd) {
-  transform: translate3d(0, 400px, 0);
+  transform: translate3d(0, 100%, 0);
   left: 0;
 }
 .GalleryHome--Item.next:nth-child(even) {
-  transform: translate3d(0, 400px, 0);
+  transform: translate3d(0, 100%, 0);
 }
 .GalleryHome--Item.next:nth-child(odd) {
-  transform: translate3d(0, -400px, 0);
+  transform: translate3d(0, -100%, 0);
 }
 
 .GalleryHome--Item.active {

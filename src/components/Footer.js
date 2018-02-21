@@ -8,7 +8,7 @@ export default ({ globalSettings, socialSettings, navLinks }) => (
   <footer className='Footer'>
     <div className='container mainFooter Flex justifyBetween center'>
       <Link to='/'>
-        <Logo />
+        <img src='/images/logo.svg' alt='Spacial Studio' />
       </Link>
       <div className='Flex alignStart justifyBetween flexWrap halfs'>
         <div className='address pods'>

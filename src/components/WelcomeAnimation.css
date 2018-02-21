@@ -10,7 +10,6 @@
 
 body.fixed {
   overflow: hidden;
-  /* height: 0; */
 }
 
 .WelcomeAnimation--Studio {
@@ -42,7 +41,7 @@ body.fixed .WelcomeAnimation {
   left: 0;
   background: var(--primary);
   z-index: 5;
-  animation: pulse 3s forwards;
+  animation: pulse 2s forwards;
 }
 body.fixed .WelcomeAnimation--Studio {
   display: block;
@@ -52,7 +51,7 @@ body.fixed .WelcomeAnimation--Studio {
   top: 25vh;
   left: 50%;
   transform: translate3d(6px, -50%, 0);
-  animation: slideLeft 2s forwards;
+  animation: slideLeft 1.5s forwards;
 }
 
 body.fixed .WelcomeAnimation--Spacial {
@@ -63,7 +62,7 @@ body.fixed .WelcomeAnimation--Spacial {
   top: 25vh;
   right: 50%;
   transform: translate3d(-6px, -50%, 0);
-  animation: slideRight 2s forwards;
+  animation: slideRight 1.5s forwards;
 }
 body.scrolled .WelcomeAnimation--Spacial,
 body.scrolled .WelcomeAnimation--Studio {
@@ -71,7 +70,7 @@ body.scrolled .WelcomeAnimation--Studio {
 }
 
 @keyframes pulse {
-  50% {
+  40% {
     background-color: var(--primary);
   }
   100% {
