@@ -47,6 +47,20 @@ collections: # A list of collections the CMS should be able to edit
     editor:
       preview: false
     files:
+      - file: "content/pages/clientArea.md"
+        label: "Contact Page"
+        name: "clientArea-page"
+        fields:
+          - {label: Title, name: title, widget: string}
+          - {label: Content Section, name: contentSection, widget: markdown}
+          - label: "Accordion"
+            name: "accordion"
+            widget: "list"
+            fields:
+              - {label: Title, name: title, widget: string}
+              - {label: Description, name: description, widget: markdown}
+              - {label: Link Title, name: linkTitle, widget: string}
+              - {label: Link, name: link, widget: file}
       - file: "content/pages/contact.md"
         label: "Contact Page"
         name: "contact-page"

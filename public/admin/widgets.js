@@ -21,7 +21,6 @@ var EncodeControl = createClass({
     })
   }
 })
-
 CMS.registerWidget('encode', EncodeControl)
 
 CMS.registerEditorComponent({
