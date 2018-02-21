@@ -180,7 +180,6 @@ class App extends Component {
                 )
               }}
             />
-
             <Route
               path='/blog/'
               exact
@@ -242,7 +241,6 @@ class App extends Component {
                 )
               }}
             />
-
             <Route
               path='/contact/'
               exact
@@ -257,6 +255,21 @@ class App extends Component {
                 </RouteWithFooter>
               )}
             />
+            <Route
+              path='/client-area/'
+              exact
+              render={props => (
+                <RouteWithFooter>
+                  <Contact
+                    page={this.getDocument('pages', 'clientArea')}
+                    globalSettings={globalSettings}
+                    siteTitle={siteTitle}
+                    {...props}
+                  />
+                </RouteWithFooter>
+              )}
+            />
+
             <Route
               render={() => (
                 <RouteWithFooter>

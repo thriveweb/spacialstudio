@@ -32,7 +32,7 @@ const Home = ({ page, projects, posts }) => {
       )}
 
       {page.title && (
-        <section className='section HomeTitle'>
+        <section className='section HomeTitle thick'>
           <div className='container'>
             <h1>{page.title}</h1>
           </div>
@@ -40,7 +40,7 @@ const Home = ({ page, projects, posts }) => {
       )}
 
       {page.service && (
-        <section className='section'>
+        <section className='section '>
           <div className='container'>
             <h2 className='section-title'>{page.servicesTitle}</h2>
             <div className='servicesGrid Flex alignStart justifyCenter flexWrap'>
