@@ -59,7 +59,7 @@ class Nav extends React.Component {
               <NavLink to='/contact/' exact>
                 Contact
               </NavLink>
-              <NavLink to='/login/' exact className='login'>
+              <NavLink to='/client-area/' exact className='login'>
                 Login
               </NavLink>
             </div>
