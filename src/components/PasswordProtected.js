@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 
+import './PasswordProtected.css'
+
 // Remove react devtools hook for obfuscation:
 // https://github.com/facebook/react-devtools/blob/master/shells/chrome/src/checkForReact.js
 if (
@@ -86,30 +88,36 @@ class PasswordProtected extends Component {
       <main className={`PasswordProtected ${className}`}>
         <div className='section'>
           <div className='container'>
-            {message && (
-              <div className='PasswordProtected--Message'>{message}</div>
-            )}
-            <form
-              onSubmit={this.handleSubmit}
-              className='PasswordProtected--Form'
-            >
-              <input
-                className='PasswordProtected--Input'
-                type='hidden'
-                name='passwordInput'
-                value={hiddenUsername}
-                disabled
-              />
-              <input
-                className='PasswordProtected--Input'
-                type='password'
-                name='passwordInput'
-                onChange={this.handleChange}
-                value={passwordInput}
-                required
-              />
-              <input type='submit' value='Submit' className='button' />
-            </form>
+            <div className='PasswordProtected--Modal'>
+              {message && (
+                <div className='PasswordProtected--Message'>{message}</div>
+              )}
+              <form
+                onSubmit={this.handleSubmit}
+                className='PasswordProtected--Form'
+              >
+                <input
+                  className='PasswordProtected--Input'
+                  type='hidden'
+                  name='passwordInput'
+                  value={hiddenUsername}
+                  disabled
+                />
+                <input
+                  className='PasswordProtected--Input'
+                  type='password'
+                  name='passwordInput'
+                  onChange={this.handleChange}
+                  value={passwordInput}
+                  required
+                />
+                <input
+                  type='submit'
+                  value='Submit'
+                  className='PasswordProtected--Button'
+                />
+              </form>
+            </div>
           </div>
         </div>
       </main>

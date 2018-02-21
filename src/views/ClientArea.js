@@ -7,8 +7,8 @@ import Content from '../components/Content.js'
 import Accordion from '../components/Accordion.js'
 import './ClientArea.css'
 
-export default ({ page }) => (
-  <PasswordProtected password={page.clientAreaPassword}>
+export default ({ page, globalSettings }) => (
+  <PasswordProtected password={globalSettings.clientAreaPassword}>
     <main className='ClientArea'>
       <Helmet>
         <title>{page.title}</title>
