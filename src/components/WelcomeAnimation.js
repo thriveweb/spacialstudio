@@ -4,9 +4,13 @@ import './WelcomeAnimation.css'
 
 export default class WelcomeAnimation extends React.Component {
   element = null
+
+  componentWillMount () {
+    document.body.classList.add('fixed')
+  }
+
   componentDidMount () {
     this.element.addEventListener('animationend', this.handleAnimationFinish)
-    document.body.classList.add('fixed')
   }
 
   componentWillUnmount () {
