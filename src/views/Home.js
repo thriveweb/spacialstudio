@@ -19,7 +19,7 @@ const Home = ({ page, projects, posts }) => {
     .slice(0, 2)
 
   const homeGalleryImages = page.welcomeGalleryImages.map(obj =>
-    getImageSrc(obj.galleryimage, window.innerWidth || 1800)
+    getImageSrc(obj.galleryimage, window.innerWidth / 4 || 1800)
   )
 
   return (
@@ -28,7 +28,7 @@ const Home = ({ page, projects, posts }) => {
         <title>{page.title}</title>
       </Helmet>
 
-      <WelcomeAnimation waitForImages={homeGalleryImages} />
+      <WelcomeAnimation waitForImages={homeGalleryImages.slice(0, 2)} />
 
       {page.welcomeGalleryImages && (
         <GalleryHome
