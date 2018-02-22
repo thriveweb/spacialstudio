@@ -16,7 +16,7 @@ body,
 }
 
 .isHome.Nav {
-  background: transparent;
+  background-color: transparent;
   position: fixed;
   color: white;
   transition: all 0.2s ease-in-out;
@@ -30,4 +30,59 @@ body.scrolled .isHome.Nav {
 
 body.fixed .Nav {
   opacity: 0;
+}
+
+.NavLink--DropDown {
+  position: relative;
+}
+
+.NavLink--Parent {
+  position: relative;
+  cursor: default;
+}
+.NavLink--Parent:hover {
+  opacity: 1;
+}
+
+.NavLink--Children {
+  overflow: hidden;
+  height: 0;
+  position: absolute;
+  top: 6rem;
+  left: 2rem;
+  transition: all 0.3s ease-out;
+}
+.NavLink--Children .NavLink {
+  padding: 1rem;
+  text-align: left;
+  font-size: 1.2rem;
+}
+
+.NavLink--Children .NavLink .hover {
+  display: none;
+}
+
+.NavLink--Parent:hover .NavLink--Children {
+  opacity: 1 !important;
+  height: auto;
+  width: 200px;
+  color: var(--primary);
+  background: var(--bodyColor);
+  border: 1px solid var(--lightGrey);
+  border-top: none;
+  padding: 0 2rem;
+}
+
+body .isHome.Nav .NavLink--Parent:hover .NavLink--Children {
+  color: white;
+  background: transparent;
+  border: 1px solid var(--midGrey);
+  border-top: none;
+}
+
+body.scrolled .isHome.Nav .NavLink--Parent:hover .NavLink--Children {
+  color: var(--primary);
+  background: var(--bodyColor);
+  border: 1px solid var(--lightGrey);
+  border-top: none;
 }

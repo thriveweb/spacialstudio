@@ -36,8 +36,7 @@ class Nav extends React.Component {
         className={`Nav ${isHome ? 'isHome' : ''}`}
         ref={element => {
           this.element = element
-        }}
-      >
+        }}>
         <div className='container'>
           <div className='Flex alignCenter justifyBetween relative'>
             <Link style={{ color: 'currentColor' }} to='/'>
@@ -47,13 +46,27 @@ class Nav extends React.Component {
               <NavLink to='/about/' exact>
                 About
               </NavLink>
-              <div className='drop-down'>
-                <NavLink to='/services/' exact>
-                  Services
-                </NavLink>
-                <NavLink to='/services/interior-design/' exact>
-                  interior-design
-                </NavLink>
+              <div className='NavLink--DropDown'>
+                <div className='NavLink NavLink--Parent'>
+                  Services <div className='hover'>•</div>
+                  <div className='NavLink--Children'>
+                    <NavLink to='/services/interior-design/' exact>
+                      Interior design
+                    </NavLink>
+                    <NavLink to='/services/construction/' exact>
+                      Construction
+                    </NavLink>
+                    <NavLink to='/services/building-design/' exact>
+                      Building Design
+                    </NavLink>
+                    <NavLink to='/services/property/' exact>
+                      Property
+                    </NavLink>
+                    <NavLink to='/services/consulting/' exact>
+                      Consulting
+                    </NavLink>
+                  </div>
+                </div>
               </div>
               <NavLink to='/project/' exact>
                 Projects
