@@ -1,0 +1,55 @@
+.SingleService {
+}
+
+.SingleService--BackgroundImage {
+  height: 50rem;
+}
+
+.SingleService--Content {
+  width: 85%;
+  background: white;
+  position: absolute;
+  top: 30rem;
+  left: 50%;
+  transform: translate(-50%, 0);
+  padding: 8rem 8rem 4rem 8rem;
+  margin-bottom: 30rem;
+}
+
+.SingleService--Content blockquote {
+  margin: 0 0 0 4rem;
+  padding: 3rem 0 0 3rem;
+  background: url(/images/button-background.svg) 0 0 no-repeat;
+  background-size: 6rem;
+  padding: 3rem;
+  line-height: 1.1;
+  font-size: 2rem;
+  font-style: italic;
+}
+
+.SingleService--Category-Date {
+  font-size: 1rem;
+  margin: 0 0 2rem 0;
+  text-align: center;
+}
+.SingleService--Title {
+  text-align: center;
+  font-size: 5rem;
+  line-height: 1.2;
+}
+
+.SingleService--InnerContent {
+  padding: 0 8rem;
+}
+.SingleService--gallery {
+  width: 100%;
+}
+
+.SingleService--Links {
+  margin: 6rem 0 0 0;
+}
+
+.SingleService--Links a {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+}

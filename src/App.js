@@ -12,6 +12,7 @@ import Meta from './components/Meta'
 import Home from './views/Home'
 import About from './views/About'
 import Services from './views/Services'
+import SingleService from './views/SingleService'
 import Project from './views/Project'
 import SingleProject from './views/SingleProject'
 import Blog from './views/Blog'
@@ -77,6 +78,7 @@ class App extends Component {
     const staff = this.getDocuments('staff')
     const projects = this.getDocuments('projects')
     const posts = this.getDocuments('posts')
+    const services = this.getDocuments('services')
     const postCategories = getCollectionTerms(posts, 'category', 'asc')
 
     const RouteWithFooter = ({ children, scrollToTop = true, ...props }) => (
@@ -153,6 +155,25 @@ class App extends Component {
                   />
                 </RouteWithFooter>
               )}
+            />
+            <Route
+              path='/services/:slug/'
+              render={props => {
+                const slug = props.match.params.slug
+                const singleService = services.find(
+                  item => _kebabCase(item.title) === slug
+                )
+                return (
+                  <RouteWithFooter>
+                    <SingleService
+                      singleService={singleService}
+                      projects={projects}
+                      posts={posts}
+                      {...props}
+                    />
+                  </RouteWithFooter>
+                )
+              }}
             />
             <Route
               path='/project/'

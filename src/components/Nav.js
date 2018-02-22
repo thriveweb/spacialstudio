@@ -47,9 +47,14 @@ class Nav extends React.Component {
               <NavLink to='/about/' exact>
                 About
               </NavLink>
-              <NavLink to='/services/' exact>
-                Services
-              </NavLink>
+              <div className='drop-down'>
+                <NavLink to='/services/' exact>
+                  Services
+                </NavLink>
+                <NavLink to='/services/interior-design/' exact>
+                  interior-design
+                </NavLink>
+              </div>
               <NavLink to='/project/' exact>
                 Projects
               </NavLink>
