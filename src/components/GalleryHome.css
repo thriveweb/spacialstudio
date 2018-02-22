@@ -5,6 +5,15 @@
   position: relative;
   will-change: transform, z-index;
   background: var(--primary);
+  opacity: 1;
+}
+
+body.fixed .GalleryHome {
+  opacity: 0;
+}
+
+body.fixed.animate .GalleryHome {
+  opacity: 1;
 }
 
 .GalleryHome .overlay {

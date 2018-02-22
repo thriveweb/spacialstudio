@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import Helmet from 'react-helmet'
 import _sortBy from 'lodash/sortBy'
 
+import { getImageSrc } from '../util/getImageUrl'
 import Content from '../components/Content'
 import LazyImage from '../components/LazyImage'
 import WelcomeAnimation from '../components/WelcomeAnimation'
@@ -16,17 +17,22 @@ const Home = ({ page, projects, posts }) => {
   const visiblePosts = _sortBy(posts, ['date'])
     .reverse()
     .slice(0, 2)
+
+  const homeGalleryImages = page.welcomeGalleryImages.map(obj =>
+    getImageSrc(obj.galleryimage, window.innerWidth || 1800)
+  )
+
   return (
     <main className='Home'>
       <Helmet>
         <title>{page.title}</title>
       </Helmet>
 
-      <WelcomeAnimation />
+      <WelcomeAnimation waitForImages={homeGalleryImages} />
 
       {page.welcomeGalleryImages && (
         <GalleryHome
-          images={page.welcomeGalleryImages.map(obj => obj.galleryimage)}
+          images={homeGalleryImages}
           flickityOptions={{ autoPlay: 30000 }}
         />
       )}

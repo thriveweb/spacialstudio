@@ -1,6 +1,5 @@
 import React from 'react'
 
-import BackgroundImage from './BackgroundImage'
 import './GalleryHome.css'
 
 export default class GalleryHome extends React.Component {
@@ -59,7 +58,13 @@ export default class GalleryHome extends React.Component {
               key={image + index}
               className={`GalleryHome--Item ${this.calculatePosition(index)}`}
             >
-              <BackgroundImage lazy={'true'} src={image} alt='gallery' />
+              <div
+                className='BackgroundImage absolute'
+                style={{
+                  backgroundImage: `url(${image})`,
+                  backgroundSize: 'cover'
+                }}
+              />
             </div>
           )
         })}
