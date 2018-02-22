@@ -20,7 +20,7 @@ export default class WelcomeAnimation extends React.Component {
         this.props.waitForImages.map(
           image =>
             new Promise((resolve, reject) => {
-              console.log('loading')
+              // console.log('loading')
               const img = document.createElement('img')
               img.src = image
               img.onload = () => {
