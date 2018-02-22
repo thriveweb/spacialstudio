@@ -72,6 +72,7 @@ body.fixed .Nav {
   border: 1px solid var(--lightGrey);
   border-top: none;
   padding: 0 2rem;
+  visibility: visible;
 }
 
 body .isHome.Nav .NavLink--Parent:hover .NavLink--Children {

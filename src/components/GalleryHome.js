@@ -76,7 +76,14 @@ export default class GalleryHome extends React.Component {
                 className={`GalleryHome--Indicator relative ${this.calculatePosition(
                   index
                 )}`}
-                onClick={() => this.nextSlide(index)}>
+                onClick={() => {
+                  this.nextSlide(index)
+                  clearInterval(this.autoPlay)
+                  this.autoPlay = setInterval(
+                    this.nextSlide,
+                    this.props.autoPlay
+                  )
+                }}>
                 <img
                   src={`/images/dot-${
                     this.calculatePosition(index) === 'active'
