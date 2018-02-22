@@ -24,7 +24,6 @@
 }
 
 .semipolar-spinner {
-  --size: 6rem;
   --duration: 750ms;
   --color: var(--primary);
   height: var(--size);

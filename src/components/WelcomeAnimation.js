@@ -1,5 +1,6 @@
 import React from 'react'
 
+import Spinner from './Spinner'
 import './WelcomeAnimation.css'
 
 export default class WelcomeAnimation extends React.Component {
@@ -54,6 +55,7 @@ export default class WelcomeAnimation extends React.Component {
           this.element = element
         }}
       >
+        <Spinner size='2rem' />
         <Spacial />
         <Studio />
       </main>
