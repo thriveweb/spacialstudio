@@ -265,8 +265,8 @@ collections: # A list of collections the CMS should be able to edit
             name: "projectList"
             widget: "relation"
             collection: "projects"
-            searchFields: ["name"]
-            valueField: "name"
+            searchFields: ["title"]
+            valueField: "title"
       - {label: News Section Title, name: newsSectionTitle, widget: string}
       - label: "Featured Projects"
         name: "featuredProject"
@@ -276,6 +276,6 @@ collections: # A list of collections the CMS should be able to edit
             name: "projectList"
             widget: "relation"
             collection: "posts"
-            searchFields: ["name"]
-            valueField: "name"
+            searchFields: ["title"]
+            valueField: "title"
       - {label:  Booking Title, name: bookingTitle, widget: string}
