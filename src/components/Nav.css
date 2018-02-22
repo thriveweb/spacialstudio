@@ -27,3 +27,7 @@ body.scrolled .isHome.Nav {
   background: var(--bodyColor);
   border-bottom: 2px solid var(--lightGrey);
 }
+
+body.fixed .Nav {
+  opacity: 0;
+}

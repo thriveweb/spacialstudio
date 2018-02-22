@@ -9,15 +9,19 @@ import { getImageSrc } from '../util/getImageUrl'
 export default class BackgroundImage extends React.Component {
   static defaultProps = {
     lazy: false,
-    src: ''
+    src: '',
+    imageSize: 1800
   }
 
   state = {
     src:
       this.props.src.indexOf('http') === 0
         ? ''
-        : getImageSrc(this.props.src, this.props.lazy ? 10 : 1800),
-    dataSrc: getImageSrc(this.props.src, 1800),
+        : getImageSrc(
+          this.props.src,
+          this.props.lazy ? 10 : this.props.imageSize
+        ),
+    dataSrc: getImageSrc(this.props.src, this.props.imageSize),
     loaded: false
   }
 
@@ -38,8 +42,11 @@ export default class BackgroundImage extends React.Component {
     if (this.props.src === nextProps.src) return
 
     this.setState({
-      src: getImageSrc(nextProps.src, nextProps.lazy ? 10 : 1800),
-      dataSrc: getImageSrc(nextProps.src, 1800)
+      src: getImageSrc(
+        nextProps.src,
+        nextProps.lazy ? 10 : this.props.imageSize
+      ),
+      dataSrc: getImageSrc(nextProps.src, this.props.imageSize)
     })
   }
 
@@ -52,7 +59,7 @@ export default class BackgroundImage extends React.Component {
       onlyOnce: true,
       rootMargin: '0% 0% 100%'
     }
-    const { lazy, ...props } = this.props
+    const { lazy, imageSize, ...props } = this.props
 
     return (
       <Observer {...options}>
