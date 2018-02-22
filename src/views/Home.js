@@ -28,7 +28,7 @@ const Home = ({ page, projects, posts }) => {
         <title>{page.title}</title>
       </Helmet>
 
-      <WelcomeAnimation waitForImages={homeGalleryImages} />
+      <WelcomeAnimation waitForImages={homeGalleryImages.slice(0, 2)} />
 
       {page.welcomeGalleryImages && (
         <GalleryHome
