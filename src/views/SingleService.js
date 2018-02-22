@@ -12,23 +12,24 @@ import ConsultationSection from '../components/ConsultationSection'
 import './SingleService.css'
 
 const SingleService = ({ singleService, projects, posts, ...props }) => {
-  const projectsFiltered = projects.filter(
-    project => project.title === selectedProjects
+  const selectedProjects = singleService.featuredProjects.map(
+    selected => selected.projectList
   )
-
-  const selectedProjects = singleService.featuredProjects.map(selected => {
-    return selected.projectList
-  })
+  const projectsFiltered = projects.filter(
+    item => selectedProjects.indexOf(item.title) >= 0
+  )
+  const selectedPosts = singleService.featuredPosts.map(
+    selected => selected.postList
+  )
+  const postsFiltered = posts.filter(
+    item => selectedPosts.indexOf(item.title) >= 0
+  )
 
   return (
     <article className='SingleService' data-aos='fade-up'>
       <Helmet>
         <title>{singleService.title}</title>
       </Helmet>
-
-      {console.log(singleService.featuredProjects)}
-      {console.log(projectsFiltered)}
-      {console.log(selectedProjects)}
 
       <PageHeader title={singleService.title} />
       {singleService.galleryDescription && (
@@ -75,7 +76,7 @@ const SingleService = ({ singleService, projects, posts, ...props }) => {
 
       {!!projects.length && (
         <ProjectSection
-          projects={projects}
+          projects={projectsFiltered}
           title={singleService.projectSectionTitle}
           limit='2'
         />
@@ -85,7 +86,7 @@ const SingleService = ({ singleService, projects, posts, ...props }) => {
         <section className='section thin'>
           <div className='container'>
             <PostSection
-              posts={posts}
+              posts={postsFiltered}
               title={singleService.newsSectionTitle}
               limit='3'
               showLoadMore={false}
