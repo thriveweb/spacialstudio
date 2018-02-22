@@ -35,7 +35,7 @@ const SingleService = ({ singleService, projects, posts, ...props }) => {
       {singleService.galleryDescription && (
         <section className='section thin Services--gallery'>
           <div className='container larger'>
-            <div className='Flex alignCenter'>
+            <div className='Flex alignCenter justifyBetween'>
               <Gallery
                 images={singleService.galleryImages.map(
                   obj => obj.galleryimage
