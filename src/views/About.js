@@ -5,12 +5,13 @@ import _sortBy from 'lodash/sortBy'
 import PageHeader from '../components/PageHeader'
 import LazyImage from '../components/LazyImage'
 import Content from '../components/Content.js'
+import ServicePodSection from '../components/ServicePodSection'
 import StaffMemberCard from '../components/StaffMemberCard'
 
 import './About.css'
 
 export default ({ page, staff }) => (
-  <main className='About'>
+  <main className='About' data-aos='fade-up'>
     <Helmet>
       <title>{page.title}</title>
     </Helmet>
@@ -37,33 +38,10 @@ export default ({ page, staff }) => (
       </section>
     )}
     {page.service && (
-      <section className='section thick'>
-        <div className='container'>
-          <h2 className='section-title'>{page.servicesTitle}</h2>
-          <div className='servicesGrid Flex alignStart justifyCenter flexWrap'>
-            {page.service.map(servicePod => (
-              <div key={servicePod.title} className='servicePod'>
-                {servicePod.icon && (
-                  <img
-                    className='servicePod--Icon'
-                    src={servicePod.icon}
-                    alt={servicePod.title}
-                  />
-                )}
-                <div className='servicePod--Info'>
-                  {servicePod.title && (
-                    <h4 className='ServicePod--Title'>{servicePod.title}</h4>
-                  )}
-                  {servicePod.description && <p>{servicePod.description}</p>}
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      <ServicePodSection title={page.servicesTitle} services={page.service} />
     )}
     {staff && (
-      <section className='section thin StaffSection'>
+      <section className='section thin StaffSection' data-aos='fade-up'>
         <div className='container'>
           <div className='StaffSection--Grid Flex alignStart justifyBetween flexWrap'>
             {_sortBy(staff, ['order']).map(staffMember => (

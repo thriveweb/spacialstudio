@@ -7,7 +7,7 @@ import Gallery from '../components/Gallery'
 import './SingleProject.css'
 
 export default ({ singleProject }) => (
-  <article className='Project'>
+  <article className='Project' data-aos='fade-up'>
     <Helmet>
       <title>{singleProject.title}</title>
     </Helmet>

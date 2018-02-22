@@ -49,7 +49,15 @@ class LazyImage extends React.Component {
   }
 
   render () {
-    const { sizes, lazy, onClick, alt } = this.props
+    const {
+      sizes,
+      lazy,
+      onClick,
+      alt,
+      enableSrcset,
+      imageSize,
+      ...props
+    } = this.props
     let className = this.props.className || ''
     if (this.state.loaded) className += ' loaded'
     const options = {
@@ -67,6 +75,7 @@ class LazyImage extends React.Component {
           sizes={sizes || '100vw'}
           onClick={onClick}
           alt={alt}
+          {...props}
         />
       )
     }

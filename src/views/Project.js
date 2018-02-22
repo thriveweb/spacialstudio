@@ -6,7 +6,7 @@ import ProjectSection from '../components/ProjectSection'
 import './Project.css'
 
 export default ({ page, projects }) => (
-  <main className='Project'>
+  <main className='Project' data-aos='fade-up'>
     <Helmet>
       <title>{page.title}</title>
     </Helmet>

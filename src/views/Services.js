@@ -10,14 +10,13 @@ import ProjectSection from '../components/ProjectSection'
 import PostSection from '../components/PostSection'
 import './Services.css'
 
-export default ({ page, projects, posts }) => (
-  <main className='Services'>
+export default ({ page, projects, posts, ...props }) => (
+  <main className='Services' data-aos='fade-up' {...props}>
     <Helmet>
       <title>{page.title}</title>
     </Helmet>
 
     <PageHeader title={page.title} />
-
     {page.galleryDescription && (
       <section className='section thin Services--gallery'>
         <div className='container larger'>

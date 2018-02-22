@@ -5,7 +5,7 @@ import Helmet from 'react-helmet'
 import './NoMatch.css'
 
 const NoMatch = ({ siteUrl }) => (
-  <main className='NoMatch'>
+  <main className='NoMatch' data-aos='fade-up'>
     <section className='section thick'>
       <div className='container taCenter'>
         <h1>404 - Page Not Found</h1>

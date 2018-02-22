@@ -85,7 +85,7 @@ class PasswordProtected extends Component {
     const { children, password, hiddenUsername, className = '' } = this.props
     const { message, passwordInput, passwordAttempt } = this.state
     return passwordAttempt !== password ? (
-      <main className={`PasswordProtected ${className}`}>
+      <main className={`PasswordProtected ${className}`} data-aos='flip-down'>
         <div className='section'>
           <div className='container'>
             <div className='PasswordProtected--Modal'>

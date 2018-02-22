@@ -270,3 +270,15 @@ pre code:after {
   font-size: 4rem;
   text-align: center;
 }
+
+.flickity-prev-next-button {
+  top: calc(100% - 15px);
+  border-radius: 0;
+  left: auto !important;
+  right: 0 !important;
+  width: 30px;
+  height: 30px;
+}
+.flickity-prev-next-button.previous {
+  right: 30px !important;
+}

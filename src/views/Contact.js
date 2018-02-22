@@ -6,7 +6,7 @@ import MapBanner from '../components/MapBanner'
 import './Contact.css'
 
 export default ({ page, siteTitle, globalSettings }) => (
-  <main className='Contact'>
+  <main className='Contact' data-aos='fade-up'>
     <Helmet>
       <title>{page.title}</title>
     </Helmet>

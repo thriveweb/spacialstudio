@@ -21,7 +21,7 @@ export default ({ page, posts, postCategories, showFeatured = true }) => {
     featuredPostIndex >= 0 ? _pullAt(posts, featuredPostIndex)[0] : null
 
   return (
-    <main className='Blog'>
+    <main className='Blog' data-aos='fade-up'>
       <Helmet>
         <title>{page.title}</title>
       </Helmet>

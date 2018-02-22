@@ -7,6 +7,7 @@ import { getImageSrc } from '../util/getImageUrl'
 import Content from '../components/Content'
 import LazyImage from '../components/LazyImage'
 import WelcomeAnimation from '../components/WelcomeAnimation'
+import ServicePodSection from '../components/ServicePodSection'
 import GalleryHome from '../components/GalleryHome'
 import ProjectSection from '../components/ProjectSection'
 import PostCard from '../components/PostCard'
@@ -40,42 +41,24 @@ const Home = ({ page, projects, posts }) => {
       {page.title && (
         <section className='section HomeTitle thick'>
           <div className='container'>
-            <h1>{page.title}</h1>
+            <h1 data-aos='fade-down'>{page.title}</h1>
           </div>
         </section>
       )}
 
       {page.service && (
-        <section className='section '>
-          <div className='container'>
-            <h2 className='section-title'>{page.servicesTitle}</h2>
-            <div className='servicesGrid Flex alignStart justifyCenter flexWrap'>
-              {page.service.map(servicePod => (
-                <div key={servicePod.title} className='servicePod'>
-                  {servicePod.icon && (
-                    <img
-                      className='servicePod--Icon'
-                      src={servicePod.icon}
-                      alt={servicePod.title}
-                    />
-                  )}
-                  <div className='servicePod--Info'>
-                    {servicePod.title && (
-                      <h4 className='ServicePod--Title'>{servicePod.title}</h4>
-                    )}
-                    {servicePod.description && <p>{servicePod.description}</p>}
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
+        <ServicePodSection title={page.servicesTitle} services={page.service} />
       )}
 
       {page.aboutSectionTitle && (
         <section className='section thin AboutSection'>
           <div className='container Flex alignCenter justifyBetween flexWrap'>
-            <LazyImage src={page.aboutImage} alt='LazyImage' lazy />
+            <LazyImage
+              src={page.aboutImage}
+              alt='LazyImage'
+              lazy
+              data-aos='fade-left'
+            />
             <div className='AboutSection--Info'>
               <small>About us</small>
               <blockquote>
@@ -94,8 +77,12 @@ const Home = ({ page, projects, posts }) => {
 
       {!!visiblePosts.length && (
         <section className='section thin HomeNews'>
-          <div className='container Flex alignStretch justifyBetween flexWrap'>
-            <div className='HomeNews--Info'>
+          <div className='container Flex alignStretch justifyBetween flexWrap relative'>
+            <div
+              className='HomeNews--Info'
+              data-aos='slide-left'
+              data-aos-offset='300'
+            >
               <h2>{page.newsSectionTitle}</h2>
               <div className='HomeNews--Content'>
                 <Content source={page.aboutContent} />
@@ -104,12 +91,17 @@ const Home = ({ page, projects, posts }) => {
                 {page.aboutLinkText}
               </Link>
             </div>
-            <div className='HomeNews--Posts Flex alignStretch justifyBetween flexWrap'>
+            <div
+              className='HomeNews--Posts Flex alignStretch justifyBetween flexWrap'
+              data-aos='slide-left'
+              data-aos-offset='400'
+            >
               {visiblePosts.map((postItem, index) => (
                 <PostCard
                   key={postItem.title + index}
                   postItem={postItem}
-                  data-aos='fade-in'
+                  data-aos='slide-left'
+                  data-aos-offset='500'
                   className='HomeNews--Post'
                 />
               ))}

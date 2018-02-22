@@ -13,9 +13,16 @@ const ProjectSection = ({
 }) => (
   <div className={`section thin ProjectSection ${className}`} {...props}>
     <div className='container'>
-      {title && <h2 className='taCenter'>{title}</h2>}
+      {title && (
+        <h2 className='taCenter' data-aos='fade-down'>
+          {title}
+        </h2>
+      )}
       {projects.length && (
-        <div className='Flex alignCenter justifyBetween flexWrap'>
+        <div
+          className='Flex alignCenter justifyBetween flexWrap'
+          data-aos='fade-up'
+        >
           {_sortBy(projects, ['order'])
             .slice(0, limit)
             .map((projectItem, index) => (
