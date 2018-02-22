@@ -56,8 +56,7 @@ export default class GalleryHome extends React.Component {
           return (
             <div
               key={image + index}
-              className={`GalleryHome--Item ${this.calculatePosition(index)}`}
-            >
+              className={`GalleryHome--Item ${this.calculatePosition(index)}`}>
               <div
                 className='BackgroundImage absolute'
                 style={{
@@ -74,11 +73,16 @@ export default class GalleryHome extends React.Component {
             return (
               <div
                 key={index}
-                className='GalleryHome--Indicator relative'
-                onClick={() => this.nextSlide(index)}
-              >
+                className={`GalleryHome--Indicator relative ${this.calculatePosition(
+                  index
+                )}`}
+                onClick={() => this.nextSlide(index)}>
                 <img
-                  src='/images/dot.svg'
+                  src={`/images/dot-${
+                    this.calculatePosition(index) === 'active'
+                      ? 'active'
+                      : 'inActive'
+                  }.svg`}
                   alt='Indicator'
                   className='GalleryHome--IndicatorDot'
                 />

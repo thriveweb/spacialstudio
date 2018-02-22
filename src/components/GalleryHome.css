@@ -64,7 +64,7 @@ body.fixed.animate .GalleryHome {
 
 .GalleryHome--Indicators {
   position: absolute;
-  bottom: 2rem;
+  top: 50%;
   right: 2rem;
   z-index: 5;
 }
