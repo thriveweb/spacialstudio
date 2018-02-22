@@ -45,8 +45,13 @@ accordion:
     linkTitle: Download
     title: Etiam ac quam eget lectus venenatis ullamcorper
 projectSectionTitle: Interior design
-featuredProject:
-  - projectList: project
+featuredProjects:
+  - projectList: This projects
+  - projectList: That project
 newsSectionTitle: News
-bookingTitle: Ask today for a free consulation
+featuredPosts:
+  - postList: Etiam ac quam eget lectus venenatis ullamcorper sit amet non arcu
+  - postList: A quam eget lectus venenatis ullamcorper sit amet non arcu
+  - postList: Post 1 Etiam ac quam eget lectus venenatis ullamcorper sit amet non arcu
 ---
+
