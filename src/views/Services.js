@@ -8,6 +8,7 @@ import Gallery from '../components/Gallery.js'
 import Accordion from '../components/Accordion.js'
 import ProjectSection from '../components/ProjectSection'
 import PostSection from '../components/PostSection'
+import ConsultationSection from '../components/ConsultationSection'
 import './Services.css'
 
 export default ({ page, projects, posts, ...props }) => (
@@ -71,15 +72,6 @@ export default ({ page, projects, posts, ...props }) => (
       </section>
     )}
 
-    {page.bookingTitle && (
-      <section className='section thin Services--Consultation'>
-        <div className='container'>
-          <h2>{page.bookingTitle}</h2>
-          <Link className='button' to='/contact/'>
-            book now
-          </Link>
-        </div>
-      </section>
-    )}
+    <ConsultationSection />
   </main>
 )

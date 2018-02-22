@@ -9,35 +9,3 @@
 .Services--description {
   padding: 0 4rem;
 }
-
-.Services--Consultation {
-  background: white;
-  padding: 12rem 0 !important;
-  position: relative;
-  overflow: hidden;
-}
-
-.Services--Consultation:before {
-  content: 'GET A QUOTE';
-  position: absolute;
-  bottom: -5rem;
-  font-size: calc(100vw / 6);
-  font-weight: bold;
-  line-height: 1;
-  color: var(--lightGrey);
-  opacity: 0.4;
-}
-
-.Services--Consultation .container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.Services--Consultation .container h2,
-.Services--Consultation .container a {
-  width: 200px;
-  margin: 0 2rem;
-  line-height: 1.2;
-}

@@ -12,6 +12,7 @@ import GalleryHome from '../components/GalleryHome'
 import ProjectSection from '../components/ProjectSection'
 import PostCard from '../components/PostCard'
 import TestimonialsSection from '../components/TestimonialsSection'
+import ConsultationSection from '../components/ConsultationSection'
 import './Home.css'
 
 const Home = ({ page, projects, posts }) => {
@@ -126,6 +127,8 @@ const Home = ({ page, projects, posts }) => {
           limit='6'
         />
       )}
+
+      <ConsultationSection />
     </main>
   )
 }
