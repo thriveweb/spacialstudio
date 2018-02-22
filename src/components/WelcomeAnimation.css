@@ -18,6 +18,17 @@ body.fixed {
   background: var(--primary);
 }
 
+body.animate .WelcomeAnimation .Spinner {
+  display: none;
+}
+
+body.fixed .WelcomeAnimation .Spinner {
+  position: absolute;
+  bottom: 50%;
+  right: 50%;
+  transform: translate(50%, 50%);
+}
+
 .WelcomeAnimation--Studio {
   display: block;
   height: 50px;
