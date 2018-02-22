@@ -57,7 +57,7 @@ body.fixed .WelcomeAnimation .Spinner {
 body.fixed.animate .WelcomeAnimation {
   top: 0;
   background: var(--primary);
-  animation: pulse 2s forwards;
+  animation: pulse 0.5s forwards;
 }
 
 .WelcomeAnimation--Studio {
@@ -68,7 +68,7 @@ body.fixed.animate .WelcomeAnimation {
   top: 50vh;
   left: 50%;
   transform: translate3d(6px, 0, 0);
-  animation: slideLeft 0.5s forwards;
+  animation: slideLeft 0.8s forwards;
 }
 
 .WelcomeAnimation--Spacial {
@@ -79,7 +79,7 @@ body.fixed.animate .WelcomeAnimation {
   top: 50vh;
   right: 50%;
   transform: translate3d(-6px, 0, 0);
-  animation: slideRight 0.5s forwards;
+  animation: slideRight 0.8s forwards;
 }
 
 body.animate .WelcomeAnimation--Spacial,
