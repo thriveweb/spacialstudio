@@ -239,6 +239,15 @@ collections: # A list of collections the CMS should be able to edit
     create: true # Allow users to create new documents in this collection
     fields:
       - {label: Title, name: title, widget: string}
+      - label: "Colour"
+        name: "color"
+        widget: "select"
+        options:
+          - { label: "Orange", value: "#a15734" }
+          - { label: "Blue", value: "#2a374d" }
+          - { label: "Black", value: "#453833" }
+          - { label: "Medium Grey", value: "#b5b4b5" }
+          - { label: "Light Grey", value: "#585858" }
       - label: "Gallery Images"
         name: "galleryImages"
         widget: "list"

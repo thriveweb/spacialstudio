@@ -10,11 +10,11 @@
   border-top: 1px solid var(--midGrey);
 }
 
-.Accordion--item h3 {
+.Accordion--item h2 {
   cursor: pointer;
 }
 
-.Accordion--item h3::after {
+.Accordion--item h2:after {
   content: '+';
   float: right;
   font-size: 4rem;
@@ -23,7 +23,7 @@
   font-weight: 300;
 }
 
-.Accordion--item.active h3::after {
+.Accordion--item.active h2:after {
   content: '-';
   float: right;
   font-size: 4rem;

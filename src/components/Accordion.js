@@ -28,7 +28,7 @@ export default class Accordion extends React.Component {
               className={`Accordion--item ${active ? 'active' : ''}`}
               key={`accordion-item-${item.title + index}`}
             >
-              <h3 onClick={() => this.handleClick(index)}>{item.title}</h3>
+              <h2 onClick={() => this.handleClick(index)}>{item.title}</h2>
               {active && (
                 <div className='description'>
                   {item.description} <br />
