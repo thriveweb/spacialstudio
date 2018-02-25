@@ -248,6 +248,7 @@ collections: # A list of collections the CMS should be able to edit
           - { label: "Black", value: "#453833" }
           - { label: "Medium Grey", value: "#b5b4b5" }
           - { label: "Light Grey", value: "#585858" }
+      - {label: Order, name: order, widget: number}
       - label: "Gallery Images"
         name: "galleryImages"
         widget: "list"
