@@ -1,6 +1,7 @@
 ---
 title: Interior design
 color: '#a15734'
+order: '1'
 galleryImages:
   - galleryimage: /images/uploads/bitmap.jpg
   - galleryimage: /images/uploads/bitmap.jpg
