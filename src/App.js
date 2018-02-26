@@ -20,6 +20,7 @@ import Contact from './views/Contact'
 import ClientArea from './views/ClientArea'
 import NoMatch from './views/NoMatch'
 import Nav from './components/Nav'
+import NavPopup from './components/NavPopup'
 import Footer from './components/Footer'
 import ServiceWorkerNotifications from './components/ServiceWorkerNotifications'
 import Spinner from './components/Spinner'
@@ -30,6 +31,7 @@ import data from './data.json'
 class App extends Component {
   state = {
     data,
+    navPopup: false,
     loading: false
   }
 
@@ -62,6 +64,9 @@ class App extends Component {
     this.state.data[collection].filter(page => page.name === name)[0]
 
   getDocuments = collection => this.state.data[collection]
+
+  handleNavPopupClose = () => this.setState({ navPopup: false })
+  handleNavPopupOpen = () => this.setState({ navPopup: true })
 
   render () {
     const globalSettings = this.getDocument('settings', 'global')
@@ -112,7 +117,15 @@ class App extends Component {
             }
             headerScripts={headerScripts}
           />
-          <Nav services={services} />
+          <Nav
+            services={services}
+            handleNavPopupOpen={this.handleNavPopupOpen}
+          />
+          <NavPopup
+            services={services}
+            active={this.state.navPopup}
+            handleClose={this.handleNavPopupClose}
+          />
           <Switch>
             <Route
               path='/'

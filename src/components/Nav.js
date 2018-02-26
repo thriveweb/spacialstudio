@@ -31,6 +31,7 @@ class Nav extends React.Component {
   render () {
     const isHome = this.props.location.pathname === '/'
     const services = this.props.services
+    const handleNavPopupOpen = this.props.handleNavPopupOpen
     return (
       <nav
         className={`Nav ${isHome ? 'isHome' : ''}`}
@@ -77,6 +78,13 @@ class Nav extends React.Component {
               </NavLink>
             </div>
           </div>
+          <button
+            className='Nav--MenuButton'
+            onClick={handleNavPopupOpen}
+            aria-label='Menu Button'
+          >
+            <MenuSVG />
+          </button>
         </div>
       </nav>
     )
@@ -84,3 +92,16 @@ class Nav extends React.Component {
 }
 
 export default withRouter(Nav)
+
+const MenuSVG = () => (
+  <svg
+    width='35'
+    height='25'
+    viewBox='0 0 35 25'
+    xmlns='http://www.w3.org/2000/svg'
+  >
+    <g strokeWidth='3' fill='none' fillRule='evenodd'>
+      <path d='M0 2h35M0 13h26M0 23h35' />
+    </g>
+  </svg>
+)
