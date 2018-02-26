@@ -11,7 +11,6 @@ import AOS from './components/AOS'
 import Meta from './components/Meta'
 import Home from './views/Home'
 import About from './views/About'
-import Services from './views/Services'
 import SingleService from './views/SingleService'
 import Project from './views/Project'
 import SingleProject from './views/SingleProject'
@@ -139,20 +138,6 @@ class App extends Component {
                     page={this.getDocument('pages', 'about')}
                     staff={staff}
                     services={services}
-                    {...props}
-                  />
-                </RouteWithFooter>
-              )}
-            />
-            <Route
-              path='/services/'
-              exact
-              render={props => (
-                <RouteWithFooter>
-                  <Services
-                    page={this.getDocument('pages', 'services')}
-                    projects={projects}
-                    posts={posts}
                     {...props}
                   />
                 </RouteWithFooter>

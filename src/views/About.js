@@ -11,7 +11,7 @@ import StaffMemberCard from '../components/StaffMemberCard'
 import './About.css'
 
 export default ({ page, staff, services }) => (
-  <main className='About' data-aos='flip-down'>
+  <main className='About' data-aos='fade-up'>
     <Helmet>
       <title>{page.title}</title>
     </Helmet>

@@ -1,5 +1,6 @@
 import React from 'react'
 import _sortBy from 'lodash/sortBy'
+import _truncate from 'lodash/truncate'
 
 import './ServicePodSection.css'
 
@@ -21,7 +22,7 @@ const ServicePodSection = ({ title, services, ...props }) => {
               )}
               <div className='ServicePod--Info' data-aos='fade-left'>
                 {servicePod.title && (
-                  <h4 className='Service--Title Coloured'>
+                  <h3 className='Service--Title Coloured'>
                     <div
                       className='Coloured--Dot--small'
                       style={{
@@ -29,10 +30,14 @@ const ServicePodSection = ({ title, services, ...props }) => {
                       }}
                     />
                     {servicePod.title}
-                  </h4>
+                  </h3>
                 )}
                 {servicePod.galleryDescription && (
-                  <p>{servicePod.galleryDescription}</p>
+                  <div className='ServicePod--Description'>
+                    {_truncate(servicePod.galleryDescription, {
+                      length: 111
+                    })}
+                  </div>
                 )}
               </div>
             </div>

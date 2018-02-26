@@ -15,7 +15,7 @@ import TestimonialsSection from '../components/TestimonialsSection'
 import ConsultationSection from '../components/ConsultationSection'
 import './Home.css'
 
-const Home = ({ page, projects, posts }) => {
+const Home = ({ page, projects, posts, services }) => {
   const visiblePosts = _sortBy(posts, ['date'])
     .reverse()
     .slice(0, 2)
@@ -47,8 +47,8 @@ const Home = ({ page, projects, posts }) => {
         </section>
       )}
 
-      {page.service && (
-        <ServicePodSection title={page.servicesTitle} services={page.service} />
+      {services && (
+        <ServicePodSection title={page.servicesTitle} services={services} />
       )}
 
       {page.aboutSectionTitle && (
@@ -88,7 +88,7 @@ const Home = ({ page, projects, posts }) => {
               <div className='HomeNews--Content'>
                 <Content source={page.aboutContent} />
               </div>
-              <Link to={`/about/`} className='button'>
+              <Link to={`/blog/`} className='button'>
                 {page.aboutLinkText}
               </Link>
             </div>
