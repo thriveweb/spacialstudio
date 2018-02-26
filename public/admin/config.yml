@@ -77,51 +77,51 @@ collections: # A list of collections the CMS should be able to edit
         name: "project-page"
         fields:
           - {label: Title, name: title, widget: string}
-      - file: "content/pages/services.md"
-        label: "Services Page"
-        name: "services-page"
-        fields:
-          - {label: Title, name: title, widget: string}
-          - label: "Gallery Images"
-            name: "galleryImages"
-            widget: "list"
-            fields:
-              - {label: Image, name: galleryimage, widget: image}
-          - {label: Gallery Title, name: galleryTitle, widget: string}
-          - {label: Gallery Description, name: galleryDescription, widget: markdown}
-          - {label: Three Column Section Title, name: threeColumnSectionTitle, widget: string}
-          - {label: Three Column Section, name: threeColumnSection, widget: markdown}
-          - label: "Accordion"
-            name: "accordion"
-            widget: "list"
-            fields:
-              - {label: Title, name: title, widget: string}
-              - {label: Description, name: description, widget: markdown}
-              - {label: Link Title, name: linkTitle, widget: string}
-              - {label: Link, name: link, widget: file}
-          - {label: Project Section Title, name: projectSectionTitle, widget: string}
-          # - label: "Featured Projects"
-          #   name: "featuredProject"
-          #   widget: "list"
-          #   fields:
-          #     - label: "Project List"
-          #       name: "projectList"
-          #       widget: "relation"
-          #       collection: "projects"
-          #       searchFields: ["name"]
-          #       valueField: "name"
-          - {label: News Section Title, name: newsSectionTitle, widget: string}
-            # - label: "Featured Projects"
-            #   name: "featuredProject"
-            #   widget: "list"
-            #   fields:
-            #     - label: "Project List"
-            #       name: "projectList"
-            #       widget: "relation"
-            #       collection: "projects"
-            #       searchFields: ["name"]
-            #       valueField: "name"
-          - {label:  Booking Title, name: bookingTitle, widget: string}
+      # - file: "content/pages/services.md"
+      #   label: "Services Page"
+      #   name: "services-page"
+      #   fields:
+      #     - {label: Title, name: title, widget: string}
+      #     - label: "Gallery Images"
+      #       name: "galleryImages"
+      #       widget: "list"
+      #       fields:
+      #         - {label: Image, name: galleryimage, widget: image}
+      #     - {label: Gallery Title, name: galleryTitle, widget: string}
+      #     - {label: Gallery Description, name: galleryDescription, widget: markdown}
+      #     - {label: Three Column Section Title, name: threeColumnSectionTitle, widget: string}
+      #     - {label: Three Column Section, name: threeColumnSection, widget: markdown}
+      #     - label: "Accordion"
+      #       name: "accordion"
+      #       widget: "list"
+      #       fields:
+      #         - {label: Title, name: title, widget: string}
+      #         - {label: Description, name: description, widget: markdown}
+      #         - {label: Link Title, name: linkTitle, widget: string}
+      #         - {label: Link, name: link, widget: file}
+      #     - {label: Project Section Title, name: projectSectionTitle, widget: string}
+      #     # - label: "Featured Projects"
+      #     #   name: "featuredProject"
+      #     #   widget: "list"
+      #     #   fields:
+      #     #     - label: "Project List"
+      #     #       name: "projectList"
+      #     #       widget: "relation"
+      #     #       collection: "projects"
+      #     #       searchFields: ["name"]
+      #     #       valueField: "name"
+      #     - {label: News Section Title, name: newsSectionTitle, widget: string}
+      #       # - label: "Featured Projects"
+      #       #   name: "featuredProject"
+      #       #   widget: "list"
+      #       #   fields:
+      #       #     - label: "Project List"
+      #       #       name: "projectList"
+      #       #       widget: "relation"
+      #       #       collection: "projects"
+      #       #       searchFields: ["name"]
+      #       #       valueField: "name"
+      #     - {label:  Booking Title, name: bookingTitle, widget: string}
       - file: "content/pages/about.md"
         label: "About Page"
         name: "about-page"
