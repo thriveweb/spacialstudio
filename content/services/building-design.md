@@ -1,5 +1,8 @@
 ---
-title: Building Design 
+title: Building Design
+icon: /images/uploads/Building design.svg
+color: '#453833'
+order: '3'
 galleryImages:
   - galleryimage: /images/uploads/bitmap.jpg
   - galleryimage: /images/uploads/bitmap.jpg
@@ -44,7 +47,7 @@ accordion:
     link: /images/uploads/sample.pdf
     linkTitle: Download
     title: Etiam ac quam eget lectus venenatis ullamcorper
-projectSectionTitle: Building Design 
+projectSectionTitle: Building Design
 featuredProjects:
   - projectList: This projects
   - projectList: That project
@@ -54,3 +57,4 @@ featuredPosts:
   - postList: A quam eget lectus venenatis ullamcorper sit amet non arcu
   - postList: Post 1 Etiam ac quam eget lectus venenatis ullamcorper sit amet non arcu
 ---
+
