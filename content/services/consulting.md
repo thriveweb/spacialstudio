@@ -1,5 +1,8 @@
 ---
 title: Consulting
+icon: /images/uploads/Consulting.svg
+color: '#585858'
+order: '5'
 galleryImages:
   - galleryimage: /images/uploads/bitmap.jpg
   - galleryimage: /images/uploads/bitmap.jpg
@@ -54,3 +57,4 @@ featuredPosts:
   - postList: A quam eget lectus venenatis ullamcorper sit amet non arcu
   - postList: Post 1 Etiam ac quam eget lectus venenatis ullamcorper sit amet non arcu
 ---
+
