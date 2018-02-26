@@ -1,5 +1,6 @@
 ---
 title: Interior design
+icon: /images/uploads/Interior design.svg
 color: '#a15734'
 order: '1'
 galleryImages:
