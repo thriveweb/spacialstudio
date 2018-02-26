@@ -54,5 +54,7 @@ featuredProjects:
 newsSectionTitle: News
 featuredPosts:
   - postList: Etiam ac quam eget lectus venenatis ullamcorper sit amet non arcu
+  - postList: Etiam ac quam eget lectus venenatis ullamcorper sit amet non arcu
+  - postList: Post 1 Etiam ac quam eget lectus venenatis ullamcorper sit amet non arcu
 ---
 
