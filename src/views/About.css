@@ -1,8 +1,15 @@
 .About {
 }
 
+.welcome--image {
+  width: 55%;
+  height: 550px;
+  position: relative;
+}
+
 .welcome--info {
   padding: 4rem;
+  width: 45%;
 }
 
 .welcome--info blockquote {
@@ -13,6 +20,28 @@
 }
 .welcome--info blockquote p {
   margin: 0 0 1.5rem 0;
+}
+
+@media screen and (max-width: 1000px) {
+  .welcome--info blockquote {
+    font-size: 2.8rem;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .welcome--image {
+    width: 100%;
+    height: 350px;
+    position: relative;
+  }
+  .welcome--info {
+    padding: 4rem;
+    width: 100%;
+  }
+
+  .welcome--info blockquote {
+    font-size: 2rem;
+  }
 }
 
 .welcome--content {

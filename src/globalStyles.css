@@ -16,6 +16,9 @@
     'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   --borderRadius: 3px;
+  --desktop: 1000px;
+  --tablet: 750px;
+  --mobile: 500px;
 }
 
 html {
@@ -35,6 +38,14 @@ body {
   font-weight: 300;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
+}
+
+@media screen and (max-width: 1000px) {
+  body {
+    font-size: 1.4em;
+    font-weight: 300;
+    line-height: 1.4;
+  }
 }
 
 *,
@@ -73,6 +84,11 @@ h1 {
 }
 h2.large {
   font-size: 4rem;
+}
+@media screen and (max-width: 1000px) {
+  h2.large {
+    font-size: 2.5rem;
+  }
 }
 
 a {
@@ -169,6 +185,26 @@ pre code:after {
 .section.noPadding {
   padding: 0;
 }
+@media screen and (max-width: 1000px) {
+  .section {
+    padding: 5rem 0;
+  }
+  .section.thick {
+    padding: 5rem 0;
+  }
+  .section.thin {
+    padding: 1.5rem 0;
+  }
+}
+@media screen and (max-width: 750px) {
+  .section,
+  .section.thick {
+    padding: 2.5rem 0;
+  }
+  .section.thin {
+    padding: 1rem 0;
+  }
+}
 
 .container {
   max-width: 1111px;
@@ -196,6 +232,17 @@ pre code:after {
   column-gap: 2rem;
 }
 
+@media screen and (max-width: 750px) {
+  .twoColumn {
+    column-count: 1;
+    column-gap: 0;
+  }
+  .threeColumn {
+    column-count: 1;
+    column-gap: 0;
+  }
+}
+
 /* Flex */
 
 .Flex {
@@ -204,6 +251,16 @@ pre code:after {
   justify-content: flex-start;
   align-items: center;
 }
+
+@media screen and (max-width: 750px) {
+  .Flex {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}
+
 .Flex.column {
   flex-direction: column;
 }
@@ -221,6 +278,11 @@ pre code:after {
 }
 .Flex.alignStart {
   align-items: flex-start;
+}
+@media screen and (max-width: 750px) {
+  .Flex.alignStart {
+    align-items: center;
+  }
 }
 .Flex.alignEnd {
   align-items: flex-end;

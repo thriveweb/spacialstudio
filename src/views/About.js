@@ -3,7 +3,7 @@ import Helmet from 'react-helmet'
 import _sortBy from 'lodash/sortBy'
 
 import PageHeader from '../components/PageHeader'
-import LazyImage from '../components/LazyImage'
+import BackgroundImage from '../components/BackgroundImage'
 import Content from '../components/Content.js'
 import ServicePodSection from '../components/ServicePodSection'
 import StaffMemberCard from '../components/StaffMemberCard'
@@ -18,7 +18,9 @@ export default ({ page, staff, services }) => (
     <PageHeader title={page.title} />
     <section className='section thin welcome'>
       <div className='container Flex alignCenter justifyBettwen'>
-        <LazyImage src={page.featuredImage} alt='LazyImage' lazy />
+        <div className='welcome--image'>
+          <BackgroundImage src={page.featuredImage} lazy />
+        </div>
         <div className='welcome--info'>
           <blockquote>
             <Content source={page.welcomeQuote} />

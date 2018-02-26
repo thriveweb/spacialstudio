@@ -11,7 +11,6 @@
   background: var(--primary);
   padding: 2rem;
   font-size: 3rem;
-
   transition: all 0.5s ease;
   opacity: 0;
   overflow: hidden;
@@ -30,8 +29,8 @@
 }
 
 @media screen and (max-width: 1000px) {
-  .nav_container {
-    display: none;
+  .mainNav {
+    display: none !important;
   }
   /* .NavPopup.active {
     display: flex;
@@ -51,15 +50,6 @@
     display: block;
     width: 100%;
   }
-}
-
-.NavPopup .NavLink {
-  color: white;
-  text-decoration: none;
-}
-.NavPopup .NavLink:hover,
-.NavPopup .NavLink:focus {
-  color: var(--tertiary);
 }
 
 .NavPopup .NavLink + .NavLink:before {
@@ -92,16 +82,6 @@
   outline: none;
 }
 
-.NavPopup--CloseButton:hover svg g,
-.NavPopup--CloseButton:focus svg g {
-  stroke: var(--orange);
-}
-
-.Nav--MenuButton:hover svg g,
-.Nav--MenuButton:focus svg g {
-  stroke: var(--orange);
-}
-
 .NavPopup--IconLink {
   color: white;
   display: flex;
@@ -109,12 +89,6 @@
   text-decoration: none;
   margin: 3rem 0;
 }
-
-.NavPopup--IconLink:hover,
-.NavPopup--IconLink:focus {
-  color: var(--orange);
-}
-
 .NavPopup--IconLink--Icon {
   max-height: 3rem;
   max-width: 3rem;

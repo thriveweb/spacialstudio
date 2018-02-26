@@ -25,3 +25,10 @@
 .ServicePod--Description {
   padding-left: 4rem;
 }
+
+@media screen and (max-width: 1000px) {
+  .ServicePod {
+    width: 75%;
+    margin: 2rem 0;
+  }
+}

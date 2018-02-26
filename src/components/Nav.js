@@ -39,12 +39,12 @@ class Nav extends React.Component {
           this.element = element
         }}
       >
-        <div className='container'>
+        <div className='container Nav--OuterWrap'>
           <div className='Flex alignCenter justifyBetween relative'>
             <Link style={{ color: 'currentColor' }} to='/'>
               <Logo />
             </Link>
-            <div className='nav Flex alignCenter justifyStart'>
+            <div className='nav Flex alignCenter justifyStart mainNav'>
               <NavLink to='/about/' exact>
                 About
               </NavLink>
@@ -79,7 +79,7 @@ class Nav extends React.Component {
             </div>
           </div>
           <button
-            className='Nav--MenuButton'
+            className='Nav--MenuButton NavLink'
             onClick={handleNavPopupOpen}
             aria-label='Menu Button'
           >
@@ -100,7 +100,7 @@ const MenuSVG = () => (
     viewBox='0 0 35 25'
     xmlns='http://www.w3.org/2000/svg'
   >
-    <g strokeWidth='3' fill='none' fillRule='evenodd'>
+    <g stroke='currentColor' strokeWidth='3' fill='none' fillRule='evenodd'>
       <path d='M0 2h35M0 13h26M0 23h35' />
     </g>
   </svg>
