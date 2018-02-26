@@ -1,7 +1,6 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 
-import PageHeader from '../components/PageHeader'
 import Content from '../components/Content.js'
 import Gallery from '../components/Gallery.js'
 import Accordion from '../components/Accordion.js'
@@ -31,7 +30,20 @@ const SingleService = ({ singleService, projects, posts, ...props }) => {
         <title>{singleService.title}</title>
       </Helmet>
 
-      <PageHeader title={singleService.title} />
+      <div className='section PageHeader thick relative'>
+        <div className='container relative'>
+          <h1 className='PageHeader--Title Coloured'>
+            <div
+              className='Coloured--Dot'
+              style={{
+                background: `${singleService.color}`
+              }}
+            />
+            {singleService.title}
+          </h1>
+        </div>
+      </div>
+
       {singleService.galleryDescription && (
         <section className='section thin Services--gallery'>
           <div className='container larger'>

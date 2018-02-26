@@ -20,7 +20,15 @@ const ServicePodSection = ({ title, services, ...props }) => {
               )}
               <div className='servicePod--Info' data-aos='fade-left'>
                 {servicePod.title && (
-                  <h4 className='ServicePod--Title'>{servicePod.title}</h4>
+                  <h4 className='Service--Title Coloured'>
+                    <div
+                      className='Coloured--Dot--small'
+                      style={{
+                        background: `${servicePod.color}`
+                      }}
+                    />
+                    {servicePod.title}
+                  </h4>
                 )}
                 {servicePod.description && <p>{servicePod.description}</p>}
               </div>

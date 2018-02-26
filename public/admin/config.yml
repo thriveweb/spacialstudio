@@ -139,6 +139,15 @@ collections: # A list of collections the CMS should be able to edit
             fields:
               - { label: Title, name: title, widget: string}
               - { label: Icon, name: icon, widget: image}
+              - label: "Colour"
+                name: "color"
+                widget: "select"
+                options:
+                  - { label: "Orange", value: "#a15734" }
+                  - { label: "Blue", value: "#2a374d" }
+                  - { label: "Black", value: "#453833" }
+                  - { label: "Medium Grey", value: "#b5b4b5" }
+                  - { label: "Light Grey", value: "#585858" }
               - { label: Description, name: description, widget: text}
       - file: "content/pages/home.md"
         label: "Home Page"
@@ -156,6 +165,15 @@ collections: # A list of collections the CMS should be able to edit
             fields:
               - { label: Title, name: title, widget: string}
               - { label: Icon, name: icon, widget: image}
+              - label: "Colour"
+                name: "color"
+                widget: "select"
+                options:
+                  - { label: "Orange", value: "#a15734" }
+                  - { label: "Blue", value: "#2a374d" }
+                  - { label: "Black", value: "#453833" }
+                  - { label: "Medium Grey", value: "#b5b4b5" }
+                  - { label: "Light Grey", value: "#585858" }
               - { label: Description, name: description, widget: text}
           - {label: About Image, name: aboutImage, widget: image}
           - {label: About Section Title, name: aboutSectionTitle, widget: string}
