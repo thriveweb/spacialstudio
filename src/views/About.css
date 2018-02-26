@@ -18,20 +18,3 @@
 .welcome--content {
   padding: 0 0 0 4rem;
 }
-
-.servicePod {
-  width: calc(33.33% - 2rem);
-  margin: 2rem 1rem;
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-}
-.servicePod--Icon {
-  margin-right: 4rem;
-}
-.servicePod--Info {
-  padding: 4rem 0 0 0;
-}
-.ServicePod--Title {
-  font-size: 2.5rem;
-}

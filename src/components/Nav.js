@@ -1,5 +1,7 @@
 import React from 'react'
 import { Link, withRouter } from 'react-router-dom'
+import _sortBy from 'lodash/sortBy'
+import _kebabCase from 'lodash/kebabCase'
 
 import Logo from './Logo'
 import NavLink from './NavLink'
@@ -28,15 +30,14 @@ class Nav extends React.Component {
 
   render () {
     const isHome = this.props.location.pathname === '/'
-    if (isHome) {
-      // addBodyClass()
-    }
+    const services = this.props.services
     return (
       <nav
         className={`Nav ${isHome ? 'isHome' : ''}`}
         ref={element => {
           this.element = element
-        }}>
+        }}
+      >
         <div className='container'>
           <div className='Flex alignCenter justifyBetween relative'>
             <Link style={{ color: 'currentColor' }} to='/'>
@@ -50,21 +51,15 @@ class Nav extends React.Component {
                 <div className='NavLink NavLink--Parent'>
                   Services <div className='hover'>•</div>
                   <div className='NavLink--Children'>
-                    <NavLink to='/services/interior-design/' exact>
-                      Interior design
-                    </NavLink>
-                    <NavLink to='/services/construction/' exact>
-                      Construction
-                    </NavLink>
-                    <NavLink to='/services/building-design/' exact>
-                      Building Design
-                    </NavLink>
-                    <NavLink to='/services/property/' exact>
-                      Property
-                    </NavLink>
-                    <NavLink to='/services/consulting/' exact>
-                      Consulting
-                    </NavLink>
+                    {_sortBy(services, ['order']).map(servicePod => (
+                      <NavLink
+                        key={_kebabCase(servicePod.title)}
+                        to={`/services/${_kebabCase(servicePod.title)}/`}
+                        exact
+                      >
+                        {servicePod.title}
+                      </NavLink>
+                    ))}
                   </div>
                 </div>
               </div>

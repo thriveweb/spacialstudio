@@ -113,7 +113,7 @@ class App extends Component {
             }
             headerScripts={headerScripts}
           />
-          <Nav />
+          <Nav services={services} />
           <Switch>
             <Route
               path='/'

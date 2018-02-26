@@ -1,6 +1,23 @@
 .ServicePodSection .Service--Title {
   font-size: 2rem;
 }
-.servicePod--Info p {
-  padding: 0 0 0 4rem;
+
+.ServicePod {
+  width: calc(33.33% - 2rem);
+  margin: 2rem 1rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.ServicePod--Icon {
+  margin-right: 2rem;
+  max-width: 70px;
+  max-height: 70px;
+}
+.ServicePod--Info {
+  padding: 4rem 0 0 0;
+}
+
+.ServicePod--Title {
+  font-size: 2.5rem;
 }
