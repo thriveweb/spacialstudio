@@ -1,5 +1,8 @@
 ---
 title: Property
+icon: /images/uploads/Property.svg
+color: '#b5b4b5'
+order: '4'
 galleryImages:
   - galleryimage: /images/uploads/bitmap.jpg
   - galleryimage: /images/uploads/bitmap.jpg
@@ -54,3 +57,4 @@ featuredPosts:
   - postList: A quam eget lectus venenatis ullamcorper sit amet non arcu
   - postList: Post 1 Etiam ac quam eget lectus venenatis ullamcorper sit amet non arcu
 ---
+
