@@ -47,31 +47,36 @@ historySection: >-
   risus ut, imperdiet eros.
 servicesTitle: Our Services
 service:
-  - description: >-
+  - color: '#a15734'
+    description: >-
       Nullam interdum arcu vitae augue pulvinar sodales. Sed non dui diam.
       Quisque lectus est, lobortis ac efficitur vitae, posuere a mauris.
       Phasellus ac dui pellentesque, lacinia risus ut, imperdiet eros.
     icon: /images/uploads/Interior design.svg
     title: Interior design
-  - description: >-
+  - color: '#2a374d'
+    description: >-
       Nullam interdum arcu vitae augue pulvinar sodales. Sed non dui diam.
       Quisque lectus est, lobortis ac efficitur vitae, posuere a mauris.
       Phasellus ac dui pellentesque, lacinia risus ut, imperdiet eros.
     icon: /images/uploads/Construction.svg
     title: Construction
-  - description: >-
+  - color: '#453833'
+    description: >-
       Nullam interdum arcu vitae augue pulvinar sodales. Sed non dui diam.
       Quisque lectus est, lobortis ac efficitur vitae, posuere a mauris.
       Phasellus ac dui pellentesque, lacinia risus ut, imperdiet eros.
     icon: /images/uploads/Building design.svg
     title: Building Design
-  - description: >-
+  - color: '#b5b4b5'
+    description: >-
       Nullam interdum arcu vitae augue pulvinar sodales. Sed non dui diam.
       Quisque lectus est, lobortis ac efficitur vitae, posuere a mauris.
       Phasellus ac dui pellentesque, lacinia risus ut, imperdiet eros.
     icon: /images/uploads/Property.svg
     title: Property
-  - description: >-
+  - color: '#585858'
+    description: >-
       Nullam interdum arcu vitae augue pulvinar sodales. Sed non dui diam.
       Quisque lectus est, lobortis ac efficitur vitae, posuere a mauris.
       Phasellus ac dui pellentesque, lacinia risus ut, imperdiet eros.
