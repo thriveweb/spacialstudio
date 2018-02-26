@@ -1,2 +1,6 @@
-.ServicePodSection {
+.ServicePodSection .Service--Title {
+  font-size: 2rem;
+}
+.servicePod--Info p {
+  padding: 0 0 0 4rem;
 }

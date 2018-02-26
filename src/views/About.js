@@ -10,7 +10,7 @@ import StaffMemberCard from '../components/StaffMemberCard'
 
 import './About.css'
 
-export default ({ page, staff }) => (
+export default ({ page, staff, services }) => (
   <main className='About' data-aos='flip-down'>
     <Helmet>
       <title>{page.title}</title>
@@ -37,8 +37,8 @@ export default ({ page, staff }) => (
         </div>
       </section>
     )}
-    {page.service && (
-      <ServicePodSection title={page.servicesTitle} services={page.service} />
+    {services && (
+      <ServicePodSection title={page.servicesTitle} services={services} />
     )}
     {staff && (
       <section className='section thin StaffSection' data-aos='fade-up'>

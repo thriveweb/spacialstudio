@@ -30,7 +30,9 @@ const ServicePodSection = ({ title, services, ...props }) => {
                     {servicePod.title}
                   </h4>
                 )}
-                {servicePod.description && <p>{servicePod.description}</p>}
+                {servicePod.galleryDescription && (
+                  <p>{servicePod.galleryDescription}</p>
+                )}
               </div>
             </div>
           ))}

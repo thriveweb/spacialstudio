@@ -77,51 +77,6 @@ collections: # A list of collections the CMS should be able to edit
         name: "project-page"
         fields:
           - {label: Title, name: title, widget: string}
-      # - file: "content/pages/services.md"
-      #   label: "Services Page"
-      #   name: "services-page"
-      #   fields:
-      #     - {label: Title, name: title, widget: string}
-      #     - label: "Gallery Images"
-      #       name: "galleryImages"
-      #       widget: "list"
-      #       fields:
-      #         - {label: Image, name: galleryimage, widget: image}
-      #     - {label: Gallery Title, name: galleryTitle, widget: string}
-      #     - {label: Gallery Description, name: galleryDescription, widget: markdown}
-      #     - {label: Three Column Section Title, name: threeColumnSectionTitle, widget: string}
-      #     - {label: Three Column Section, name: threeColumnSection, widget: markdown}
-      #     - label: "Accordion"
-      #       name: "accordion"
-      #       widget: "list"
-      #       fields:
-      #         - {label: Title, name: title, widget: string}
-      #         - {label: Description, name: description, widget: markdown}
-      #         - {label: Link Title, name: linkTitle, widget: string}
-      #         - {label: Link, name: link, widget: file}
-      #     - {label: Project Section Title, name: projectSectionTitle, widget: string}
-      #     # - label: "Featured Projects"
-      #     #   name: "featuredProject"
-      #     #   widget: "list"
-      #     #   fields:
-      #     #     - label: "Project List"
-      #     #       name: "projectList"
-      #     #       widget: "relation"
-      #     #       collection: "projects"
-      #     #       searchFields: ["name"]
-      #     #       valueField: "name"
-      #     - {label: News Section Title, name: newsSectionTitle, widget: string}
-      #       # - label: "Featured Projects"
-      #       #   name: "featuredProject"
-      #       #   widget: "list"
-      #       #   fields:
-      #       #     - label: "Project List"
-      #       #       name: "projectList"
-      #       #       widget: "relation"
-      #       #       collection: "projects"
-      #       #       searchFields: ["name"]
-      #       #       valueField: "name"
-      #     - {label:  Booking Title, name: bookingTitle, widget: string}
       - file: "content/pages/about.md"
         label: "About Page"
         name: "about-page"
@@ -133,22 +88,6 @@ collections: # A list of collections the CMS should be able to edit
           - {label: History Title, name: historyTitle, widget: string}
           - {label: History Section, name: historySection, widget: markdown}
           - {label: Services Title, name: servicesTitle, widget: string}
-          - label: Service
-            name: service
-            widget: list
-            fields:
-              - { label: Title, name: title, widget: string}
-              - { label: Icon, name: icon, widget: image}
-              - label: "Colour"
-                name: "color"
-                widget: "select"
-                options:
-                  - { label: "Orange", value: "#a15734" }
-                  - { label: "Blue", value: "#2a374d" }
-                  - { label: "Black", value: "#453833" }
-                  - { label: "Medium Grey", value: "#b5b4b5" }
-                  - { label: "Light Grey", value: "#585858" }
-              - { label: Description, name: description, widget: text}
       - file: "content/pages/home.md"
         label: "Home Page"
         name: "home-page"
@@ -159,22 +98,6 @@ collections: # A list of collections the CMS should be able to edit
             fields:
               - {label: Image, name: galleryimage, widget: image}
           - {label: Title, name: title, widget: string}
-          - label: Service
-            name: service
-            widget: list
-            fields:
-              - { label: Title, name: title, widget: string}
-              - { label: Icon, name: icon, widget: image}
-              - label: "Colour"
-                name: "color"
-                widget: "select"
-                options:
-                  - { label: "Orange", value: "#a15734" }
-                  - { label: "Blue", value: "#2a374d" }
-                  - { label: "Black", value: "#453833" }
-                  - { label: "Medium Grey", value: "#b5b4b5" }
-                  - { label: "Light Grey", value: "#585858" }
-              - { label: Description, name: description, widget: text}
           - {label: About Image, name: aboutImage, widget: image}
           - {label: About Section Title, name: aboutSectionTitle, widget: string}
           - {label: About Content, name: aboutContent, widget: markdown}
@@ -257,6 +180,7 @@ collections: # A list of collections the CMS should be able to edit
     create: true # Allow users to create new documents in this collection
     fields:
       - {label: Title, name: title, widget: string}
+      - { label: Icon, name: icon, widget: image}
       - label: "Colour"
         name: "color"
         widget: "select"

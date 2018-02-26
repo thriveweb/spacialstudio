@@ -124,6 +124,7 @@ class App extends Component {
                     page={this.getDocument('pages', 'home')}
                     projects={projects}
                     posts={posts}
+                    services={services}
                     {...props}
                   />
                 </RouteWithFooter>
@@ -137,6 +138,7 @@ class App extends Component {
                   <About
                     page={this.getDocument('pages', 'about')}
                     staff={staff}
+                    services={services}
                     {...props}
                   />
                 </RouteWithFooter>

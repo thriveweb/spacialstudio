@@ -15,12 +15,10 @@
 
 .Coloured--Dot--small {
   border-radius: 50%;
-  position: absolute;
-  top: -1rem;
-  left: -4rem;
   width: 1rem;
   height: 1rem;
-  z-index: -1;
+  display: inline-block;
+  margin-right: 1rem;
 }
 
 .Services--gallery .Gallery {
