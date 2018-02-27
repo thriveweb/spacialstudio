@@ -6,16 +6,16 @@ categories:
   - category: Design
   - category: Architecture
   - category: Consulting
-postFeaturedImage: /images/uploads/unsplash.jpg
+postFeaturedImage: /images/uploads/unsplash7.jpg
 excerpt: >-
   Etiam ac quam eget lectus venenatis ullamcorper sit amet non arcu. Nullam
   interdum arcu vitae augue pulvinar sodales. Sed non dui diam. Quisque lectus
   est, lobortis ac efficitur vitae, posuere a mauris. Phasellus ac dui
   pellentesque, lacinia risus ut, imperdiet eros.
 galleryImages:
+  - galleryimage: /images/uploads/unsplash3.jpg
   - galleryimage: /images/uploads/unsplash4.jpg
-  - galleryimage: /images/uploads/unsplash.jpg
-  - galleryimage: /images/uploads/unsplash7.jpg
+  - galleryimage: /images/uploads/unsplash5.jpg
 ---
 
 # An h1 header

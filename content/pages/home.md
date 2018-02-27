@@ -1,11 +1,11 @@
 ---
 welcomeGalleryImages:
-  - galleryimage: /images/uploads/unsplash7.jpg
-  - galleryimage: /images/uploads/willie-fineberg-57667.jpg
+  - galleryimage: /images/uploads/unsplash.jpg
+  - galleryimage: /images/uploads/unsplash2.jpg
   - galleryimage: /images/uploads/unsplash3.jpg
   - galleryimage: /images/uploads/unsplash7.jpg
-  - galleryimage: /images/uploads/unsplash3.jpg
   - galleryimage: /images/uploads/unsplash5.jpg
+  - galleryimage: /images/uploads/unsplash6.jpg
 title: >-
   We are Spacial Studio. A desing studio that puts the passion in creating new
   and unique spaces
@@ -65,4 +65,3 @@ newsLinkText: See more
 projectSectionTitle: A unique style and approach
 testimonialSectionTitle: What our clients say about us
 ---
-

@@ -8,7 +8,7 @@ categories:
   - category: Technology
   - category: Design Interiors
 date: 2018-12-14T03:52:13.021Z
-postFeaturedImage: /images/uploads/unsplash.jpg
+postFeaturedImage: /images/uploads/unsplash3.jpg
 excerpt: >-
   Etiam ac quam eget lectus venenatis ullamcorper sit amet non arcu. Nullam
   interdum arcu vitae augue pulvinar sodales. Sed non dui diam. Quisque lectus
@@ -16,8 +16,8 @@ excerpt: >-
   pellentesque, lacinia risus ut, imperdiet eros.
 galleryImages:
   - galleryimage: /images/uploads/unsplash4.jpg
-  - galleryimage: /images/uploads/unsplash.jpg
-  - galleryimage: /images/uploads/unsplash7.jpg
+  - galleryimage: /images/uploads/unsplash5.jpg
+  - galleryimage: /images/uploads/unsplash6.jpg
 ---
 
 # An h1 header

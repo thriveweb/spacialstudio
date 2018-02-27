@@ -14,9 +14,9 @@ excerpt: >-
   est, lobortis ac efficitur vitae, posuere a mauris. Phasellus ac dui
   pellentesque, lacinia risus ut, imperdiet eros.
 galleryImages:
+  - galleryimage: /images/uploads/unsplash2.jpg
+  - galleryimage: /images/uploads/unsplash3.jpg
   - galleryimage: /images/uploads/unsplash4.jpg
-  - galleryimage: /images/uploads/unsplash.jpg
-  - galleryimage: /images/uploads/unsplash7.jpg
 ---
 
 # An h1 header
