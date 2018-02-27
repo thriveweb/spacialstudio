@@ -1,5 +1,6 @@
 ---
 title: Client Area
+message: 'Go to Settings to change/update the password.'
 contentSection: >-
   Etiam ac quam eget lectus venenatis ullamcorper sit amet non arcu. Nullam
   interdum arcu vitae augue pulvinar sodales. Sed non dui diam. Quisque lectus

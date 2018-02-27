@@ -52,6 +52,7 @@ collections: # A list of collections the CMS should be able to edit
         name: "clientArea-page"
         fields:
           - {label: Title, name: title, widget: string}
+          - {label: Meassage, name: message, widget: message}
           - {label: Content Section, name: contentSection, widget: markdown}
           - label: "Accordion"
             name: "accordion"
