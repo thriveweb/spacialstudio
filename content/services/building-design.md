@@ -4,10 +4,10 @@ icon: /images/uploads/Building design.svg
 color: '#453833'
 order: '3'
 galleryImages:
-  - galleryimage: /images/uploads/bitmap.jpg
-  - galleryimage: /images/uploads/bitmap.jpg
-  - galleryimage: /images/uploads/bitmap.jpg
-  - galleryimage: /images/uploads/bitmap.jpg
+  - galleryimage: /images/uploads/unsplash4.jpg
+  - galleryimage: /images/uploads/unsplash4.jpg
+  - galleryimage: /images/uploads/unsplash4.jpg
+  - galleryimage: /images/uploads/unsplash4.jpg
 galleryTitle: ' Nullam interdum arcu vitae augue '
 galleryDescription: >-
   Etiam ac quam eget lectus venenatis ullamcorper sit amet non arcu. Nullam

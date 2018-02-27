@@ -1,7 +1,7 @@
 ---
 title: Caroline Hamiliton
 subtitle: Owner
-image: /images/uploads/harprit-bola-239056.jpg
+image: /images/uploads/unsplash.jpg
 instagram: 'http://instagram.com'
 twitter: 'http://instagram.com'
 linkedin: 'http://instagram.com'

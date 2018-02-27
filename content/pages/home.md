@@ -1,11 +1,11 @@
 ---
 welcomeGalleryImages:
-  - galleryimage: /images/uploads/stephen-di-donato-119071.jpg
+  - galleryimage: /images/uploads/unsplash7.jpg
   - galleryimage: /images/uploads/willie-fineberg-57667.jpg
-  - galleryimage: /images/uploads/joel-filipe-377515.jpg
-  - galleryimage: /images/uploads/stephen-di-donato-119071.jpg
-  - galleryimage: /images/uploads/joel-filipe-377515.jpg
-  - galleryimage: /images/uploads/rectangle.jpg
+  - galleryimage: /images/uploads/unsplash3.jpg
+  - galleryimage: /images/uploads/unsplash7.jpg
+  - galleryimage: /images/uploads/unsplash3.jpg
+  - galleryimage: /images/uploads/unsplash5.jpg
 title: >-
   We are Spacial Studio. A desing studio that puts the passion in creating new
   and unique spaces
@@ -45,7 +45,7 @@ service:
       Phasellus ac dui pellentesque, lacinia risus ut, imperdiet eros.
     icon: /images/uploads/Consulting.svg
     title: Consulting
-aboutImage: /images/uploads/joel-filipe-377515.jpg
+aboutImage: /images/uploads/unsplash3.jpg
 aboutSectionTitle: >-
   We are an Australian practice operating within the traditional boundaries of
   architecture and urbanism.

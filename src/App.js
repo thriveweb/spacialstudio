@@ -220,9 +220,11 @@ class App extends Component {
             <Route
               path='/blog/category/:slug/'
               render={props => {
+                //  help needed
                 const slug = props.match.params.slug
-                const categoryPosts = posts.filter(post =>
-                  documentHasTerm(post, 'category', slug)
+                const doc = posts.map(obj => obj.categories)
+                const categoryPosts = postCategories.filter(post =>
+                  documentHasTerm(doc, 'category', slug)
                 )
                 return (
                   <RouteWithFooter scrollToTop={false}>

@@ -1,10 +1,10 @@
 ---
 title: Services
 galleryImages:
-  - galleryimage: /images/uploads/bitmap.jpg
+  - galleryimage: /images/uploads/unsplash4.jpg
   - galleryimage: /images/uploads/card-og.png
-  - galleryimage: /images/uploads/harprit-bola-239056.jpg
-  - galleryimage: /images/uploads/jake-campbell-355139.jpg
+  - galleryimage: /images/uploads/unsplash.jpg
+  - galleryimage: /images/uploads/unsplash2.jpg
 galleryTitle: What we do
 galleryDescription: >-
   Etiam ac quam eget lectus venenatis ullamcorper sit amet non arcu. Nullam

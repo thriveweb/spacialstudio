@@ -1,5 +1,5 @@
 ---
-projectFeaturedImage: /images/uploads/bitmap.jpg
+projectFeaturedImage: /images/uploads/unsplash4.jpg
 title: Another project
 year: '2009'
 typeofproject: Construction
@@ -13,8 +13,8 @@ testimonial: >-
 name: Joe Blogs
 role: Role here
 projectGalleryImages:
-  - galleryimage: /images/uploads/harprit-bola-239056.jpg
-  - galleryimage: /images/uploads/jake-campbell-355139.jpg
+  - galleryimage: /images/uploads/unsplash.jpg
+  - galleryimage: /images/uploads/unsplash2.jpg
 
 ---
 

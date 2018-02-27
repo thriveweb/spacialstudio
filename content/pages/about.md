@@ -1,6 +1,6 @@
 ---
 title: About
-featuredImage: /images/uploads/harprit-bola-239056.jpg
+featuredImage: /images/uploads/unsplash.jpg
 welcomeQuote: 'Etiam ac quam eget lectus venenatis ullamcorper sit amet non arcu. '
 welcomeSection: >-
   Nullam interdum arcu vitae augue pulvinar sodales. Sed non dui diam. Quisque
