@@ -8,6 +8,16 @@
 .SingleProject--content {
   width: 35%;
 }
+@media screen and (max-width: 750px) {
+  .SingleProject--gallery {
+    width: 100%;
+  }
+
+  .SingleProject--content {
+    width: 90%;
+    margin: 2rem auto;
+  }
+}
 
 .breakout {
   border-top: 1px solid var(--midGrey);
@@ -18,6 +28,12 @@
 
 .breakout h3 {
   margin: 0;
+}
+@media screen and (max-width: 750px) {
+  .breakout {
+    flex-direction: row !important;
+    flex-wrap: wrap;
+  }
 }
 
 .testimonials em {
