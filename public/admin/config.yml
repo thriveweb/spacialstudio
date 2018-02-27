@@ -149,31 +149,7 @@ collections: # A list of collections the CMS should be able to edit
         widget: "list"
         fields:
           - {label: Image, name: galleryimage, widget: image}
-  - name: posts
-    label: Posts
-    editor:
-      preview: false
-    folder: content/posts
-    slug: "{{slug}}"
-    create: true # Allow users to create new documents in this collection
-    fields: # The fields each document in this collection have
-      - {label: Title, name: title, widget: string}
-      - label: 'Status'
-        name: 'status'
-        widget: 'select'
-        options: ["Published", "Featured / Published", "Draft / Hidden"]
-        default: 'Published'
-      - {label: Date / Order, name: date, widget: date}
-      - {label: Category, name: category, widget: string}
-      - {label: Post Featured Image, name: postFeaturedImage, widget: image}
-      - {label: Excerpt, name: excerpt, widget: text}
-      - {label: Content, name: body, widget: markdown}
-      - label: "Gallery Images"
-        name: "galleryImages"
-        widget: "list"
-        fields:
-          - {label: Image, name: galleryimage, widget: image}
-        required: false
+
   - name: serrvices
     label: Services
     editor:
@@ -233,3 +209,47 @@ collections: # A list of collections the CMS should be able to edit
             collection: "posts"
             searchFields: ["title"]
             valueField: "title"
+  - name: posts
+    label: Posts
+    editor:
+      preview: false
+    folder: content/posts
+    slug: "{{slug}}"
+    create: true # Allow users to create new documents in this collection
+    fields: # The fields each document in this collection have
+      - {label: Title, name: title, widget: string}
+      - label: 'Status'
+        name: 'status'
+        widget: 'select'
+        options: ["Published", "Featured / Published", "Draft / Hidden"]
+        default: 'Published'
+      - label: "Categories"
+        name: "categoreies"
+        widget: "list"
+        fields:
+          - label: "Category"
+            name: "category"
+            widget: "relation"
+            collection: "postCategories"
+            searchFields: ["title"]
+            valueField: "title"
+      - {label: Date / Order, name: date, widget: date}
+      # - {label: Category, name: category, widget: string}
+      - {label: Post Featured Image, name: postFeaturedImage, widget: image}
+      - {label: Excerpt, name: excerpt, widget: text}
+      - {label: Content, name: body, widget: markdown}
+      - label: "Gallery Images"
+        name: "galleryImages"
+        widget: "list"
+        fields:
+          - {label: Image, name: galleryimage, widget: image}
+        required: false
+  - name: postCategories
+    label: Post Categoreies
+    editor:
+      preview: false
+    folder: content/postCategories
+    slug: "{{slug}}"
+    create: true # Allow users to create new documents in this collection
+    fields: # The fields each document in this collection have
+      - {label: Title, name: title, widget: string}
