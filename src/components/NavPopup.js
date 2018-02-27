@@ -16,15 +16,16 @@ class NavPopup extends React.Component {
         </button>
         <div className='flex'>
           <div className='inner'>
-            <NavLink to='/about/' exact>
+            <NavLink onClick={handleClose} to='/about/' exact>
               About
             </NavLink>
             <div className='NavLink--DropDown'>
               <div className='NavLink NavLink--Parent'>
                 Services <div className='hover'>•</div>
-                <div className='NavLink--Children'>
+                <div className='NavLink--Children--Mobile'>
                   {_sortBy(services, ['order']).map(servicePod => (
                     <NavLink
+                      onClick={handleClose}
                       key={_kebabCase(servicePod.title)}
                       to={`/services/${_kebabCase(servicePod.title)}/`}
                       exact
@@ -35,16 +36,21 @@ class NavPopup extends React.Component {
                 </div>
               </div>
             </div>
-            <NavLink to='/project/' exact>
+            <NavLink onClick={handleClose} to='/project/' exact>
               Projects
             </NavLink>
-            <NavLink to='/blog/' exact>
+            <NavLink onClick={handleClose} to='/blog/' exact>
               Blog
             </NavLink>
-            <NavLink to='/contact/' exact>
+            <NavLink onClick={handleClose} to='/contact/' exact>
               Contact
             </NavLink>
-            <NavLink to='/client-area/' exact className='login'>
+            <NavLink
+              onClick={handleClose}
+              to='/client-area/'
+              exact
+              className='login'
+            >
               Login
             </NavLink>
           </div>

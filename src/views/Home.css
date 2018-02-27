@@ -49,3 +49,21 @@
 .HomeProjectSection {
   padding: 8rem 0 !important;
 }
+
+@media screen and (max-width: 750px) {
+  .AboutSection .LazyImage,
+  .HomeNews--Info {
+    width: 100%;
+  }
+
+  .AboutSection--Info,
+  .HomeNews--Posts {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .HomeNews--Post {
+    width: 100%;
+    margin: 2rem 0;
+  }
+}

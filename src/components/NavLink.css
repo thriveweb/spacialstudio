@@ -24,3 +24,24 @@
 .NavLink.active .hover {
   opacity: 1;
 }
+
+.NavPopup .NavLink {
+  padding: 1rem;
+  font-size: 1.6rem;
+}
+
+.NavPopup .NavLink .hover {
+  display: inline-block;
+  margin: 0 1rem;
+  line-height: 0.8;
+}
+.NavPopup .NavLink .hover {
+  display: inline-block;
+  margin: 0 1rem;
+  line-height: 0.8;
+}
+
+.NavLink--Children--Mobile .NavLink {
+  padding: 0.6rem 1.5rem;
+  font-size: 1.2rem;
+}

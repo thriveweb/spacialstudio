@@ -82,4 +82,5 @@ body.fixed.animate .GalleryHome {
   left: 2rem;
   z-index: 5;
   opacity: 0.7;
+  width: 16px;
 }

@@ -52,15 +52,6 @@
   }
 }
 
-.NavPopup .NavLink + .NavLink:before {
-  content: '';
-  display: block;
-  width: 4rem;
-  height: 3px;
-  background: var(--tertiary);
-  margin: 1.5rem auto;
-}
-
 .NavPopup--CloseButton {
   color: var(--tertiary);
   background: none;

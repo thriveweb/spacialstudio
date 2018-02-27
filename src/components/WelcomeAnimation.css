@@ -53,6 +53,14 @@ body.fixed .WelcomeAnimation .Spinner {
   right: 50%;
   transform: translate(-6px, 0);
 }
+@media screen and (max-width: 650px) {
+  .WelcomeAnimation--Studio {
+    width: 45% !important;
+  }
+  .WelcomeAnimation--Spacial {
+    width: 45% !important;
+  }
+}
 
 body.fixed.animate .WelcomeAnimation {
   top: 0;

@@ -21,3 +21,12 @@
 .TestimonialCard .button {
   margin: 2rem 6rem;
 }
+
+@media screen and (max-width: 750px) {
+  .TestimonialCard {
+    padding: 0 1rem;
+  }
+  .TestimonialCard.is-selected {
+    border: none;
+  }
+}

@@ -17,6 +17,7 @@ const SingleService = ({ singleService, projects, posts, ...props }) => {
   const projectsFiltered = projects.filter(
     item => selectedProjects.indexOf(item.title) >= 0
   )
+
   const selectedPosts = singleService.featuredPosts.map(
     selected => selected.postList
   )

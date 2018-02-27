@@ -23,3 +23,19 @@
 .Footer .halfs .pods {
   width: 49%;
 }
+
+@media screen and (max-width: 750px) {
+  .Footer {
+    padding: 0 0 4rem 0;
+    text-align: center;
+  }
+  .Footer .halfs {
+    width: 100%;
+    text-align: center;
+    margin: 2rem 0;
+  }
+  .Footer .halfs .pods {
+    width: 100%;
+    margin: 1rem 0 0 0;
+  }
+}

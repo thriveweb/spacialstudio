@@ -13,3 +13,9 @@
   margin: 0 auto 4rem auto;
   line-height: 1.2;
 }
+
+@media screen and (max-width: 750px) {
+  .ProjectSection .ProjectCard {
+    width: 80% !important;
+  }
+}
