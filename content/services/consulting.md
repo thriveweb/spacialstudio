@@ -4,10 +4,10 @@ icon: /images/uploads/Consulting.svg
 color: '#585858'
 order: '5'
 galleryImages:
-  - galleryimage: /images/uploads/unsplash4.jpg
-  - galleryimage: /images/uploads/unsplash4.jpg
-  - galleryimage: /images/uploads/unsplash4.jpg
-  - galleryimage: /images/uploads/unsplash4.jpg
+  - galleryimage: /images/uploads/unsplash5.jpg
+  - galleryimage: /images/uploads/unsplash6.jpg
+  - galleryimage: /images/uploads/unsplash7.jpg
+  - galleryimage: /images/uploads/unsplash.jpg
 galleryTitle: ' Nullam interdum arcu vitae augue '
 galleryDescription: >-
   Etiam ac quam eget lectus venenatis ullamcorper sit amet non arcu. Nullam
@@ -57,4 +57,3 @@ featuredPosts:
   - postList: A quam eget lectus venenatis ullamcorper sit amet non arcu
   - postList: Post 1 Etiam ac quam eget lectus venenatis ullamcorper sit amet non arcu
 ---
-

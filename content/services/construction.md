@@ -4,9 +4,9 @@ icon: /images/uploads/Construction.svg
 color: '#2a374d'
 order: '2'
 galleryImages:
-  - galleryimage: /images/uploads/unsplash4.jpg
-  - galleryimage: /images/uploads/unsplash4.jpg
-  - galleryimage: /images/uploads/unsplash4.jpg
+  - galleryimage: /images/uploads/unsplash.jpg
+  - galleryimage: /images/uploads/unsplash2.jpg
+  - galleryimage: /images/uploads/unsplash3.jpg
   - galleryimage: /images/uploads/unsplash4.jpg
 galleryTitle: ' Nullam interdum arcu vitae augue '
 galleryDescription: >-
@@ -57,4 +57,3 @@ featuredPosts:
   - postList: A quam eget lectus venenatis ullamcorper sit amet non arcu
   - postList: Post 1 Etiam ac quam eget lectus venenatis ullamcorper sit amet non arcu
 ---
-
