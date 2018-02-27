@@ -21,6 +21,9 @@
 .welcome--info blockquote p {
   margin: 0 0 1.5rem 0;
 }
+.welcome--content {
+  padding: 0 0 0 4rem;
+}
 
 @media screen and (max-width: 1000px) {
   .welcome--info blockquote {
@@ -34,16 +37,17 @@
     height: 350px;
     position: relative;
   }
+  .threeColumn,
   .welcome--info {
-    padding: 4rem;
-    width: 100%;
+    padding: 2rem 0;
+    width: 90%;
+    margin: 0 auto;
   }
 
   .welcome--info blockquote {
     font-size: 2rem;
   }
-}
-
-.welcome--content {
-  padding: 0 0 0 4rem;
+  .welcome--content {
+    padding: 0;
+  }
 }

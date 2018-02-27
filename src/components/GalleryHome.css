@@ -84,3 +84,12 @@ body.fixed.animate .GalleryHome {
   opacity: 0.7;
   width: 16px;
 }
+
+@media screen and (max-width: 650px) {
+  .GalleryHome--Indicators {
+    display: none;
+  }
+  .GalleryHome--Arrow {
+    width: 10px;
+  }
+}

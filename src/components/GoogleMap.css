@@ -1,3 +1,13 @@
 .GoogleMap {
   height: 50rem;
 }
+@media screen and (max-width: 750px) {
+  .GoogleMap {
+    height: 40rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  .GoogleMap {
+    height: 30rem;
+  }
+}
