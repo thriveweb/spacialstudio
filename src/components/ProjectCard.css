@@ -11,3 +11,8 @@
 .ProjectCard .button {
   margin: 2rem 6rem;
 }
+@media screen and (max-width: 750px) {
+  .ProjectCard .button {
+    margin: 2rem 0;
+  }
+}
