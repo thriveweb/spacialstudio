@@ -22,3 +22,10 @@
 .PhotoLayout .BackgroundImage:nth-child(3n + 2) {
   width: calc(50% - 1rem);
 }
+
+@media screen and (max-width: 500px) {
+  .PhotoLayout .BackgroundImage {
+    width: 100% !important;
+    height: 250px;
+  }
+}
