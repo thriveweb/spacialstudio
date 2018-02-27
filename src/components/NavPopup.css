@@ -28,13 +28,25 @@
   margin-top: 20px;
 }
 
+.NavPopup .NavLink {
+  padding: 1rem;
+  font-size: 1.6rem;
+}
+
+.NavPopup .NavLink .hover {
+  display: none;
+}
+
+.NavLink--Children--Mobile .NavLink {
+  padding: 1rem 1.5rem;
+  font-size: 1.2rem;
+}
+
 @media screen and (max-width: 1000px) {
   .mainNav {
     display: none !important;
   }
-  /* .NavPopup.active {
-    display: flex;
-  } */
+
   .NavPopup .flex {
     align-items: center;
     justify-content: center;
@@ -42,18 +54,11 @@
   }
 
   .NavPopup .flex .inner {
-    width: 100%l;
-  }
-
-  .AnchorLink {
-    padding: 25px 15px;
-    display: block;
     width: 100%;
   }
 }
 
 .NavPopup--CloseButton {
-  color: var(--tertiary);
   background: none;
   border: none;
   display: block;

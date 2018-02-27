@@ -5,8 +5,27 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .Categories .NavLink {
   text-transform: none;
+}
+
+@media screen and (max-width: 750px) {
+  .Categories {
+    display: block;
+    text-align: left;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .Categories .NavLink {
+    text-align: left;
+    margin: 0;
+    padding: 1rem;
+    border-bottom: 1px solid var(--primary);
+  }
+  .Categories .NavLink .hover {
+    display: none;
+  }
 }

@@ -14,3 +14,13 @@
 .contactForm {
   max-width: 100%;
 }
+
+@media screen and (max-width: 750px) {
+  .Contact h1,
+  .Contact .thirds,
+  .Contact .thirds .pods {
+    width: 90%;
+    margin: 1rem auto;
+    max-width: 500px;
+  }
+}

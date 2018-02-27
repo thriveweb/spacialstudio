@@ -18,6 +18,15 @@
 .Flex > .EnquiryForm--Label {
   width: 49%;
 }
+@media screen and (max-width: 750px) {
+  .EnquiryForm {
+    max-width: 500px;
+    margin: 2rem auto;
+  }
+  .Flex > .EnquiryForm--Label {
+    width: 100%;
+  }
+}
 
 .EnquiryForm--Input {
   font-family: inherit;
