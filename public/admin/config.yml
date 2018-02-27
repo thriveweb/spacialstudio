@@ -72,11 +72,13 @@ collections: # A list of collections the CMS should be able to edit
         name: "blog-page"
         fields:
           - {label: Title, name: title, widget: string}
+          - {label: Meassage, name: message, widget: message}
       - file: "content/pages/project.md"
         label: "Project Page"
         name: "project-page"
         fields:
           - {label: Title, name: title, widget: string}
+          - {label: Meassage, name: message, widget: message}
       - file: "content/pages/about.md"
         label: "About Page"
         name: "about-page"
