@@ -29,3 +29,19 @@
   margin: 0 2rem;
   line-height: 1.2;
 }
+
+@media screen and (max-width: 750px) {
+  .ConsultationSection {
+    padding: 5rem 0 !important;
+  }
+
+  .ConsultationSection:before {
+    content: 'GET A QUOTE';
+    position: absolute;
+    bottom: -1rem;
+    left: 0;
+    width: 100%;
+    font-size: 40px;
+    text-align: center;
+  }
+}

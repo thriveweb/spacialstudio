@@ -51,19 +51,22 @@
 }
 
 @media screen and (max-width: 750px) {
-  .AboutSection .LazyImage,
-  .HomeNews--Info {
+  .AboutSection .LazyImage {
     width: 100%;
   }
 
   .AboutSection--Info,
   .HomeNews--Posts {
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
   }
 
   .HomeNews--Post {
     width: 100%;
     margin: 2rem 0;
+  }
+  .HomeNews--Info {
+    width: 100%;
+    padding: 2rem;
   }
 }

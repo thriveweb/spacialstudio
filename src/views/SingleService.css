@@ -10,7 +10,6 @@
   left: -14rem;
   width: 12rem;
   height: 12rem;
-  z-index: -1;
 }
 
 .Coloured--Dot--small {
@@ -32,4 +31,25 @@
 
 .Services--description {
   padding: 0 8rem;
+}
+
+@media screen and (max-width: 750px) {
+  .Coloured--Dot {
+    top: -0.5rem;
+    left: -8rem;
+    width: 6rem;
+    height: 6rem;
+  }
+  .Services--gallery .Gallery {
+    width: 100%;
+  }
+
+  .Services--info {
+    padding: 2rem;
+    width: 100%;
+  }
+
+  .Services--description {
+    padding: 0;
+  }
 }

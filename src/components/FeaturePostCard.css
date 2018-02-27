@@ -23,3 +23,17 @@
 .FeaturePostCard .button {
   margin: 2rem 0;
 }
+
+@media screen and (max-width: 750px) {
+  .FeaturePostCard .FeaturePostCard--Image {
+    width: 100%;
+    height: 350px;
+    margin: 0 0 2rem 0;
+  }
+
+  .FeaturePostCard--Info,
+  .FeaturePostCard--Excerpt {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
