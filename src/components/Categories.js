@@ -10,10 +10,10 @@ const Categories = ({ categories }) => (
       return (
         <NavLink
           className='NavLink'
-          key={category + index}
-          to={`/blog/category/${_kebabCase(category)}/`}
+          key={category.title + index}
+          to={`/blog/category/${_kebabCase(category.title)}/`}
         >
-          {category}
+          {category.title}
           <div className='hover'>•</div>
         </NavLink>
       )

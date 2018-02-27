@@ -83,7 +83,8 @@ class App extends Component {
     const projects = this.getDocuments('projects')
     const posts = this.getDocuments('posts')
     const services = this.getDocuments('services')
-    const postCategories = getCollectionTerms(posts, 'category', 'asc')
+    const postCategories = this.getDocuments('postCategories')
+    // const postCategories = getCollectionTerms(posts, 'category', 'asc')
 
     const RouteWithFooter = ({ children, scrollToTop = true, ...props }) => (
       <div className='RouteWithFooter' {...props}>
