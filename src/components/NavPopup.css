@@ -11,7 +11,7 @@
   background: var(--primary);
   padding: 2rem;
   font-size: 3rem;
-  transition: all 0.5s ease;
+  transition: all 0.3s ease;
   opacity: 0;
   overflow: hidden;
   transform: scaleY(0);
@@ -24,8 +24,7 @@
 }
 
 .NavPopup .flex {
-  height: 320px;
-  margin-top: 20px;
+  overflow-y: scroll;
 }
 
 .NavPopup .NavLink {
@@ -66,7 +65,9 @@
   height: 40px;
   margin-left: auto;
   cursor: pointer;
-  margin-top: 15px;
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
 }
 
 .NavPopup--CloseButton svg {

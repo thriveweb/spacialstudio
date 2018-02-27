@@ -72,15 +72,17 @@ export default class GoogleMap extends Component {
   render () {
     return (
       <div className='GoogleMap--Wrap'>
-        <Helmet>
-          <script
-            async
-            defer
-            src={`https://maps.googleapis.com/maps/api/js?key=${
-              this.props.apiKey
-            }&callback=initMap`}
-          />
-        </Helmet>
+        {!window.google && (
+          <Helmet>
+            <script
+              async
+              defer
+              src={`https://maps.googleapis.com/maps/api/js?key=${
+                this.props.apiKey
+              }&callback=initMap`}
+            />
+          </Helmet>
+        )}
         <div
           className='GoogleMap'
           ref={el => {
