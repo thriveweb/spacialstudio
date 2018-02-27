@@ -128,7 +128,6 @@ class App extends Component {
           />
           <Switch>
             <Route
-              onUpdate={() => window.scrollTo(0, 0)}
               path='/'
               exact
               render={props => (
@@ -144,7 +143,6 @@ class App extends Component {
               )}
             />
             <Route
-              onUpdate={() => window.scrollTo(0, 0)}
               path='/about/'
               exact
               render={props => (
@@ -159,7 +157,6 @@ class App extends Component {
               )}
             />
             <Route
-              onUpdate={() => window.scrollTo(0, 0)}
               path='/services/:slug/'
               render={props => {
                 const slug = props.match.params.slug
@@ -179,7 +176,6 @@ class App extends Component {
               }}
             />
             <Route
-              onUpdate={() => window.scrollTo(0, 0)}
               path='/project/'
               exact
               render={props => (
@@ -193,7 +189,6 @@ class App extends Component {
               )}
             />
             <Route
-              onUpdate={() => window.scrollTo(0, 0)}
               path='/projects/:slug/'
               render={props => {
                 const slug = props.match.params.slug
@@ -208,7 +203,6 @@ class App extends Component {
               }}
             />
             <Route
-              onUpdate={() => window.scrollTo(0, 0)}
               path='/blog/'
               exact
               render={props => (
@@ -223,7 +217,6 @@ class App extends Component {
               )}
             />
             <Route
-              onUpdate={() => window.scrollTo(0, 0)}
               path='/blog/category/:slug/'
               render={props => {
                 const slug = props.match.params.slug
@@ -244,7 +237,6 @@ class App extends Component {
               }}
             />
             <Route
-              onUpdate={() => window.scrollTo(0, 0)}
               path='/blog/:slug/'
               render={props => {
                 const slug = props.match.params.slug
@@ -272,7 +264,6 @@ class App extends Component {
               }}
             />
             <Route
-              onUpdate={() => window.scrollTo(0, 0)}
               path='/contact/'
               exact
               render={props => (
@@ -287,7 +278,6 @@ class App extends Component {
               )}
             />
             <Route
-              onUpdate={() => window.scrollTo(0, 0)}
               path='/client-area/'
               exact
               render={props => (
