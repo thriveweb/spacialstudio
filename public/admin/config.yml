@@ -224,7 +224,7 @@ collections: # A list of collections the CMS should be able to edit
         options: ["Published", "Featured / Published", "Draft / Hidden"]
         default: 'Published'
       - label: "Categories"
-        name: "categoreies"
+        name: "categories"
         widget: "list"
         fields:
           - label: "Category"
