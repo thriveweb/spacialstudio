@@ -9,7 +9,7 @@ import './ClientArea.css'
 
 export default ({ page, globalSettings }) => (
   <PasswordProtected password={globalSettings.clientAreaPassword}>
-    <main className='ClientArea' data-aos='fade-up'>
+    <main className='ClientArea'>
       <Helmet>
         <title>{page.title}</title>
       </Helmet>

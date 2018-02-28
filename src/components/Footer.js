@@ -10,28 +10,41 @@ export default ({ globalSettings, socialSettings, navLinks }) => (
         <img src='/images/logo.svg' alt='Spacial Studio' />
       </Link>
       <div className='Flex alignStart justifyBetween flexWrap halfs'>
-        <div className='address pods'>
-          <h4>Office Address</h4>
-          {globalSettings.officeAddress}
-        </div>
-        <div className='email pods'>
-          <h4>Email</h4>
-          <a href={`mailto:${globalSettings.email}`}>{globalSettings.email}</a>
-        </div>
-        <div className='phone pods'>
-          <h4>Phone</h4>
-          <a className='tel' href={`tel:${globalSettings.phone}`}>
-            {globalSettings.phone}
-          </a>
-        </div>
-        <div className='mail pods'>
-          <h4>Mail</h4>
-          {globalSettings.postalAddress}
-        </div>
+        {globalSettings.officeAddress && (
+          <div className='address pods'>
+            <h4>Office Address</h4>
+            {globalSettings.officeAddress}
+          </div>
+        )}
+        {globalSettings.email && (
+          <div className='email pods'>
+            <h4>Email</h4>
+            <a href={`mailto:${globalSettings.email}`}>
+              {globalSettings.email}
+            </a>
+          </div>
+        )}
+        {globalSettings.phone && (
+          <div className='phone pods'>
+            <h4>Phone</h4>
+            <a className='tel' href={`tel:${globalSettings.phone}`}>
+              {globalSettings.phone}
+            </a>
+          </div>
+        )}
+        {globalSettings.postalAddress && (
+          <div className='mail pods'>
+            <h4>Mail</h4>
+            {globalSettings.postalAddress}
+          </div>
+        )}
       </div>
     </div>
-    <div className='container'>
-      <span>© 2017 All rights reserved.</span>
+    <div className='container Flex alignCenter justifyBetween flexWrap'>
+      <small>© 2017 All rights reserved.</small>
+      <small>
+        <a href='https://thriveweb.com.au/'>Build on the Gold Coast</a>
+      </small>
     </div>
   </footer>
 )
