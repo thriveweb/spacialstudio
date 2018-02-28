@@ -40,7 +40,7 @@ export default ({ globalSettings, socialSettings, navLinks }) => (
         )}
       </div>
     </div>
-    <div className='container Flex alignCenter justifyBetween flexWrap'>
+    <div className='container Flex alignCenter justifyBetween flexWrap Footer--Copyright'>
       <small>© 2017 All rights reserved.</small>
       <small>
         <a href='https://thriveweb.com.au/'>Build on the Gold Coast</a>

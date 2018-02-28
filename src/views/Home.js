@@ -52,7 +52,7 @@ const Home = ({ page, projects, posts, services }) => {
       )}
 
       {page.aboutSectionTitle && (
-        <section className='section thin AboutSection'>
+        <section className='section thick AboutSection'>
           <div className='container hidden Flex alignCenter justifyBetween flexWrap'>
             <LazyImage
               src={page.aboutImage}

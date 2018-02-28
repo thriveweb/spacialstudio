@@ -5,14 +5,14 @@
   background-position: center;
   height: 15rem;
   width: 15rem;
-  margin-right: 1rem;
+  margin: 1rem;
   color: currentColor;
 }
 
 body.scrolled .Logo {
   transform: scale(0.5);
   position: absolute;
-  top: -3.5rem;
+  top: -4.5rem;
   left: -4rem;
 }
 
@@ -20,7 +20,7 @@ body.scrolled .Logo {
   body .Logo {
     transform: scale(0.5);
     position: absolute;
-    top: -3.5rem;
+    top: -4.5rem;
     left: -4rem;
   }
 }
