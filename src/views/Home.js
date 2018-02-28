@@ -53,7 +53,7 @@ const Home = ({ page, projects, posts, services }) => {
 
       {page.aboutSectionTitle && (
         <section className='section thin AboutSection'>
-          <div className='container Flex alignCenter justifyBetween flexWrap'>
+          <div className='container hidden Flex alignCenter justifyBetween flexWrap'>
             <LazyImage
               src={page.aboutImage}
               alt='LazyImage'
@@ -61,7 +61,7 @@ const Home = ({ page, projects, posts, services }) => {
               data-aos='fade-left'
             />
             <div className='AboutSection--Info'>
-              <small>About us</small>
+              <h2>About us</h2>
               <blockquote>
                 <Content source={page.aboutSectionTitle} />
               </blockquote>
@@ -78,7 +78,7 @@ const Home = ({ page, projects, posts, services }) => {
 
       {!!visiblePosts.length && (
         <section className='section thin HomeNews'>
-          <div className='container Flex alignStretch justifyBetween flexWrap relative'>
+          <div className='container hidden Flex alignStretch justifyBetween flexWrap relative'>
             <div
               className='HomeNews--Info'
               data-aos='slide-left'
