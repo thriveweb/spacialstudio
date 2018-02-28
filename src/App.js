@@ -164,14 +164,19 @@ class App extends Component {
                 const singleService = services.find(
                   item => _kebabCase(item.title) === slug
                 )
+
+                const Comp = props => (
+                  <SingleService
+                    singleService={singleService}
+                    projects={projects}
+                    posts={posts}
+                    {...props}
+                  />
+                )
+
                 return (
                   <RouteWithFooter>
-                    <SingleService
-                      singleService={singleService}
-                      projects={projects}
-                      posts={posts}
-                      {...props}
-                    />
+                    <Comp {...props} />
                   </RouteWithFooter>
                 )
               }}
