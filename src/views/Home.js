@@ -40,7 +40,7 @@ const Home = ({ page, projects, posts, services }) => {
       )}
 
       {page.title && (
-        <section className='section HomeTitle thick'>
+        <section className='section HomeTitle'>
           <div className='container'>
             <h1 data-aos='fade-down'>{page.title}</h1>
           </div>

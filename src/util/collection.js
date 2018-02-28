@@ -24,8 +24,12 @@ export const getCollectionTerms = (
 }
 
 export const documentHasTerm = (doc, taxonomyName, term) => {
-  const termString = doc[taxonomyName]
-  if (!termString) return false
-  const terms = termString.split(',').map(term => _kebabCase(term))
+  const termField = doc[taxonomyName]
+  if (!termField) return false
+  const terms =
+    typeof termField === 'string'
+      ? termField.split(',').map(term => _kebabCase(term))
+      : termField.map(term => _kebabCase(Object.values(term)[0]))
+  // console.log(terms.includes(_kebabCase(term)))
   return terms.includes(_kebabCase(term))
 }

@@ -24,7 +24,7 @@ import NavPopup from './components/NavPopup'
 import Footer from './components/Footer'
 import ServiceWorkerNotifications from './components/ServiceWorkerNotifications'
 import Spinner from './components/Spinner'
-import { getCollectionTerms, documentHasTerm } from './util/collection'
+import { documentHasTerm } from './util/collection'
 import { fetchContent } from './util/fetch-content'
 import data from './data.json'
 
@@ -222,9 +222,8 @@ class App extends Component {
               render={props => {
                 //  help needed
                 const slug = props.match.params.slug
-                const doc = posts.map(obj => obj.categories)
-                const categoryPosts = postCategories.filter(post =>
-                  documentHasTerm(doc, 'category', slug)
+                const categoryPosts = posts.filter(post =>
+                  documentHasTerm(post, 'categories', slug)
                 )
                 return (
                   <RouteWithFooter scrollToTop={false}>

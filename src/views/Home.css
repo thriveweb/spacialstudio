@@ -1,6 +1,9 @@
 .Home {
 }
 
+.section.HomeTitle {
+  padding: 15rem 0 5rem 0;
+}
 .HomeTitle .container {
   max-width: 600px;
   text-align: center;
