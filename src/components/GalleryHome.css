@@ -38,7 +38,7 @@ body.fixed.animate .GalleryHome {
   z-index: 1;
   opacity: 0;
 }
-body.fixed.animate .GalleryHome--Item {
+body.animate .GalleryHome--Item {
   opacity: 1;
 }
 
