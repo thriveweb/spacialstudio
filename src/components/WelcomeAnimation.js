@@ -32,7 +32,7 @@ export default class WelcomeAnimation extends React.Component {
         .then(this.startAnimation)
         .catch(this.startAnimation)
     }
-    this.element.addEventListener('animationend', this.handleAnimationFinish)
+    // this.element.addEventListener('animationend', this.handleAnimationFinish)
   }
 
   componentWillUnmount () {

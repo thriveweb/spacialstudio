@@ -32,9 +32,9 @@ body.scrolled .isHome.Nav {
   border-bottom: 2px solid var(--lightGrey);
 }
 
-body.fixed .Nav {
+/* body.fixed .Nav {
   opacity: 0;
-}
+} */
 
 .NavLink--DropDown {
   position: relative;

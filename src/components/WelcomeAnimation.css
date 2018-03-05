@@ -2,7 +2,7 @@
   height: 100vh;
   width: 100%;
   overflow: hidden;
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   z-index: 5;
@@ -13,7 +13,7 @@ html {
   background: var(--primary);
 }
 
-body.fixed {
+/* body.fixed {
   overflow: hidden;
   background: var(--primary);
   height: 100%;
@@ -21,7 +21,7 @@ body.fixed {
   position: fixed;
   top: 0;
   left: 0;
-}
+} */
 
 body.animate .WelcomeAnimation .Spinner {
   display: none;
