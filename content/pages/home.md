@@ -7,7 +7,7 @@ welcomeGalleryImages:
   - galleryimage: /images/uploads/unsplash5.jpg
   - galleryimage: /images/uploads/unsplash6.jpg
 title: >-
-  We are Spacial Studio. A desing studio that puts the passion in creating new
+  We are Spacial Studio. A design studio that puts the passion in creating new
   and unique spaces
 aboutImage: /images/uploads/unsplash3.jpg
 aboutSectionTitle: >-
