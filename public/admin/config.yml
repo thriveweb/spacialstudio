@@ -67,24 +67,44 @@ collections: # A list of collections the CMS should be able to edit
         name: "contact-page"
         fields:
           - {label: Title, name: title, widget: string}
+          - label: 'Status'
+            name: 'status'
+            widget: 'select'
+            options: ["Published", "Draft / Hidden"]
+            default: 'Published'
           - {label: Meassage, name: message, widget: message}
       - file: "content/pages/blog.md"
         label: "Blog Page"
         name: "blog-page"
         fields:
           - {label: Title, name: title, widget: string}
+          - label: 'Status'
+            name: 'status'
+            widget: 'select'
+            options: ["Published", "Draft / Hidden"]
+            default: 'Published'
           - {label: Meassage, name: message, widget: message}
       - file: "content/pages/project.md"
         label: "Project Page"
         name: "project-page"
         fields:
           - {label: Title, name: title, widget: string}
+          - label: 'Status'
+            name: 'status'
+            widget: 'select'
+            options: ["Published", "Draft / Hidden"]
+            default: 'Published'
           - {label: Meassage, name: message, widget: message}
       - file: "content/pages/about.md"
         label: "About Page"
         name: "about-page"
         fields:
           - {label: Title, name: title, widget: string}
+          - label: 'Status'
+            name: 'status'
+            widget: 'select'
+            options: ["Published", "Draft / Hidden"]
+            default: 'Published'
           - {label: Featured Image, name: featuredImage, widget: image}
           - {label: Welcome Quote, name: welcomeQuote, widget: text}
           - {label: Welcome Section, name: welcomeSection, widget: markdown}

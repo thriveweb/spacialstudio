@@ -32,6 +32,7 @@ class Nav extends React.Component {
     const isHome = this.props.location.pathname === '/'
     const services = this.props.services
     const handleNavPopupOpen = this.props.handleNavPopupOpen
+    const { about, contact, project, blog } = this.props
     return (
       <nav
         className={`Nav ${isHome ? 'isHome' : ''}`}
@@ -45,9 +46,11 @@ class Nav extends React.Component {
               <Logo />
             </Link>
             <div className='nav Flex alignCenter justifyStart mainNav'>
-              <NavLink to='/about/' exact>
-                About
-              </NavLink>
+              {about && (
+                <NavLink to='/about/' exact>
+                  About
+                </NavLink>
+              )}
               <div className='NavLink--DropDown'>
                 <div className='NavLink NavLink--Parent'>
                   Services <div className='hover'>•</div>
@@ -64,15 +67,21 @@ class Nav extends React.Component {
                   </div>
                 </div>
               </div>
-              <NavLink to='/project/' exact>
-                Projects
-              </NavLink>
-              <NavLink to='/blog/' exact>
-                Blog
-              </NavLink>
-              <NavLink to='/contact/' exact>
-                Contact
-              </NavLink>
+              {project && (
+                <NavLink to='/project/' exact>
+                  Projects
+                </NavLink>
+              )}
+              {blog && (
+                <NavLink to='/blog/' exact>
+                  Blog
+                </NavLink>
+              )}
+              {contact && (
+                <NavLink to='/contact/' exact>
+                  Contact
+                </NavLink>
+              )}
               <NavLink to='/client-area/' exact className='login'>
                 Login
               </NavLink>

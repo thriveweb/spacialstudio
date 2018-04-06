@@ -24,7 +24,7 @@ import NavPopup from './components/NavPopup'
 import Footer from './components/Footer'
 import ServiceWorkerNotifications from './components/ServiceWorkerNotifications'
 import Spinner from './components/Spinner'
-import { documentHasTerm } from './util/collection'
+import { documentHasTerm, isDraft } from './util/collection'
 
 import data from './data.json'
 
@@ -79,6 +79,12 @@ class App extends Component {
       headerScripts
     } = globalSettings
 
+    const aboutPage = this.getDocument('pages', 'about')
+    const contactPage = this.getDocument('pages', 'contact')
+    const projectPage = this.getDocument('pages', 'project')
+    const blogPage = this.getDocument('pages', 'blog')
+    // const servicesPage = this.getDocument('pages', 'services')
+
     /* Custom posts setup */
     const staff = this.getDocuments('staff')
     const projects = this.getDocuments('projects')
@@ -122,6 +128,10 @@ class App extends Component {
           <Nav
             services={services}
             handleNavPopupOpen={this.handleNavPopupOpen}
+            about={!isDraft(aboutPage)}
+            blog={!isDraft(blogPage)}
+            project={!isDraft(projectPage)}
+            contact={!isDraft(contactPage)}
           />
           <NavPopup
             services={services}
@@ -144,20 +154,24 @@ class App extends Component {
                 </RouteWithFooter>
               )}
             />
-            <Route
-              path='/about/'
-              exact
-              render={props => (
-                <RouteWithFooter>
-                  <About
-                    page={this.getDocument('pages', 'about')}
-                    staff={staff}
-                    services={services}
-                    {...props}
-                  />
-                </RouteWithFooter>
-              )}
-            />
+
+            {!isDraft(aboutPage) && (
+              <Route
+                path='/about/'
+                exact
+                render={props => (
+                  <RouteWithFooter>
+                    <About
+                      page={aboutPage}
+                      staff={staff}
+                      services={services}
+                      {...props}
+                    />
+                  </RouteWithFooter>
+                )}
+              />
+            )}
+
             <Route
               path='/services/:slug/'
               render={props => {
@@ -182,19 +196,23 @@ class App extends Component {
                 )
               }}
             />
-            <Route
-              path='/project/'
-              exact
-              render={props => (
-                <RouteWithFooter>
-                  <Project
-                    page={this.getDocument('pages', 'project')}
-                    projects={projects}
-                    {...props}
-                  />
-                </RouteWithFooter>
-              )}
-            />
+
+            {!isDraft(projectPage) && (
+              <Route
+                path='/project/'
+                exact
+                render={props => (
+                  <RouteWithFooter>
+                    <Project
+                      page={projectPage}
+                      projects={projects}
+                      {...props}
+                    />
+                  </RouteWithFooter>
+                )}
+              />
+            )}
+
             <Route
               path='/projects/:slug/'
               render={props => {
@@ -209,20 +227,24 @@ class App extends Component {
                 )
               }}
             />
-            <Route
-              path='/blog/'
-              exact
-              render={props => (
-                <RouteWithFooter>
-                  <Blog
-                    page={this.getDocument('pages', 'blog')}
-                    posts={posts}
-                    postCategories={postCategories}
-                    {...props}
-                  />
-                </RouteWithFooter>
-              )}
-            />
+
+            {!isDraft(blogPage) && (
+              <Route
+                path='/blog/'
+                exact
+                render={props => (
+                  <RouteWithFooter>
+                    <Blog
+                      page={this.getDocument('pages', 'blog')}
+                      posts={posts}
+                      postCategories={postCategories}
+                      {...props}
+                    />
+                  </RouteWithFooter>
+                )}
+              />
+            )}
+
             <Route
               path='/blog/category/:slug/'
               render={props => {
@@ -234,7 +256,7 @@ class App extends Component {
                 return (
                   <RouteWithFooter scrollToTop={false}>
                     <Blog
-                      page={this.getDocument('pages', 'blog')}
+                      page={blogPage}
                       posts={categoryPosts}
                       postCategories={postCategories}
                       showFeatured={false}
@@ -271,20 +293,24 @@ class App extends Component {
                 )
               }}
             />
-            <Route
-              path='/contact/'
-              exact
-              render={props => (
-                <RouteWithFooter>
-                  <Contact
-                    page={this.getDocument('pages', 'contact')}
-                    globalSettings={globalSettings}
-                    siteTitle={siteTitle}
-                    {...props}
-                  />
-                </RouteWithFooter>
-              )}
-            />
+
+            {!isDraft(contactPage) && (
+              <Route
+                path='/contact/'
+                exact
+                render={props => (
+                  <RouteWithFooter>
+                    <Contact
+                      page={contactPage}
+                      globalSettings={globalSettings}
+                      siteTitle={siteTitle}
+                      {...props}
+                    />
+                  </RouteWithFooter>
+                )}
+              />
+            )}
+
             <Route
               path='/client-area/'
               exact
