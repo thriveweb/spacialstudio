@@ -7,8 +7,8 @@ welcomeGalleryImages:
   - galleryimage: /images/uploads/unsplash5.jpg
   - galleryimage: /images/uploads/unsplash6.jpg
 title: >-
-  We are Spacial Studio. We are a passionate Building Design studio that listens
-  and moves forward.
+  We are Spacial Studio. A passionate Building Design studio that listens and
+  moves forward. We Design, Consult and Connect.
 aboutImage: /images/uploads/unsplash3.jpg
 aboutSectionTitle: >-
   We are an Australian practice endeavouring to connect clients with the best
