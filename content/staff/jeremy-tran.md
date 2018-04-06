@@ -1,7 +1,7 @@
 ---
-title: Jeremy Tran
-subtitle: Owner
-image: /images/uploads/unsplash2.jpg
+title: Michael Scheltema
+subtitle: Co-Founder/Director
+image: /images/uploads/profile.png
 instagram: 'http://instagram.com'
 twitter: 'http://instagram.com'
 linkedin: 'http://instagram.com'
