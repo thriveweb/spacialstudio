@@ -264,7 +264,7 @@ collections: # A list of collections the CMS should be able to edit
           - {label: Image, name: galleryimage, widget: image}
         required: false
   - name: postCategories
-    label: Post Categoreies
+    label: Post Categories
     editor:
       preview: false
     folder: content/postCategories
