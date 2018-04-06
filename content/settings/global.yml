@@ -14,4 +14,4 @@ phone: (07) 55 35 00 63
 email: info@spacialstudio.com.au
 clientAreaPassword: cGFzc3dvcmQ=
 headerScripts: <!-- Add your analytics scripts / verification meta here -->
-enableServiceWorker: true
+enableServiceWorker: false
