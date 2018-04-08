@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-import LazyImage from './LazyImage'
+import BackgroundImage from './BackgroundImage'
 import Content from './Content'
 import './StaffMemberCard.css'
 
@@ -12,8 +12,11 @@ export default class StaffMemberCard extends React.Component {
     return (
       <div className='StaffMember'>
         {staffMember.image && (
-          <div className='StaffMember--Image'>
-            <LazyImage src={staffMember.image} alt={staffMember.title} />
+          <div className='StaffMember--Image square'>
+            <BackgroundImage
+              className='square-content'
+              src={staffMember.image}
+            />
           </div>
         )}
         <h3 className='StaffMember--Title'>{staffMember.title}</h3>

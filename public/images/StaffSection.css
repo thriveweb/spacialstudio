@@ -1,9 +1,0 @@
-.StaffSection--Grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: stretch;
-}
-
-@media screen and (max-width: 1000px) {
-}
