@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
 import PropTypes from 'prop-types'
 
 import './PasswordProtected.css'
@@ -87,7 +88,18 @@ class PasswordProtected extends Component {
     return passwordAttempt !== password ? (
       <main className={`PasswordProtected ${className}`} data-aos='flip-down'>
         <div className='section'>
-          <div className='container'>
+          <div className='container skinny'>
+            <h2 className='PasswordProtected--intro'>
+              Get access to our Fees, Standard Plans, Facades, Preferred
+              Builders Contacts, Preferred Professional Contacts, Example
+              Projects -
+              <Link className='link' to='/contact/'>
+                {' '}
+                Contact us
+              </Link>.
+            </h2>
+          </div>
+          <div className='container PasswordProtected--container'>
             <div className='PasswordProtected--Modal'>
               {message && (
                 <div className='PasswordProtected--Message'>{message}</div>

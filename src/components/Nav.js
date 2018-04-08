@@ -52,7 +52,7 @@ class Nav extends React.Component {
                 <div className='NavLink NavLink--Parent'>
                   Services <div className='hover'>•</div>
                   <div className='NavLink--Children'>
-                    {_sortBy(services, ['order']).map(servicePod => (
+                    {/* {_sortBy(services, ['order']).map(servicePod => (
                       <NavLink
                         key={_kebabCase(servicePod.title)}
                         to={`/services/${_kebabCase(servicePod.title)}/`}
@@ -60,7 +60,16 @@ class Nav extends React.Component {
                       >
                         {servicePod.title}
                       </NavLink>
-                    ))}
+                    ))} */}
+                    <NavLink to={`/services/building-design/`} exact>
+                      Building Design
+                    </NavLink>
+                    <NavLink to={`/services/interior-design/`} exact>
+                      Interior Design
+                    </NavLink>
+                    <NavLink to={`/services/consulting/`} exact>
+                      Consulting
+                    </NavLink>
                   </div>
                 </div>
               </div>
