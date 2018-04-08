@@ -21,14 +21,14 @@ aboutContent: >-
   with your builders.
 
 
-  We pride ourselves on knowing the answers and knowing the right people.
+  We pride ourselves on finding the right solutions and connecting the right
+  people.
 aboutLinkText: Know more
 newsSectionTitle: Our latest news
-newsContent: >-
-  Etiam ac quam eget lectus venenatis ullamcorper sit amet non arcu. Nullam
-  interdum arcu vitae augue pulvinar sodales. Sed non dui diam. Quisque lectus
-  est, lobortis ac efficitur vitae, posuere a mauris. Phasellus ac dui
-  pellentesque, lacinia risus ut, imperdiet eros.
+newsContent: |-
+  Spacial Studio Website Launch
+
+  Spacial Studio Blog Launch
 newsLinkText: See more
 projectSectionTitle: A unique style and approach
 testimonialSectionTitle: What our clients say about us
