@@ -33,3 +33,6 @@ export const documentHasTerm = (doc, taxonomyName, term) => {
   // console.log(terms.includes(_kebabCase(term)))
   return terms.includes(_kebabCase(term))
 }
+
+export const isDraft = ({ status = '' } = {}) =>
+  status && status.toLowerCase().indexOf('draft') >= 0

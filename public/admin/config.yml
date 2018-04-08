@@ -37,7 +37,7 @@ collections: # A list of collections the CMS should be able to edit
           - {label: Office Address, name: officeAddress, widget: text, required: false}
           - {label: Postal Address, name: postalAddress, widget: text, required: false}
           - {label: Phone, name: phone, widget: string, required: false}
-          - {label: Email, name: email, widget: string, required: false, pattern: ['^([A-Z|a-z|0-9](\.|_){0,1})+[A-Z|a-z|0-9]\@([A-Z|a-z|0-9])+((\.){0,1}[A-Z|a-z|0-9]){2}\.[a-z]{2,3}$', 'Email address required']}
+          - {label: Email, name: email, widget: string, required: false}
           - {label: Client Area Password, name: clientAreaPassword, widget: encode, required: false}
           - {label: Header Meta / Scripts, name: headerScripts, widget: text, required: false}
           - {label: Enable Service Worker Pre-Cache, name: enableServiceWorker, widget: boolean, required: false}
@@ -67,24 +67,44 @@ collections: # A list of collections the CMS should be able to edit
         name: "contact-page"
         fields:
           - {label: Title, name: title, widget: string}
+          - label: 'Status'
+            name: 'status'
+            widget: 'select'
+            options: ["Published", "Draft / Hidden"]
+            default: 'Published'
           - {label: Meassage, name: message, widget: message}
       - file: "content/pages/blog.md"
         label: "Blog Page"
         name: "blog-page"
         fields:
           - {label: Title, name: title, widget: string}
+          - label: 'Status'
+            name: 'status'
+            widget: 'select'
+            options: ["Published", "Draft / Hidden"]
+            default: 'Published'
           - {label: Meassage, name: message, widget: message}
       - file: "content/pages/project.md"
         label: "Project Page"
         name: "project-page"
         fields:
           - {label: Title, name: title, widget: string}
+          - label: 'Status'
+            name: 'status'
+            widget: 'select'
+            options: ["Published", "Draft / Hidden"]
+            default: 'Published'
           - {label: Meassage, name: message, widget: message}
       - file: "content/pages/about.md"
         label: "About Page"
         name: "about-page"
         fields:
           - {label: Title, name: title, widget: string}
+          - label: 'Status'
+            name: 'status'
+            widget: 'select'
+            options: ["Published", "Draft / Hidden"]
+            default: 'Published'
           - {label: Featured Image, name: featuredImage, widget: image}
           - {label: Welcome Quote, name: welcomeQuote, widget: text}
           - {label: Welcome Section, name: welcomeSection, widget: markdown}
@@ -244,7 +264,7 @@ collections: # A list of collections the CMS should be able to edit
           - {label: Image, name: galleryimage, widget: image}
         required: false
   - name: postCategories
-    label: Post Categoreies
+    label: Post Categories
     editor:
       preview: false
     folder: content/postCategories

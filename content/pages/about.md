@@ -1,5 +1,6 @@
 ---
 title: About
+status: Published
 featuredImage: /images/uploads/unsplash.jpg
 welcomeQuote: 'Etiam ac quam eget lectus venenatis ullamcorper sit amet non arcu. '
 welcomeSection: >-

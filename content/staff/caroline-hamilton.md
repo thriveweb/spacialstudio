@@ -1,6 +1,6 @@
 ---
-title: Caroline Hamiliton
-subtitle: Owner
+title: Tim Davies
+subtitle: Co-Founder/Director
 image: /images/uploads/unsplash.jpg
 instagram: 'http://instagram.com'
 twitter: 'http://instagram.com'
