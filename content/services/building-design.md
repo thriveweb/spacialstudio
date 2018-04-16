@@ -10,10 +10,8 @@ galleryImages:
   - galleryimage: /images/uploads/unsplash4.jpg
 galleryTitle: Imagine a building that just works.
 galleryDescription: >-
-  Etiam ac quam eget lectus venenatis ullamcorper sit amet non arcu. Nullam
-  interdum arcu vitae augue pulvinar sodales. Sed non dui diam. Quisque lectus
-  est, lobortis ac efficitur vitae, posuere a mauris. Phasellus ac dui
-  pellentesque, lacinia risus ut, imperdiet eros.
+  We can help you to realise your project. Stay true to the inspiration and the
+  context. Get it approved and built on time and on budget.
 threeColumnSectionTitle: Etiam ac quam eget lectus venenatis ullamcorper
 threeColumnSection: >-
   Etiam ac quam eget lectus venenatis ullamcorper sit amet non arcu. Nullam
