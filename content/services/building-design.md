@@ -10,8 +10,8 @@ galleryImages:
   - galleryimage: /images/uploads/unsplash4.jpg
 galleryTitle: A building that just works.
 galleryDescription: >-
-  We can help you to realise your project. Stay true to the inspiration and the
-  context. Get it approved and built on time and on budget.
+  We can help you to realise your project, stay true to the inspiration and the
+  context.
 threeColumnSectionTitle: Etiam ac quam eget lectus venenatis ullamcorper
 threeColumnSection: >-
   Etiam ac quam eget lectus venenatis ullamcorper sit amet non arcu. Nullam
