@@ -8,7 +8,7 @@ galleryImages:
   - galleryimage: /images/uploads/unsplash2.jpg
   - galleryimage: /images/uploads/unsplash3.jpg
   - galleryimage: /images/uploads/unsplash4.jpg
-galleryTitle: Imagine a building that just works.
+galleryTitle: A building that just works.
 galleryDescription: >-
   We can help you to realise your project. Stay true to the inspiration and the
   context. Get it approved and built on time and on budget.
