@@ -30,7 +30,7 @@ newsContent: |-
 
   Spacial Studio Blog Launch
 newsLinkText: See more
-projectSectionTitle: A unique style and approach
+projectSectionTitle: Some ideas we'd like to share
 testimonialSectionTitle: What our clients say about us
 ---
 
