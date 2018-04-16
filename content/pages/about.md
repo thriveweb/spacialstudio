@@ -2,50 +2,49 @@
 title: About
 status: Published
 featuredImage: /images/uploads/unsplash.jpg
-welcomeQuote: 'Etiam ac quam eget lectus venenatis ullamcorper sit amet non arcu. '
+welcomeQuote: >-
+  Welcome to a new kind of Building Design. We listen. We collaborate. Your
+  Project is our priority.
 welcomeSection: >-
-  Nullam interdum arcu vitae augue pulvinar sodales. Sed non dui diam. Quisque
-  lectus est, lobortis ac efficitur vitae, posuere a mauris. Phasellus ac dui
-  pellentesque, lacinia risus ut, imperdiet eros.
+  Welcome to Spacial Studio. We have created a modern, ever evolving Building
+  Design company that focuses on delivering your project at your budget. We use
+  next generation software solutions mixed with great Design learnt from real
+  world experience. We collaborate with Builders and Clients to ensure that a
+  build-able design meets your needs.
 
 
-  interdum interdum arcu vitae augue pulvinar sodales. Sed non dui diam. Quisque
-  lectus est, lobortis ac efficitur vitae, posuere a mauris. Phasellus ac dui
-  pellentesque, lacinia risus ut, imperdiet eros
+  Our vision is to deliver high level work to private clients and industry
+  leaders. Whether you are contemplating the perfect home, large development or
+  requiring solutions to hard problems, we are ready to help with the knowledge
+  and passion.
 historyTitle: Our History
 historySection: >-
-  Nullam interdum arcu vitae augue pulvinar sodales. Sed non dui diam. Quisque
-  lectus est, lobortis ac efficitur vitae, posuere a mauris. Phasellus ac dui
-  pellentesque, lacinia risus ut, imperdiet eros.Nullam interdum arcu vitae
-  augue pulvinar sodales. Sed non dui diam. Quisque lectus est, lobortis ac
-  efficitur vitae, posuere a mauris. Phasellus ac dui pellentesque, lacinia
-  risus ut, imperdiet eros.
+  Spacial Studio originated from the simple desire to be better. Tim and Michael
+  envisaged a company that listened to clients in a more collaborative way.
+  Connecting design to software. Software to quantity surveyors and then on to
+  tender. All to arrive at a more accurate price and better design outcome. Why
+  risk forcing square pegs in round holes?
 
 
-  Nullam interdum arcu vitae augue pulvinar sodales. Sed non dui diam. Quisque
-  lectus est, lobortis ac efficitur vitae, posuere a mauris. Phasellus ac dui
-  pellentesque, lacinia risus ut, imperdiet eros.Nullam interdum arcu vitae
-  augue pulvinar sodales. Sed non dui diam. Quisque lectus est, lobortis ac
-  efficitur vitae, posuere a mauris. Phasellus ac dui pellentesque, lacinia
-  risus ut, imperdiet eros.
+  To builders a designer can be an impediment to accurate pricing and
+  build-ability. To many designers a builder can be stone wall. Spacial Studio
+  was founded to break this wall through building experience, design ability and
+  software knowledge. We fostered relationships to collaborate closely with
+  builders to get your project in on price and on time. Every one has a common
+  goal. A successful, timely project.
 
 
-  Nullam interdum arcu vitae augue pulvinar sodales. Sed non dui diam. Quisque
-  lectus est, lobortis ac efficitur vitae, posuere a mauris. Phasellus ac dui
-  pellentesque, lacinia risus ut, imperdiet eros.Nullam interdum arcu vitae
-  augue pulvinar sodales. Sed non dui diam. Quisque lectus est, lobortis ac
-  efficitur vitae, posuere a mauris. Phasellus ac dui pellentesque, lacinia
-  risus ut, imperdiet eros.Nullam interdum arcu vitae augue pulvinar sodales.
-  Sed non dui diam. Quisque lectus est, lobortis ac efficitur vitae, posuere a
-  mauris. Phasellus ac dui pellentesque, lacinia risus ut, imperdiet eros.
+  A mutual desire to implement new directions in software can lead to giant
+  steps forward in progress. However, most builders do not have the time to
+  research and implement these tools. Design is a cost they are not set up for.
+  Spacial Studio conceived a way to put the value back into design in a bottom
+  line driven economy. What if you could design to add value to all parties?
 
 
-  Nullam interdum arcu vitae augue pulvinar sodales. Sed non dui diam. Quisque
-  lectus est, lobortis ac efficitur vitae, posuere a mauris. Phasellus ac dui
-  pellentesque, lacinia risus ut, imperdiet eros.Nullam interdum arcu vitae
-  augue pulvinar sodales. Sed non dui diam. Quisque lectus est, lobortis ac
-  efficitur vitae, posuere a mauris. Phasellus ac dui pellentesque, lacinia
-  risus ut, imperdiet eros.
+  Understanding space only comes from experience. Sometimes experiencing a new
+  space is a revelation. With that in mind we relentlessly embarked on a journey
+  to a destination miles ahead of the status quo. Ask us about our methods and
+  processes.
 servicesTitle: Our Services
 ---
 
