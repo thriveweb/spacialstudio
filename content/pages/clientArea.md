@@ -14,8 +14,9 @@ contentSection: >-
   project goals.
 
 
-  Please note that this information is subject to copyright law. We only give
-  out our info to our trusted clients.
+  Please note that this information is subject to copyright law. These projects
+  are also privately owned and have been used by the consent of clients. We only
+  give out our info to our trusted clients.
 accordion:
   - description: >-
       Nullam interdum arcu vitae augue pulvinar sodales. Sed non dui diam.
