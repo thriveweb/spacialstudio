@@ -8,7 +8,7 @@ galleryImages:
   - galleryimage: /images/uploads/unsplash6.jpg
   - galleryimage: /images/uploads/unsplash7.jpg
   - galleryimage: /images/uploads/unsplash.jpg
-galleryTitle: ' Nullam interdum arcu vitae augue '
+galleryTitle: Your project can go to the next level with our Interior Design Concepts.
 galleryDescription: >-
   Etiam ac quam eget lectus venenatis ullamcorper sit amet non arcu. Nullam
   interdum arcu vitae augue pulvinar sodales. Sed non dui diam. Quisque lectus
@@ -57,3 +57,4 @@ featuredPosts:
   - postList: Post 1 Etiam ac quam eget lectus venenatis ullamcorper sit amet non arcu
   - postList: A quam eget lectus venenatis ullamcorper sit amet non arcu
 ---
+
