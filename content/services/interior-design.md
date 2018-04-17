@@ -10,10 +10,11 @@ galleryImages:
   - galleryimage: /images/uploads/unsplash.jpg
 galleryTitle: Your project can go to the next level with our Interior Design Concepts.
 galleryDescription: >-
-  Etiam ac quam eget lectus venenatis ullamcorper sit amet non arcu. Nullam
-  interdum arcu vitae augue pulvinar sodales. Sed non dui diam. Quisque lectus
-  est, lobortis ac efficitur vitae, posuere a mauris. Phasellus ac dui
-  pellentesque, lacinia risus ut, imperdiet eros.
+  Whether it be help with colours, materials or finishes. Or perhaps furniture
+  or soft furnishings. Spacial Studio can help you find cost effective ways to
+  make your project standout. Allowing us to coordinate the entire building
+  inside and out is a great way to have us deliver a project you'll fall in love
+  with.
 threeColumnSectionTitle: Etiam ac quam eget lectus venenatis ullamcorper
 threeColumnSection: >-
   Etiam ac quam eget lectus venenatis ullamcorper sit amet non arcu. Nullam
