@@ -8,12 +8,15 @@ galleryImages:
   - galleryimage: /images/uploads/unsplash6.jpg
   - galleryimage: /images/uploads/unsplash7.jpg
   - galleryimage: /images/uploads/unsplash.jpg
-galleryTitle: ' Nullam interdum arcu vitae augue '
+galleryTitle: Stream line your Construction or Design Company
 galleryDescription: >-
-  Etiam ac quam eget lectus venenatis ullamcorper sit amet non arcu. Nullam
-  interdum arcu vitae augue pulvinar sodales. Sed non dui diam. Quisque lectus
-  est, lobortis ac efficitur vitae, posuere a mauris. Phasellus ac dui
-  pellentesque, lacinia risus ut, imperdiet eros.
+  Do you have access to great tools, yet you don't have the time to get them
+  talking to each other to maximise your potential? We offer hourly and day rate
+  along with subscription based consultancy to get your staff and your software
+  syncing like a well oiled machine.
+
+
+  Are you tired of overruns and missed deadlines?
 threeColumnSectionTitle: Etiam ac quam eget lectus venenatis ullamcorper
 threeColumnSection: >-
   Etiam ac quam eget lectus venenatis ullamcorper sit amet non arcu. Nullam
@@ -57,3 +60,4 @@ featuredPosts:
   - postList: A quam eget lectus venenatis ullamcorper sit amet non arcu
   - postList: Post 1 Etiam ac quam eget lectus venenatis ullamcorper sit amet non arcu
 ---
+
