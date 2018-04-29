@@ -15,24 +15,22 @@ galleryDescription: >-
   make your project standout in the market place or suit your individual
   lifestyle. Allowing us to coordinate the entire building inside and out is a
   great way to have us deliver a project you'll fall in love with.
-threeColumnSectionTitle: Etiam ac quam eget lectus venenatis ullamcorper
+threeColumnSectionTitle: 'Minimalist, Inspired, Luxury, Timeless, Regional'
 threeColumnSection: >-
-  Etiam ac quam eget lectus venenatis ullamcorper sit amet non arcu. Nullam
-  interdum arcu vitae augue pulvinar sodales. Sed non dui diam. Quisque lectus
-  est, lobortis ac efficitur vitae, posuere a mauris. Phasellus ac dui
-  pellentesque, lacinia risus ut, imperdiet eros.
+  Our clients have diverse tastes. We love to hear what you love and find the
+  right way to fit your personal tastes and lifestyle into the architecture of
+  your project. A sense of place is felt through the architecture and the
+  experience of the interior design and furnishings. Whether you want to relax
+  or be inspired the right colours and textures can bring the best qualities out
+  of your architecture.
 
 
-  Etiam ac quam eget lectus venenatis ullamcorper sit amet non arcu. Nullam
-  interdum arcu vitae augue pulvinar sodales. Sed non dui diam. Quisque lectus
-  est, lobortis ac efficitur vitae, posuere a mauris. Phasellus ac dui
-  pellentesque, lacinia risus ut, imperdiet eros.
+  Our staff will listen and find the most cost effective ways to make your
+  project feel complete and holistic.
 
 
-  Etiam ac quam eget lectus venenatis ullamcorper sit amet non arcu. Nullam
-  interdum arcu vitae augue pulvinar sodales. Sed non dui diam. Quisque lectus
-  est, lobortis ac efficitur vitae, posuere a mauris. Phasellus ac dui
-  pellentesque, lacinia risus ut, imperdiet eros.
+  Ask about our partners and preferred suppliers and we will connect you to the
+  right people.
 accordion:
   - description: >-
       Etiam ac quam eget lectus venenatis ullamcorper sit amet non arcu. Nullam
