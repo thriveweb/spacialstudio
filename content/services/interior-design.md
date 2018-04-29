@@ -12,9 +12,9 @@ galleryTitle: Your project can go to the next level with our Interior Design Con
 galleryDescription: >-
   Whether it be help with colours, materials or finishes. Or perhaps furniture
   or soft furnishings. Spacial Studio can help you find cost effective ways to
-  make your project standout. Allowing us to coordinate the entire building
-  inside and out is a great way to have us deliver a project you'll fall in love
-  with.
+  make your project standout in the market place or suit your individual
+  lifestyle. Allowing us to coordinate the entire building inside and out is a
+  great way to have us deliver a project you'll fall in love with.
 threeColumnSectionTitle: Etiam ac quam eget lectus venenatis ullamcorper
 threeColumnSection: >-
   Etiam ac quam eget lectus venenatis ullamcorper sit amet non arcu. Nullam
