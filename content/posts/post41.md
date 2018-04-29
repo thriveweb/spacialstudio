@@ -1,11 +1,11 @@
 ---
-title: Sc quam eget lectus venenatis ullamcorper sit amet non arcu
-status: Featured / Published
-date: 2018-12-14T03:52:13.021Z
+title: Spacial Studio design process
+status: Draft / Hidden
 categories:
   - category: Design
   - category: Architecture
   - category: Design Interiors
+date: 2018-12-14T03:52:13.021Z
 postFeaturedImage: /images/uploads/unsplash7.jpg
 excerpt: >-
   Etiam ac quam eget lectus venenatis ullamcorper sit amet non arcu. Nullam
