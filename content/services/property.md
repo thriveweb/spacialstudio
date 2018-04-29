@@ -8,12 +8,8 @@ galleryImages:
   - galleryimage: /images/uploads/unsplash6.jpg
   - galleryimage: /images/uploads/unsplash7.jpg
   - galleryimage: /images/uploads/unsplash.jpg
-galleryTitle: ' Nullam interdum arcu vitae augue '
-galleryDescription: >-
-  Etiam ac quam eget lectus venenatis ullamcorper sit amet non arcu. Nullam
-  interdum arcu vitae augue pulvinar sodales. Sed non dui diam. Quisque lectus
-  est, lobortis ac efficitur vitae, posuere a mauris. Phasellus ac dui
-  pellentesque, lacinia risus ut, imperdiet eros.
+galleryTitle: ' Property - Coming soon'
+galleryDescription: Watch this space.
 threeColumnSectionTitle: Etiam ac quam eget lectus venenatis ullamcorper
 threeColumnSection: >-
   Etiam ac quam eget lectus venenatis ullamcorper sit amet non arcu. Nullam
@@ -57,3 +53,4 @@ featuredPosts:
   - postList: A quam eget lectus venenatis ullamcorper sit amet non arcu
   - postList: Post 1 Etiam ac quam eget lectus venenatis ullamcorper sit amet non arcu
 ---
+
