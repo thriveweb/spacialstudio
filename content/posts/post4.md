@@ -1,13 +1,13 @@
 ---
-title: Sc quam eget lectus venenatis ullamcorper sit amet non arcu
+title: 'Structural Steel '
 status: Featured / Published
-date: 2018-12-14T03:52:13.021Z
 categories:
   - category: Design
   - category: Architecture
   - category: Consulting
   - category: Technology
   - category: Design Interiors
+date: 2018-12-14T03:52:13.021Z
 postFeaturedImage: /images/uploads/unsplash5.jpg
 excerpt: >-
   Etiam ac quam eget lectus venenatis ullamcorper sit amet non arcu. Nullam
