@@ -1,11 +1,11 @@
 ---
-title: A quam eget lectus venenatis ullamcorper sit amet non arcu
-status: Featured / Published
-date: 2018-12-14T03:52:13.021Z
+title: How do I choose the right house to renovate?
+status: Draft / Hidden
 categories:
   - category: Consulting
   - category: Technology
   - category: Design Interiors
+date: 2018-12-14T03:52:13.021Z
 postFeaturedImage: /images/uploads/unsplash6.jpg
 excerpt: >-
   Etiam ac quam eget lectus venenatis ullamcorper sit amet non arcu. Nullam
