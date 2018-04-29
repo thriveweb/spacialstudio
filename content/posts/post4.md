@@ -1,6 +1,6 @@
 ---
 title: 'Structural Steel '
-status: Featured / Published
+status: Draft / Hidden
 categories:
   - category: Design
   - category: Architecture
