@@ -8,7 +8,7 @@ welcomeQuote: >-
 welcomeSection: >-
   Welcome to Spacial Studio. We have created a modern, ever evolving Building
   Design company that focuses on delivering your project at your budget. We use
-  next generation software solutions mixed with great Design learnt from real
+  next generation software solutions mixed with great design learnt from real
   world experience. We collaborate with Builders and Clients to ensure that a
   build-able design meets your needs.
 
@@ -29,7 +29,7 @@ historySection: >-
   To builders a designer can be an impediment to accurate pricing and
   build-ability. To many designers a builder can be stone wall. Spacial Studio
   was founded to break this wall through building experience, design ability and
-  software knowledge. We fostered relationships to collaborate closely with
+  software knowledge. We foster relationships to collaborate closely with
   builders to get your project in on price and on time. Every one has a common
   goal. A successful, timely project.
 
