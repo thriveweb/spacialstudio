@@ -1,12 +1,12 @@
 ---
-title: Etiam ac quam eget lectus venenatis ullamcorper sit amet non arcu
-status: Featured / Published
-date: 2018-12-14T03:52:13.021Z
+title: That's renovating
+status: Draft / Hidden
 categories:
   - category: Design
   - category: Consulting
   - category: Technology
   - category: Design Interiors
+date: 2018-12-14T03:52:13.021Z
 postFeaturedImage: /images/uploads/unsplash.jpg
 excerpt: >-
   Etiam ac quam eget lectus venenatis ullamcorper sit amet non arcu. Nullam
