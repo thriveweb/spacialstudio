@@ -8,13 +8,13 @@ welcomeGalleryImages:
   - galleryimage: /images/uploads/unsplash6.jpg
 title: >-
   We are Spacial Studio. A passionate Building Design studio that listens and
-  moves forward. We Design, Consult and Connect.
+  moves forward. We design, consult and connect.
 aboutImage: /images/uploads/unsplash3.jpg
 aboutSectionTitle: >-
   We are an Australian practice endeavouring to connect clients with the best
   possible outcomes.
 aboutContent: >-
-  We established Spacial Studio to create a Building Design and Consulting
+  We established Spacial Studio to create a building design and consulting
   company that progresses the art of design along side collaboration with
   industry. Our methods and processes are all designed to give you, not only
   better design outcomes, but more consistent pricing and better relationships
