@@ -1,6 +1,6 @@
 ---
-title: sghmdghm corper sit amet non arcu
-status: Featured / Published
+title: New Material
+status: Draft / Hidden
 categories:
   - category: Design
   - category: Architecture
