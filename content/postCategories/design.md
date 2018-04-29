@@ -1,4 +1,4 @@
 ---
-title: Design
+title: Building Design
 ---
 
