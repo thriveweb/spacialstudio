@@ -23,7 +23,7 @@
     "postcss-cssnext": "^3.0.2",
     "prop-types": "^15.6.0",
     "react-scripts": "^1.0.10",
-    "sharp": "^0.18.4",
+    "sharp": "^0.30.5",
     "sitemap-static": "^0.4.2",
     "snazzy": "^7.0.0",
     "standard": "^10.0.2",
